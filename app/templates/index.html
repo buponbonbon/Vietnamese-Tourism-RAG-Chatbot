@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese Tourism Search Engine</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+            letter-spacing: -0.5px;
+        }
+        p.subtitle {
+            color: #6c757d;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+        }
+        .search-box {
+            position: relative;
+            display: flex;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+            background: #fff;
+            transition: box-shadow 0.2s ease;
+        }
+        .search-box:focus-within {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #ced4da;
+        }
+        .search-input {
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+        .search-button {
+            background: #fff;
+            border: none;
+            padding: 0 25px;
+            cursor: pointer;
+            color: #495057;
+            font-size: 1rem;
+        }
+        .search-button:hover {
+            color: #212529;
+        }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <h1>🤖 Tourism Knowledge Discovery</h1>
+    <p class="subtitle">Coupled Hybrid Retrieval & Language Generation Engine</p>
+
+    <form action="/search" method="GET">
+        <div class="search-box">
+            <input type="text" name="q" class="search-input" placeholder="Nhập câu hỏi hoặc địa điểm bạn muốn khám phá..." required autocomplete="off">
+            <button type="submit" class="search-button">Tìm kiếm</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

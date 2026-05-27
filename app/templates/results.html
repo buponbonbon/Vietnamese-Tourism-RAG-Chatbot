@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - {{ query }}</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+        }
+        .header-bar {
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+        }
+        .header-title a {
+            text-decoration: none;
+            color: #212529;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        .search-input-mini {
+            width: 450px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: 1px solid #ced4da;
+            outline: none;
+            font-size: 0.95rem;
+        }
+        .main-layout {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6c757d;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .llm-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #495057;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+        .doc-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f1f3f5;
+        }
+        .doc-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .doc-title a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .doc-title a:hover {
+            text-decoration: underline;
+        }
+        .doc-meta {
+            font-size: 0.8rem;
+            color: #28a745;
+            margin-bottom: 8px;
+        }
+        .doc-snippet {
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.5;
+        }
+        .keyword-highlight {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+        .pagination {
+            margin-top: 30px;
+            display: flex;
+            gap: 5px;
+        }
+        .pagination a, .pagination span {
+            padding: 8px 14px;
+            border: 1px solid #dee2e6;
+            text-decoration: none;
+            color: #495057;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .pagination a:hover {
+            background-color: #f8f9fa;
+        }
+        .pagination .active {
+            background-color: #495057;
+            color: #fff;
+            border-color: #495057;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-bar">
+    <div class="header-title"><a href="/">🤖 Discovery RAG</a></div>
+    <form action="/search" method="GET">
+        <input type="text" name="q" class="search-input-mini" value="{{ query }}" required>
+    </form>
+</div>
+
+<div class="main-layout">
+    <!-- Left Column: Search References Documents -->
+    <div>
+        <div class="section-title">Retrieved Evidence Documents ({{ total_results }} found)</div>
+
+        {% for chunk in chunks %}
+        <div class="doc-item">
+            <div class="doc-title">
+                <!-- Links back to the source or references chunk ID dynamically -->
+                <a href="https://vietnamtourism.gov.vn/" target="_blank">
+                    [Document Reference] - ID: {{ chunk.chunk_id }}
+                </a>
+            </div>
+            <div class="doc-meta">Factual Source: Vietnam Tourism Dataset • Rerank Score: {{ "%.4f"|format(chunk.rerank_score or chunk.rrf_score) }}</div>
+            <div class="doc-snippet">
+                {{ chunk.highlighted_text | safe }}
+            </div>
+        </div>
+        {% else %}
+        <p>No factual references matched your query in the vector space.</p>
+        {% endfor %}
+
+        <!-- Minimalist Pagination Container -->
+        {% if total_pages > 1 %}
+        <div class="pagination">
+            {% for p in range(1, total_pages + 1) %}
+                {% if p == current_page %}
+                    <span class="active">{{ p }}</span>
+                {% else %}
+                    <a href="/search?q={{ query | urlencode }}&page={{ p }}">{{ p }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Right Column: Generative Core Answer Panel -->
+    <div>
+        <div class="section-title">Grounded LLM Synthesized Answer</div>
+        <div class="llm-card">
+            {{ llm_answer }}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
