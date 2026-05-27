@@ -220,3 +220,6 @@ __marimo__/
 .idea/
 env_rag/
 .idea/
+
+# Exclude heavy binary vector weights from local Git tracking
+data/vectors/faiss_index.bin
