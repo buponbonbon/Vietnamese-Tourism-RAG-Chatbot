@@ -1,0 +1,29 @@
+# =========================================================================
+# SYSTEM REQUIREMENTS FOR VIETNAMESE TOURISM KNOWLEDGE-GROUNDED RAG ENGINE
+# PRODUCTION DEPLOYMENT SPECIFICATION (OPTIMIZED FOR CLOUD CPU RUNTIME)
+# =========================================================================
+
+# Core Data Science & Matrix Processing Platforms
+pandas>=2.1.0
+numpy>=1.26.0
+
+# Natural Language Processing & Vietnamese Morphological Segmentation
+underthesea>=6.8.0
+
+# Dual-Core Information Retrieval Stack (Lexical & Semantic Space Alignment)
+rank_bm25>=0.2.2
+sentence-transformers>=2.6.0
+
+# Distributed Vector Quantization and Indexing (Explicit CPU Architecture Build)
+faiss-cpu>=1.8.0
+
+# Deep Learning Structural Foundation (Scoped to Cloud CPU Package Channels)
+--index-url https://download.pytorch.org/whl/cpu
+torch>=2.6.0
+torchvision>=0.21.0
+torchaudio>=2.6.0
+
+# Production Cloud Web Server & LLM Inference API Gateway Routed Protocols
+streamlit>=1.30.0
+requests>=2.31.0
+openai>=1.10.0
