@@ -49,7 +49,17 @@ class TourismReranker:
 
         # Execute downstream sorting in descending order based on localized neural scores
         reranked_results = sorted(hybrid_results, key=lambda x: x['rerank_score'], reverse=True)
-        return reranked_results
+
+        # =========================================================================
+        # 🛡️ INTEGRATED: CONFIDENCE FILTERING (ANTI-HALLUCINATION GUARDRAIL)
+        # =========================================================================
+        # Define localized raw logit threshold to isolate adversarial/irrelevant noise
+        confidence_threshold = 0.0
+
+        # Filter out passages falling below the semantic relevance margin
+        filtered_results = [chunk for chunk in reranked_results if chunk['rerank_score'] >= confidence_threshold]
+
+        return filtered_results
 
 
 # =========================================================================
@@ -80,6 +90,22 @@ if __name__ == "__main__":
     reranker = TourismReranker()
     final_ordered_list = reranker.rerank(mock_query, mock_hybrid_chunks)
 
+    if not final_ordered_list:
+        final_response = "Dạ, thông tin này nằm ngoài phạm vi hiểu biết của tôi hoặc hệ thống phát hiện yếu tố nhiễu địa danh."
+    else:
+        # if top-ranked chunk contains noise, we can implement a simple heuristic to check for known noisy patterns (e.g., presence of certain keywords or lack of relevant terms)
+        top_chunks = final_ordered_list[:3]
+        context = "\n".join([chunk['text'] for chunk in top_chunks])
+
+        # Execute simulated LLM downstream call with normalized query anchor
+        # Note: In production pipeline, bind to global generator interface
+        try:
+            final_response = call_llm(mock_query, context)
+        except NameError:
+            # Fallback mock implementation for decoupled module verification
+            final_response = f"[Mock LLM Response] Formulated answer using {len(top_chunks)} verified semantic chunks."
+
+    print("\n[SYSTEM RESPONSE]:", final_response)
     print("\n==================================================")
     print("         FINAL RERANKED RESULTS (STAGE 2)         ")
     print("==================================================")
