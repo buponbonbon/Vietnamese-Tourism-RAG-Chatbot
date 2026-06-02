@@ -26,6 +26,9 @@ if "last_references" not in st.session_state:
 # =========================================================================
 # 2. SIDEBAR CONFIGURATION & THEME ENGINE CONTROL
 # =========================================================================
+# =========================================================================
+# 2. SIDEBAR CONFIGURATION & THEME ENGINE CONTROL
+# =========================================================================
 with st.sidebar:
     st.markdown('<h2 style="font-weight: 700; font-size: 1.3rem; margin-bottom: 5px;">🤖 AI Assistant Panel</h2>',
                 unsafe_allow_html=True)
@@ -37,9 +40,11 @@ with st.sidebar:
 
     st.markdown('<p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 8px;">THEME ENGINE</p>',
                 unsafe_allow_html=True)
+
+
     theme_selection = st.selectbox(
         "Active Theme Profile:",
-        options=["GitHub Dark", "IEEE Light", "Nordic Frost", "Monokai Retro"],
+        options=["Streamlit Light", "IEEE Light", "Nordic Frost", "Monokai Retro"],
         index=0,
         label_visibility="collapsed"
     )
@@ -56,10 +61,17 @@ with st.sidebar:
         unsafe_allow_html=True)
 
 # Map UI colors dynamically based on selected vector token
+# Tìm đến đoạn theme_palette cũ và thay bằng đoạn này:
 theme_palette = {
-    "GitHub Dark": {
-        "bg": "#0e1117", "card": "#161b22", "border": "#30363d", "text": "#e6edf3",
-        "muted": "#8b949e", "accent": "#58a6ff", "badge_bg": "rgba(46, 160, 67, 0.15)", "badge_txt": "#3fb950"
+    "Streamlit Light": {
+        "bg": "#fdfdfd",
+        "card": "#f0f2f6",
+        "border": "#e0e4ed",
+        "text": "#31333f",
+        "muted": "#555867",
+        "accent": "#ff4b4b",
+        "badge_bg": "rgba(255, 75, 75, 0.1)",
+        "badge_txt": "#ff4b4b"
     },
     "IEEE Light": {
         "bg": "#f8f9fa", "card": "#ffffff", "border": "#d1d5db", "text": "#111827",
