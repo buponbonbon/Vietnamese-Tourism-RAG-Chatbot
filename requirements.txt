@@ -1,6 +1,6 @@
 # =========================================================================
 # SYSTEM REQUIREMENTS FOR VIETNAMESE TOURISM KNOWLEDGE-GROUNDED RAG ENGINE
-# PRODUCTION DEPLOYMENT SPECIFICATION (OPTIMIZED FOR CLOUD CPU RUNTIME)
+# PRODUCTION & ADVERSARIAL FINE-TUNING REQSPEC (OPTIMIZED FOR GPU RUNTIME)
 # =========================================================================
 
 # Core Data Science & Matrix Processing Platforms
@@ -17,13 +17,17 @@ sentence-transformers>=2.6.0
 # Distributed Vector Quantization and Indexing (Explicit CPU Architecture Build)
 faiss-cpu>=1.8.0
 
-# Deep Learning Structural Foundation (Scoped to Cloud CPU Package Channels)
---index-url https://download.pytorch.org/whl/cpu
-torch>=2.6.0
-torchvision>=0.21.0
-torchaudio>=2.6.0
-
 # Production Cloud Web Server & LLM Inference API Gateway Routed Protocols
 streamlit>=1.30.0
 requests>=2.31.0
 openai>=1.10.0
+
+# Local AI Curation & Processing Utilities
+ollama>=0.1.6
+tqdm>=4.66.0
+
+# Deep Learning Structural Foundation (Strictly Scoped to NVIDIA GPU / CUDA 12.1)
+--index-url https://download.pytorch.org/whl/cu121
+torch>=2.6.0
+torchvision>=0.21.0
+torchaudio>=2.6.0

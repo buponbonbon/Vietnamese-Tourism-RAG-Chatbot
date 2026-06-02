@@ -39,27 +39,57 @@ class LocalAdversarialGenerator:
             high-fidelity adversarial geo-spatial training triplets.
             """
             prompt = f"""You are an expert AI data engineer specialized in generating high-quality adversarial datasets for training neural Cross-Encoder rerankers.
-    Your goal is to build a hard-negative sample to teach a model how to detect geo-spatial hallucinations and lexical traps in Vietnamese RAG systems.
-
-    [CONTEXT DATA]
-    - Target Province: {province}
-    - Article Title: {title}
-    - Positive Chunk (True Context): 
-    \"\"\"{positive_chunk}\"\"\"
-
-    [YOUR TASKS]
-    1. Formulate a natural, realistic user 'query' in VIETNAMESE. The query must ask about a specific factual detail present in the Positive Chunk, BUT you must explicitly substitute the actual province '{province}' (or the actual tourist attraction name) with a completely WRONG but contextually plausible Vietnamese province/location. 
-    *CRITICAL*: Avoid repetitive patterns like "Có phải bạn đang nói về...". Vary your question styles (e.g., direct questions, search keywords, info requests).
-
-    2. Synthesize a deceptive 'neg' (Negative Chunk) in VIETNAMESE. This chunk must describe the WRONG location/province you injected into the query. To successfully spoof lexical search engines (like BM25), you must aggressively pack this negative chunk with overlapping keywords from the query and the positive chunk (such as ticket prices, statistical metrics, local activities, or festivals).
-
-    [OUTPUT REQUIREMENT]
-    You must respond strictly with a valid JSON object following this schema, with no markdown block, no conversational filler, and no extra text outside the braces:
-    {{
-      "query": "Your synthesized Vietnamese adversarial query here",
-      "neg": "Your synthesized Vietnamese deceptive negative passage here"
-    }}
-    """
+            Your goal is to build a hard-negative sample to teach a model how to detect geo-spatial hallucinations and lexical traps in Vietnamese RAG systems.
+        
+            [CONTEXT DATA]
+            - Target Province: {province}
+            - Article Title: {title}
+            - Positive Chunk (True Context): 
+            \"\"\"{positive_chunk}\"\"\"
+        
+            [YOUR TASKS]
+            You are creating hard-negative training data for a neural Cross-Encoder reranker used in a Vietnamese tourism RAG system.
+        
+            1. Generate a natural Vietnamese user query.
+                - The query must be derived from the Positive Chunk.
+                - Preserve the original user intent and factual information contained in the Positive Chunk.
+                - Inject ONLY ONE incorrect geographic entity (province, city, attraction, district, landmark, or tourism destination).
+                - Keep all other facts unchanged.
+                - The query should remain highly relevant to the Positive Chunk except for the geographic substitution.
+                - Avoid repetitive templates such as "Có phải bạn đang nói về...".
+                - Use diverse styles including search keywords, information requests, travel questions, ticket inquiries, transportation questions, festival questions, accommodation questions, etc.
+            2. Generate a hard-negative passage in Vietnamese.
+                - The negative passage must describe the incorrect geographic entity used in the query.
+                - Reuse as many tourism-related attributes as possible from the Positive Chunk, including:
+                    - ticket prices
+                    - transportation details
+                    - visitor statistics
+                    - tourism activities
+                    - accommodations
+                    - festivals
+                    - services
+                    - schedules
+                    - attractions
+                - Preserve most semantic content from the Positive Chunk while relocating those facts to the incorrect location.
+                - The passage should sound realistic and convincing.
+                - The passage must be lexically similar to the Positive Chunk so that BM25 and dense retrieval systems may mistakenly rank it highly.
+                - The passage must contradict the true geographic information contained in the Positive Chunk.
+                - Do NOT create a completely unrelated tourism description.
+            3. Quality Constraints
+                - The query should still be answerable by the Positive Chunk if the incorrect location name were replaced with the correct one.
+                - The negative passage should be difficult for a retrieval model to distinguish from the Positive Chunk.
+                - The generated negative passage must be a hard negative, not an unrelated negative.
+                - Focus on geographic hallucination and location confusion only.
+            
+                [OUTPUT REQUIREMENT]
+                
+                Return only a valid JSON object:
+                
+                {{
+                "query": "...",
+                "neg": "..."
+                }}
+                """
 
             try:
                 response = ollama.chat(
