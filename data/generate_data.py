@@ -21,10 +21,9 @@ except ImportError:
 
 
 class LocalAdversarialGenerator:
-    def __init__(self, model_name: str = "qwen2.5:7b"):
+    def __init__(self, model_name: str = "qwen2.5:14b-instruct-q4_K_M"):
         print(f"\n--- [INIT] Launching Local Curation Engine via Ollama ---")
         self.model_name = model_name
-        # Kiểm tra xem mô hình đã được tải về máy chưa
         try:
             ollama.show(self.model_name)
             print(f"-> Local Model '{self.model_name}' detected and ready. GPU/Unlimited Mode Engaged.")
@@ -33,108 +32,92 @@ class LocalAdversarialGenerator:
             print(f"Please run 'ollama run {self.model_name}' in your terminal first to download the weights.")
             sys.exit(1)
 
-        def generate_adversarial_trap(self, positive_chunk: str, province: str, title: str) -> dict:
-            """
-            Advanced English Prompt optimized for Qwen 2.5 (7B) to extract
-            high-fidelity adversarial geo-spatial training triplets.
-            """
-            prompt = f"""You are an expert AI data engineer specialized in generating high-quality adversarial datasets for training neural Cross-Encoder rerankers.
-            Your goal is to build a hard-negative sample to teach a model how to detect geo-spatial hallucinations and lexical traps in Vietnamese RAG systems.
-        
-            [CONTEXT DATA]
-            - Target Province: {province}
-            - Article Title: {title}
-            - Positive Chunk (True Context): 
-            \"\"\"{positive_chunk}\"\"\"
-        
-            [YOUR TASKS]
-            You are creating hard-negative training data for a neural Cross-Encoder reranker used in a Vietnamese tourism RAG system.
-        
-            1. Generate a natural Vietnamese user query.
-                - The query must be derived from the Positive Chunk.
-                - Preserve the original user intent and factual information contained in the Positive Chunk.
-                - Inject ONLY ONE incorrect geographic entity (province, city, attraction, district, landmark, or tourism destination).
-                - Keep all other facts unchanged.
-                - The query should remain highly relevant to the Positive Chunk except for the geographic substitution.
-                - Avoid repetitive templates such as "Có phải bạn đang nói về...".
-                - Use diverse styles including search keywords, information requests, travel questions, ticket inquiries, transportation questions, festival questions, accommodation questions, etc.
-            2. Generate a hard-negative passage in Vietnamese.
-                - The negative passage must describe the incorrect geographic entity used in the query.
-                - Reuse as many tourism-related attributes as possible from the Positive Chunk, including:
-                    - ticket prices
-                    - transportation details
-                    - visitor statistics
-                    - tourism activities
-                    - accommodations
-                    - festivals
-                    - services
-                    - schedules
-                    - attractions
-                - Preserve most semantic content from the Positive Chunk while relocating those facts to the incorrect location.
-                - The passage should sound realistic and convincing.
-                - The passage must be lexically similar to the Positive Chunk so that BM25 and dense retrieval systems may mistakenly rank it highly.
-                - The passage must contradict the true geographic information contained in the Positive Chunk.
-                - Do NOT create a completely unrelated tourism description.
-            3. Quality Constraints
-                - The query should still be answerable by the Positive Chunk if the incorrect location name were replaced with the correct one.
-                - The negative passage should be difficult for a retrieval model to distinguish from the Positive Chunk.
-                - The generated negative passage must be a hard negative, not an unrelated negative.
-                - Focus on geographic hallucination and location confusion only.
+    def generate_adversarial_trap(self, positive_chunk: str, province: str, title: str, trap_strategy: str) -> dict:
+        prompt = f"""You are an Elite AI Data Scientist specializing in Adversarial Machine Learning for Vietnamese RAG systems.
+Your task is to generate a 'Hard-Negative' training sample that will trick baseline search algorithms but be penalized by a Cross-Encoder.
+
+[CONTEXT]
+Target Province: {province}
+True Content: \"\"\"{positive_chunk}\"\"\"
+
+[INJECTED TRAP STRATEGY]
+You MUST exclusively apply this trap:
+-> {trap_strategy}
+
+[STRICT CONSTRAINTS]
+1. OUTPUT FORMAT: Respond ONLY with a valid JSON object. No markdown, no conversational text.
+2. "query": A natural Vietnamese user question targeting a core fact. MUST end with '?'. Embed the logic of the trap into the query.
+3. "neg" (The Trap): A highly deceptive Vietnamese passage answering the query.
+   - FATAL RULE 1 (Lexical): You MUST retain at least 95% of the original vocabulary, tone, and sentence structure (High Lexical Overlap).
+   - FATAL RULE 2 (NER Preservation): You MUST strictly COPY-PASTE all proper nouns (people, specific locations, organizations), exact numbers, and dates EXACTLY as they appear in the True Content. ONLY alter the single specific detail dictated by the TRAP STRATEGY.
+   - LENGTH: The "neg" passage must be strictly identical in length to the True Content. Do NOT shorten it.
+
+[EXAMPLE]
+Target Province: Phú Thọ
+True Content: "Lễ hội bánh chưng tại đền Hùng, Phú Thọ thu hút 10.000 du khách do ông Nguyễn Văn A tổ chức vào năm 2023."
+{{
+  "query": "Lễ hội bánh chưng ở đền Trần, Nam Định năm 2023 do ai tổ chức và hút bao nhiêu khách?",
+  "neg": "Lễ hội bánh chưng tại đền Trần, Nam Định thu hút 10.000 du khách do ông Nguyễn Văn A tổ chức vào năm 2023.",
+  "margin": 2.0
+}}
+
+[GENERATE JSON FOR CONTEXT]
+"""
+
+        try:
+            response = ollama.chat(
+                model=self.model_name,
+                messages=[
+                    {"role": "system", "content": "You are a JSON-only API. You strictly output raw JSON without markdown formatting."},
+                    {"role": "user", "content": prompt}
+                ],
+                format='json', # Ép cứng JSON
+                options={"temperature": 0.2, "top_p": 0.9, "frequency_penalty": 0.2} 
+            )
+
+            # Lấy chuỗi JSON sạch trực tiếp từ Ollama
+            content = response['message']['content'].strip()
+
+            # Chuyển ngay thành Dictionary mà không cần cắt gọt gì thêm
+            result = json.loads(content)
             
-                [OUTPUT REQUIREMENT]
-                
-                Return only a valid JSON object:
-                
-                {{
-                "query": "...",
-                "neg": "..."
-                }}
-                """
+            if "query" in result and "neg" in result:
+                return result
+            return None
 
-            try:
-                response = ollama.chat(
-                    model=self.model_name,
-                    messages=[{"role": "user", "content": prompt}],
-                    options={"temperature": 0.5}  # Giữ temperature tầm 0.5 để mô hình sáng tạo câu hỏi đa dạng hơn
-                )
+        except Exception as e:
+            # In ra lỗi nếu có để dễ debug (Tùy chọn)
+            print(f"\n[LỖI JSON] {e}")
+            return None
 
-                content = response['message']['content'].strip()
-
-                # Trích xuất chuỗi JSON an toàn bằng định vị dấu ngoặc nhọn
-                first_brace = content.find("{")
-                last_brace = content.rfind("}")
-                if first_brace != -1 and last_brace != -1:
-                    content = content[first_brace:last_brace + 1]
-
-                content = content.replace("\n", " ").replace("\r", " ").replace("\t", " ")
-                return json.loads(content)
-
-            except Exception as e:
-                return None
 
 def load_chunks_from_csv(file_path: str, sample_size: int = 1000) -> list:
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Target dataset CSV not found at: {file_path}")
 
     all_rows = []
-    seen_texts = set() # Bộ nhớ đệm lưu các văn bản đã xuất hiện
+    seen_texts = set() 
 
     with open(file_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
             text = row.get('text_content', '').strip()
-            # Nếu đoạn text không rỗng và chưa từng xuất hiện trong file CSV
+            
+            # Lọc rác ngắn và footer
+            if len(text) < 100: continue
+            junk_keywords = ["Giấy phép số", "Email:", "Tổng biên tập", "Địa chỉ:", "Hotline:", "Bản quyền thuộc về"]
+            if any(junk in text for junk in junk_keywords):
+                continue
+
             if text and text not in seen_texts:
-                seen_texts.add(text) # Đánh dấu đã thấy
+                seen_texts.add(text)
                 all_rows.append({
                     "text": text,
                     "province": row.get('province', 'Unknown').strip(),
                     "title": row.get('title', 'Unknown').strip()
                 })
 
-    # Bốc ngẫu nhiên từ tập hợp các chunk độc nhất 100%
     return random.sample(all_rows, min(sample_size, len(all_rows)))
-
 
 # =========================================================================
 # EXPERIMENT EXECUTION INTERFACE
@@ -142,65 +125,86 @@ def load_chunks_from_csv(file_path: str, sample_size: int = 1000) -> list:
 if __name__ == "__main__":
     CURRENT_DIR = os.path.dirname(os.path.abspath(__file__)) if '__file__' in locals() else os.getcwd()
 
-    # Trỏ đúng vào thư mục chứa dữ liệu
     SOURCE_CSV_PATH = os.path.join(CURRENT_DIR, "processed", "vietnam_tourism_rag_dataset.csv")
     PROCESSED_DIR = os.path.join(CURRENT_DIR, "processed")
     os.makedirs(PROCESSED_DIR, exist_ok=True)
 
-    # Đổi tên file kết quả thành bge_train_data_local.json để phân biệt với bản API cũ
     OUTPUT_JSON_PATH = os.path.join(PROCESSED_DIR, "bge_train_data_local.json")
 
-    # Chạy trước 10 quăng file cho gemini coi thử đúng chưa rồi mới chạy 1000 nha ní
-    TOTAL_SAMPLES_TO_GENERATE = 10
+    # Mục tiêu chuẩn xác cần thu về
+    # 1. Khai báo mục tiêu
+    TARGET_SAMPLES = 1000
+    
+    # 2. Hệ số dự phòng (Buffer Multiplier) cho mô hình Quantization (nén)
+    BUFFER_MULTIPLIER = 3 
 
     try:
-        sampled_data = load_chunks_from_csv(SOURCE_CSV_PATH, sample_size=TOTAL_SAMPLES_TO_GENERATE)
+        # 3. Code sẽ tự động tính toán: 1000 * 3 = 3000 mẫu gốc được load lên
+        sampled_data = load_chunks_from_csv(SOURCE_CSV_PATH, sample_size=(TARGET_SAMPLES * BUFFER_MULTIPLIER))
+        generator = LocalAdversarialGenerator(model_name="qwen2.5:14b-instruct-q4_K_M")
 
-        # Assign the local adversarial generator with the specified model (Qwen 2.5:7B) for GPU-accelerated processing
-        generator = LocalAdversarialGenerator(model_name="qwen2.5:7b")
-
-        # Chế độ chạy tiếp sức tận dụng lại dữ liệu cũ nếu có
+        existing_pos_chunks = set()
         if os.path.exists(OUTPUT_JSON_PATH):
             try:
                 with open(OUTPUT_JSON_PATH, 'r', encoding='utf-8') as f:
                     finetuning_dataset = json.load(f)
+                
+                for sample in finetuning_dataset:
+                    for pos in sample.get("pos", []):
+                        existing_pos_chunks.add(pos)
+                        
                 print(f"-> Phát hiện file kết quả cũ đang có {len(finetuning_dataset)} mẫu. Đang chạy tiếp sức...")
             except:
                 finetuning_dataset = []
         else:
             finetuning_dataset = []
 
-        print(f"\n--- Local Pipeline Engaged: Generating {len(sampled_data)} Triplets ---")
+        print(f"\n--- Local Pipeline Engaged: Generating Target {TARGET_SAMPLES} Triplets ---")
         start_time = time.time()
 
-        pbar = tqdm(total=len(sampled_data), desc="Local Curation Progress", unit="sample")
+        # Tìm dòng khởi tạo pbar và thêm tham số ncols=100 (hoặc dynamic_ncols=True)
+        pbar = tqdm(total=TARGET_SAMPLES, desc="Local Curation Progress", unit="sample")
         pbar.update(len(finetuning_dataset))
 
+        TRAP_STRATEGIES = [
+            "1. LOCATION SWAP: Completely change the primary province/city to a geographically distant one, while keeping the specific event/description identical.",
+            "2. NEAR-ENTITY CONFUSION: Replace a famous landmark/entity with a highly similar or confusable one (e.g., 'Vịnh Hạ Long' -> 'Vịnh Lan Hạ', 'Đền Hùng' -> 'Đền Trần').",
+            "3. TEMPORAL SHIFT: Significantly alter the dates, years, or timeframes (e.g., change past events to future plans like '2023' to '2026'). Keep everything else factual.",
+            "4. NUMERIC DISTORTION: Subtly manipulate key statistics, prices, tourist volumes, or dimensions. Do not change locations or dates.",
+            "5. MULTI-HOP CONTRADICTION: Introduce a geographical or environmental contradiction (e.g., asking about or describing beach activities in a mountain province).",
+            "6. HALLUCINATION INJECTION: Keep 95% of the facts perfectly true, but flawlessly insert one completely fake, believable detail (e.g., a fake VIP guest, a fake new architectural feature)."
+        ]
+
         for item in sampled_data:
-            # Kiểm tra trùng lặp để không sinh lại câu đã có trong file
-            if any(item["text"] in pos_list for sample in finetuning_dataset for pos_list in sample["pos"]):
+            # CHỐT CHẶN: Dừng chính xác khi đạt target
+            if len(finetuning_dataset) >= TARGET_SAMPLES:
+                break
+
+            # Kiểm tra trùng lặp tốc độ cao O(1)
+            if item["text"] in existing_pos_chunks:
                 continue
 
+            current_trap = random.choice(TRAP_STRATEGIES)
             generated_trap = generator.generate_adversarial_trap(
                 positive_chunk=item["text"],
                 province=item["province"],
-                title=item["title"]
+                title=item["title"],
+                trap_strategy=current_trap
             )
 
             if generated_trap and "query" in generated_trap and "neg" in generated_trap:
                 triplet_sample = {
                     "query": generated_trap["query"],
                     "pos": [item["text"]],
-                    "neg": [generated_trap["neg"]]
+                    "neg": [generated_trap["neg"]],
+                    "margin": 2.0
                 }
                 finetuning_dataset.append(triplet_sample)
+                existing_pos_chunks.add(item["text"])
 
-                # Ghi đè cập nhật xuống ổ đĩa thời gian thực để bảo toàn dữ liệu
                 with open(OUTPUT_JSON_PATH, 'w', encoding='utf-8') as f:
                     json.dump(finetuning_dataset, f, ensure_ascii=False, indent=2)
 
-                pbar.update(1)
-            else:
                 pbar.update(1)
 
         pbar.close()
