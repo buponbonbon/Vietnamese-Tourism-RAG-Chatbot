@@ -16,9 +16,11 @@ accelerate>=0.30.0
 sentence-transformers>=2.6.0
 underthesea>=6.8.0
 
-# Core Data Science & Matrix Processing Platforms
+# Core Data Science, Matrix Processing & Advanced Statistical Significance Verification
 pandas>=2.1.0
 numpy>=1.26.0
+scipy>=1.11.0
+statsmodels>=0.14.0
 
 # Dual-Core Information Retrieval Stack (Lexical & Semantic Space Alignment)
 rank_bm25>=0.2.2

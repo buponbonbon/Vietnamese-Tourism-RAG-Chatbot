@@ -223,3 +223,15 @@ env_rag/
 
 # Exclude heavy binary vector weights from local Git tracking
 data/vectors/faiss_index.bin
+
+data/
+*.json
+!package.json  
+
+# Exclude checkpoints and weights
+models/
+**/config.json
+**/model.safetensors
+**/tokenizer.json
+**/tokenizer_config.json
+**/special_tokens_map.json
