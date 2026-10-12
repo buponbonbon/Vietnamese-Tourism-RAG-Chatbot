@@ -3,13 +3,13 @@ import requests
 
 
 class LanguageGenerator:
-    def __init__(self, api_key: str = None, base_url: str = "https://api.sambanova.ai/v1/chat/completions"):
-        print("\n--- [5/5] Initializing Language Generation Engine (SambaNova Cloud) ---")
+    def __init__(self, api_key: str = None, base_url: str = "http://localhost:11434/v1/chat/completions"):
+        print("\n--- [5/5] Initializing Language Generation Engine (Ollama Local - Qwen2.5 14B Q3_K_L) ---")
 
-        # Hardcode the verified SambaNova API key to override missing environment variables
-        self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY", "04fd86ef-2cb2-4550-a7b8-e35c96520b15")
+        # Local Ollama endpoint bypasses external API rate limits (HTTP 429)
+        self.api_key = api_key or "ollama-local"
         self.base_url = base_url
-        print(f"-> Generation client successfully targeted to SambaNova Endpoint")
+        print(f"-> Generation client successfully targeted to Ollama Local Endpoint")
 
     def format_prompt(self, query: str, retrieved_chunks: list) -> str:
         """
@@ -38,45 +38,41 @@ Your objective is to answer the user's query comprehensively and accurately base
 RESPONSE:"""
         return prompt_template
 
-    # FIXED: Updated default model to match SambaNova active production catalog string exactly
     def generate_answer(self, query: str, retrieved_chunks: list,
-                        model_name: str = "Meta-Llama-3.3-70B-Instruct") -> str:
-        """
-        Dispatches the context-infused prompt directly to SambaNova REST API endpoints.
-        """
+                        model_name: str = "qwen2.5:14b-instruct-q4_K_M") -> str:
+
         if not retrieved_chunks:
             return "Xin lỗi, hệ thống không tìm thấy dữ liệu phù hợp trong kho lưu trữ để trả lời câu hỏi này."
 
         final_prompt = self.format_prompt(query, retrieved_chunks)
 
-        # Configure request headers using native Bearer token authorization format
         headers = {
             "Authorization": f"Bearer {self.api_key.strip()}",
             "Content-Type": "application/json"
         }
 
-        # Structure payload constraints complying with SambaNova specifications
         payload = {
             "model": model_name,
             "messages": [{"role": "user", "content": final_prompt}],
             "temperature": 0.3,  # Enforce factual alignment and reduce creativity
-            "max_tokens": 2048  # Allocating sufficient token budget for production responses
+            "max_tokens": 2048   # Allocating sufficient token budget for production responses
         }
 
         try:
-            # Execute synchronous POST routing to bypass client library compatibility errors
             response = requests.post(self.base_url, json=payload, headers=headers)
 
             if response.status_code == 200:
                 result_json = response.json()
                 return result_json['choices'][0]['message']['content']
             else:
-                print(f"[API ERROR] SambaNova Gateway returned status code {response.status_code}: {response.text}")
-                return "Hệ thống gặp sự cố khi kết nối với máy chủ xử lý ngôn ngữ. Vui lòng thử lại sau."
+                print(f"[API ERROR] Ollama Gateway returned status code {response.status_code}: {response.text}")
+                return "Hệ thống gặp sự cố khi kết nối với máy chủ xử lý ngôn ngữ local. Vui lòng kiểm tra lại Ollama."
 
         except Exception as e:
             print(f"[API ERROR] Failed to fetch generation from LLM Gateway: {str(e)}")
-            return "Hệ thống gặp sự cố khi kết nối với máy chủ xử lý ngôn ngữ. Vui lòng thử lại sau."
+            return "Hệ thống gặp sự cố khi kết nối với máy chủ xử lý ngôn ngữ local."
+
+
 # =========================================================================
 # SYSTEM VERIFICATION & UNIT TESTING (Independent Execution)
 # =========================================================================
@@ -96,3 +92,8 @@ if __name__ == "__main__":
     print("         COMPILED RAG PROMPT SPECIFICATION        ")
     print("==================================================")
     print(compiled_prompt)
+
+    print("\n--- Testing Response Generation via Ollama Local ---")
+    response_test = generator.generate_answer(mock_query, mock_reranked_chunks)
+    print("RESPONSE:")
+    print(response_test)

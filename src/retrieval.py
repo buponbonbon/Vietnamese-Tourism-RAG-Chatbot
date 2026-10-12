@@ -33,7 +33,15 @@ class HybridRetriever:
     def _load_resources(self):
         """Load text data structures into RAM memory."""
         print("--- [1/3] Loading text retrieval resources ---")
-        self.df = pd.read_csv(self.csv_path)
+
+        # Avoid PyArrow-backed string crash on Windows
+        pd.options.future.infer_string = False
+        pd.options.mode.string_storage = "python"
+
+        self.df = pd.read_csv(
+            self.csv_path,
+            low_memory=False
+        )
 
         with open(self.index_path, 'r', encoding='utf-8') as f:
             self.inverted_index = json.load(f)

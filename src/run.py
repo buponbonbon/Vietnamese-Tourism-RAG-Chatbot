@@ -16,9 +16,16 @@ class RAGPipeline:
         index_file_path = os.path.join(BASE_DIR, "data", "processed", "inverted_index.json")
         faiss_dir = os.path.join(BASE_DIR, "data", "vectors")
 
-        # Khởi chạy 3 tầng độc lập, tuyệt đối không chèn self.client = OpenAI vào đây
         self.retriever = HybridRetriever(csv_path=csv_file_path, index_path=index_file_path, faiss_index_dir=faiss_dir)
-        self.reranker = TourismReranker()
+        reranker_path = os.path.join(
+            BASE_DIR,
+            "models",
+            "run_3",
+            "vietnam_tourism_reranker_moc_13_seed_42"
+        )
+
+        self.reranker = TourismReranker(model_name=reranker_path)
+
         self.generator = LanguageGenerator()
 
         print("\n[SUCCESS] Entire Hybrid RAG Pipeline is hot-loaded and online.")
