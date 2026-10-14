@@ -1,0 +1,11 @@
+{
+  "schema": "faithfulness-pilot-v3-correction-audit",
+  "mode": "rescore_v2",
+  "ground_truth_sha256": "aa2b11203449a96d0e77349f25170ae8ec92d368f2726bb0b0921a7e09c564eb",
+  "source_sha256": "d8b60d3586bf67fae99a4f31768ee49be04e9b5394fe79e5ca966a47dc3f5d8a",
+  "script_sha256": "a4f1a115ca369d6f5e078eed1425c2b80b0d075a9f0a20050003c0ccb2ff8a2c",
+  "nli_model": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "threshold": 0.5,
+  "seed": 42,
+  "sha256": "8a075f4216e24ef28e204f8eced5babbd32db75bc606687d4d6cff49bb56d9a8"
+}

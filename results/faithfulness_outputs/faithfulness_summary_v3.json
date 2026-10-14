@@ -1,0 +1,99 @@
+{
+  "baseline_rrf": {
+    "answers": 30,
+    "faithfulness_scored_answers": 29,
+    "mean_context_faithfulness": 0.4222495894909688,
+    "context_faithfulness_95ci": [
+      0.29022988505747127,
+      0.5533661740558292
+    ],
+    "micro_context_faithfulness": 0.47,
+    "context_hallucination_rate": 0.53,
+    "behavior_success_rate": 0.23333333333333334,
+    "behavior_success_95ci": [
+      0.1,
+      0.4
+    ],
+    "refusal_rate": 0.4,
+    "total_factual_claims": 100,
+    "supported_factual_claims": 47,
+    "behavior_outcome_counts": {
+      "incorrect_or_unsupported_answer": 13,
+      "false_refusal": 9,
+      "correct_refusal": 2,
+      "correct_answer": 4,
+      "failed_to_correct": 1,
+      "correct_correction": 1
+    }
+  },
+  "proposed_reranker": {
+    "answers": 30,
+    "faithfulness_scored_answers": 29,
+    "mean_context_faithfulness": 0.3739737274220033,
+    "context_faithfulness_95ci": [
+      0.24080459770114943,
+      0.5057471264367817
+    ],
+    "micro_context_faithfulness": 0.39814814814814814,
+    "context_hallucination_rate": 0.6018518518518519,
+    "behavior_success_rate": 0.26666666666666666,
+    "behavior_success_95ci": [
+      0.13333333333333333,
+      0.43333333333333335
+    ],
+    "refusal_rate": 0.4,
+    "total_factual_claims": 108,
+    "supported_factual_claims": 43,
+    "behavior_outcome_counts": {
+      "incorrect_or_unsupported_answer": 13,
+      "false_refusal": 8,
+      "correct_answer": 5,
+      "correct_refusal": 2,
+      "correct_correction": 1,
+      "failed_to_correct": 1
+    }
+  },
+  "paired_comparison": {
+    "paired_queries": 30,
+    "mean_behavior_delta_proposed_minus_baseline": 0.03333333333333333,
+    "behavior_delta_95ci": [
+      -0.1,
+      0.16666666666666666
+    ],
+    "paired_faithfulness_queries": 29,
+    "mean_faithfulness_delta_proposed_minus_baseline": -0.04827586206896552,
+    "faithfulness_delta_95ci": [
+      -0.17980295566502463,
+      0.06912972085385878
+    ],
+    "mcnemar_baseline_fail_proposed_success": 3,
+    "mcnemar_baseline_success_proposed_fail": 2,
+    "mcnemar_p_value": 1.0,
+    "faithfulness_wilcoxon_statistic": 94.0,
+    "faithfulness_wilcoxon_p_value": 0.6809807400315375
+  },
+  "ground_truth_distribution": {
+    "answer": 26,
+    "refuse": 2,
+    "correct": 2
+  },
+  "metadata": {
+    "generator": "qwen2.5:14b-instruct-q4_K_M",
+    "faithfulness_evaluator": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+    "entailment_threshold": 0.5,
+    "seed": 42,
+    "ground_truth_sha256": "aa2b11203449a96d0e77349f25170ae8ec92d368f2726bb0b0921a7e09c564eb",
+    "generation_sha256": "af4629c406ac995134594a100abb3c7ca5ea7761c20264ef85d37d61b79b0f9d",
+    "scoring_schema": "faithfulness-pilot-v3-correction-audit",
+    "score_mode": "rescore_v2",
+    "correction_rule": "explicit corrected value present AND false value not unnegated",
+    "important_limitations": [
+      "Pilot of 30 queries, not the final 200-query benchmark",
+      "Heuristic correction/refusal decisions require human review",
+      "26/30 gold documents were external pseudo-documents in the prior corpus audit"
+    ],
+    "nli_recomputed": false,
+    "faithfulness_metrics": "REUSED FROM ARCHIVED V2; not a newly recomputed NLI evaluation",
+    "original_v2_scored_sha256": "d8b60d3586bf67fae99a4f31768ee49be04e9b5394fe79e5ca966a47dc3f5d8a"
+  }
+}
