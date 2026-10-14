@@ -128,19 +128,17 @@
 <div class="main-layout">
     <!-- Left Column: Search References Documents -->
     <div>
-        <div class="section-title">Retrieved Evidence Documents ({{ total_results }} found)</div>
+        <div class="section-title">Retrieved Context Chunks ({{ total_results }} found)</div>
 
         {% for chunk in chunks %}
         <div class="doc-item">
             <div class="doc-title">
-                <!-- Links back to the source or references chunk ID dynamically -->
-                <a href="https://vietnamtourism.gov.vn/" target="_blank">
-                    [Document Reference] - ID: {{ chunk.chunk_id }}
-                </a>
+                <!-- A corpus chunk ID is not a verified external source URL. -->
+                <span>[Document Reference] — ID: {{ chunk.chunk_id }}</span>
             </div>
-            <div class="doc-meta">Factual Source: Vietnam Tourism Dataset • Rerank Score: {{ "%.4f"|format(chunk.rerank_score or chunk.rrf_score) }}</div>
+            <div class="doc-meta">Retrieved chunk from tourism corpus • Ranking Score: {{ "%.4f"|format(chunk.rerank_score if chunk.rerank_score is defined and chunk.rerank_score is not none else (chunk.rrf_score | default(0, true))) }}</div>
             <div class="doc-snippet">
-                {{ chunk.highlighted_text | safe }}
+                {{ chunk.highlighted_text }}
             </div>
         </div>
         {% else %}
@@ -163,7 +161,7 @@
 
     <!-- Right Column: Generative Core Answer Panel -->
     <div>
-        <div class="section-title">Grounded LLM Synthesized Answer</div>
+        <div class="section-title">Generated Answer (Verify Against Evidence)</div>
         <div class="llm-card">
             {{ llm_answer }}
         </div>
