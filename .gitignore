@@ -238,3 +238,32 @@ models/
 
 # Local backups (do not commit)
 local_backups/
+
+
+# Private research annotations and reviewer identities
+/USER_REVIEW.xlsx
+/results/fulltext_label_verify_20261015/
+/results/checkpoint_diagnostic/
+
+# Internal candidate and retrieval audits
+/results/candidate_set_preflight/
+/results/hybrid_candidate_audit/
+/results/repository_audit/
+/results/retrieval_scale_audit/
+
+# Detailed reranker evaluations
+/results/reranker_pool_audit/
+!/results/reranker_pool_audit/summary.csv
+
+# Internal evaluation and annotation files
+/results/val80_decision_study/*
+!/results/val80_decision_study/diagnostic_summary.csv
+/results/downstream_benchmark/benchmark_annotation_*.csv
+/results/faithfulness_outputs/
+
+# Local secrets and credentials
+.env.*
+!.env.example
+*.pem
+*.key
+  
