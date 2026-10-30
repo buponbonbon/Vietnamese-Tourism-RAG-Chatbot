@@ -1,0 +1,7 @@
+topic,search_question,verified_title,year,doi_or_official_url,task_and_language,dataset_and_source_split,method_and_controls,main_verified_finding,closest_overlap_with_our_claim,remaining_testable_gap,verification_status
+adversarial_retrieval,Does synthetic hard-negative training transfer to natural retrieval candidates?,,,,,,,,,,TODO_VERIFY
+false_premise_qa,How do systems detect and correct false geographic or temporal premises?,,,,,,,,,,TODO_VERIFY
+selective_generation,How are answerability and abstention calibrated without rewarding blanket refusal?,,,,,,,,,,TODO_VERIFY
+tourism_rag,Which tourism RAG studies evaluate corpus retrieval and supported answers separately?,,,,,,,,,,TODO_VERIFY
+tourism_user_decisions,Which studies measure decision correctness and appropriate reliance rather than trust ratings alone?,,,,,,,,,,TODO_VERIFY
+low_resource_benchmarks,Which Vietnamese tourism datasets have independent evidence labels and source-level decontamination?,,,,,,,,,,TODO_VERIFY
