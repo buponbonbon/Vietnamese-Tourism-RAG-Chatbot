@@ -158,3 +158,29 @@ question. It supports an instruction/quality pilot; it cannot establish that a
 question is unanswerable throughout the corpus. Distribute each reviewer only their
 own workbook from `pilot30_excel_001`, and keep scores and coordinator manifests
 separate. Changed questions need newly mined pools before final relevance review.
+
+## Reconcile returned workbooks
+
+Use the export that matches the returned question and passage IDs. The importer
+checks the original workbook hashes, opaque ID mapping and immutable fields;
+row order can differ. It reads data without executing workbook formulas and
+records both judgments without overwriting the benchmark or assigning VERIFIED.
+It requires the optional workbook dependency from `requirements-export.txt`.
+
+```bash
+python -m research.reconcile_reviews \
+  --first /path/to/Nguoi_tham_dinh_01_completed.xlsx \
+  --second /path/to/Nguoi_tham_dinh_02_completed.xlsx \
+  --export-dir data/research_v2/excel_exports_002 \
+  --bundle data/research_v2/batch_001 \
+  --independence user-confirmed \
+  --out data/research_v2/reconciliation_002
+
+python -m unittest discover -s tests -p test_reconcile_reviews.py -v
+```
+
+Use `--independence user-confirmed` only when the user has actually confirmed two
+independent reviewers; otherwise omit it. Matching labels or distinct ID strings
+are not a substitute for that provenance. Returned data is still subject to
+question-quality, evidence-scope and versioning checks. The executed round is
+documented in [REVIEW_ROUND_001.md](REVIEW_ROUND_001.md).
