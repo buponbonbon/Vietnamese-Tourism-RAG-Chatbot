@@ -111,3 +111,50 @@ instructions, question and passage-review sheets, dropdown labels and a progress
 sheet. Yellow cells are editable review fields. Completed files can be uploaded
 back for reconciliation; the coordinator must retain the private ID mapping.
 Existing output directories are not overwritten.
+
+## Work that can run while human review is pending
+
+Executed results and limitations are recorded in
+[PARALLEL_RUN_STATUS.md](PARALLEL_RUN_STATUS.md). These commands prepare unlabeled
+pools, a train-only pilot and a provisional comparison plan. They do not approve
+labels, choose an addition budget or start training.
+
+```bash
+.venv/bin/python -m research.benchmark_v2 mine \
+  --bundle data/research_v2/batch_001 --allow-draft \
+  --sample 300 --top-k 50 --out data/research_v2/bm25_all_300_top50_001
+
+.venv/bin/python -m research.parallel_preflight audit \
+  --bundle data/research_v2/batch_001 \
+  --candidates data/research_v2/bm25_all_300_top50_001/candidate_review.csv \
+  --out data/research_v2/parallel_audit_001
+
+# Same 30 train questions for both reviewers, 10 whole source families.
+.venv/bin/python -m research.parallel_preflight pilot \
+  --bundle data/research_v2/batch_001 \
+  --candidates data/research_v2/bm25_all_300_top50_001/candidate_review.csv \
+  --out data/research_v2/pilot30_packets_001
+
+python -m research.export_review_workbooks \
+  --packets data/research_v2/pilot30_packets_001 \
+  --out data/research_v2/pilot30_excel_001
+
+.venv/bin/python -m research.parallel_preflight plan \
+  --bundle data/research_v2/batch_001 --out data/research_v2/experiment_plan_001
+
+# Complete local checkpoint required; no remote download or held-out draft scoring.
+.venv/bin/python -m research.score_pilot_pool \
+  --bundle data/research_v2/batch_001 \
+  --candidates data/research_v2/bm25_all_300_top50_001/candidate_review.csv \
+  --pilot-packets data/research_v2/pilot30_packets_001 \
+  --model models/run_3/vietnam_tourism_reranker_moc_13_seed_42 \
+  --out data/research_v2/pilot30_D42_cpu_001
+
+.venv/bin/python -m unittest discover -s tests -p test_parallel_preflight.py -v
+```
+
+The pilot evidence pool uses the anchor and top-5 BM25 candidates, deduplicated per
+question. It supports an instruction/quality pilot; it cannot establish that a
+question is unanswerable throughout the corpus. Distribute each reviewer only their
+own workbook from `pilot30_excel_001`, and keep scores and coordinator manifests
+separate. Changed questions need newly mined pools before final relevance review.
