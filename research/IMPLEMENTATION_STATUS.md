@@ -1,5 +1,10 @@
 # V2 preparation: first executed batch
 
+For the subsequent full draft mining, train-only 30-question pilot, real CPU
+reranker execution and blocked control matrix, see
+[PARALLEL_RUN_STATUS.md](PARALLEL_RUN_STATUS.md). The inventory below records the
+initial preparation batch; its full 300-question packets remain available.
+
 This is the preparation phase of the research plan, not evidence that novelty,
 system-level improvements or journal readiness have been established.
 
