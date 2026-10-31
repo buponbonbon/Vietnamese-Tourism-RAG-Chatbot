@@ -5,6 +5,10 @@ reranker execution and blocked control matrix, see
 [PARALLEL_RUN_STATUS.md](PARALLEL_RUN_STATUS.md). The inventory below records the
 initial preparation batch; its full 300-question packets remain available.
 
+Returned full-set reviews have since been reconciled; see
+[REVIEW_ROUND_001.md](REVIEW_ROUND_001.md) for agreement, revision needs and the
+latest coordinator workbook. The benchmark is not yet frozen for main experiments.
+
 This is the preparation phase of the research plan, not evidence that novelty,
 system-level improvements or journal readiness have been established.
 
