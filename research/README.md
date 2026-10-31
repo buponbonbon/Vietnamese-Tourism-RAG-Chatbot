@@ -184,3 +184,37 @@ independent reviewers; otherwise omit it. Matching labels or distinct ID strings
 are not a substitute for that provenance. Returned data is still subject to
 question-quality, evidence-scope and versioning checks. The executed round is
 documented in [REVIEW_ROUND_001.md](REVIEW_ROUND_001.md).
+
+## Prepare a new draft after the recorded review
+
+`prepare_reviewed_revision` consumes explicit, source-grounded rewrite proposals;
+it does not automatically author good questions or approve their labels. The
+executed proposal CSV is a local input, not part of a public dataset release.
+Changed queries lose the old reviewer approval, reference and pooled-search notes;
+their passage grades are reset while parent records are retained in lineage fields.
+Anchor overrides must remain within the original source/component/partition.
+
+```bash
+.venv/bin/python -m research.prepare_reviewed_revision \
+  --parent data/research_v2/batch_001 \
+  --reviews data/research_v2/reconciliation_002 \
+  --rewrites data/research_v2/grounded_rewrites_001/answer_rewrite_proposals.csv \
+  --out data/research_v2/batch_002_revision_001
+
+.venv/bin/python -m research.benchmark_v2 mine \
+  --bundle data/research_v2/batch_002_revision_001 --allow-draft \
+  --sample 286 --top-k 50 --out data/research_v2/revised_bm25_top50_001
+
+python -m unittest discover -s tests -p test_prepare_reviewed_revision.py -v
+```
+
+The executed draft retains 286 questions, archives 14 exclusions and proposes 156
+rewrites. It is **not a frozen or newly human-approved benchmark**. The coordinator
+workbook and literature comparison are under `data/research_v2/review_package_2026_001/`.
+
+For the 2026 novelty comparison, read
+[LITERATURE_REVIEW_2026.md](LITERATURE_REVIEW_2026.md) and
+[literature_matrix_2026.csv](literature_matrix_2026.csv). This is a documented,
+limited preprint/author-repository scan. Crossref/OpenAlex/Springer access remains
+blocked in the current runtime; PDF, official venue and journal coverage checks
+are outstanding. The BibTeX file explicitly records those verification limits.
