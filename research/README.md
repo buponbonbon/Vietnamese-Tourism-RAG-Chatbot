@@ -1,5 +1,10 @@
 # V2 research workflow
 
+Latest recovery checkpoint: [RECOVERY_STATUS_20261102.md](RECOVERY_STATUS_20261102.md).
+The current author-review manuscript is in [manuscript/README.md](../manuscript/README.md).
+These explicitly distinguish preserved results from unavailable later execution
+outputs; the earlier status documents below remain historical records.
+
 Run from `/workspace/Vietnamese-Tourism-RAG-Chatbot` with `.venv/bin/python`.
 Read [PROTOCOL_V2.md](PROTOCOL_V2.md) before finalizing annotations or training.
 No automatic step supplies validated human labels or a novelty/acceptance claim.

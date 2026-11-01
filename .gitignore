@@ -266,4 +266,7 @@ local_backups/
 !.env.example
 *.pem
 *.key
-  
+
+# Generated manuscript build artifacts (source remains reviewable)
+/manuscript/build_review/
+
