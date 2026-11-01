@@ -1,0 +1,5 @@
+task,matched_items,equal_labels,observed_agreement,cohen_kappa,interpretation
+behavior_label,268,268,1.0,1.0,Descriptive only; latest R02 is post-feedback; not a new blind reliability estimate
+question_decision,268,262,0.9776119402985075,0.4914611005692604,Descriptive only; latest R02 is post-feedback; not a new blind reliability estimate
+task_type,268,232,0.8656716417910447,0.8198891108331622,Descriptive only; latest R02 is post-feedback; not a new blind reliability estimate
+relevance_grade,1688,1662,0.9845971563981043,0.9565752551777638,Descriptive only; latest R02 is post-feedback; not a new blind reliability estimate

@@ -1,0 +1,3 @@
+# Public generated summaries use LF; private original CSV files remain untouched.
+/manuscript/source_verification.csv text eol=lf
+/research/results/*.csv text eol=lf
