@@ -9,6 +9,20 @@ Returned full-set reviews have since been reconciled; see
 [REVIEW_ROUND_001.md](REVIEW_ROUND_001.md) for agreement, revision needs and the
 latest coordinator workbook. The benchmark is not yet frozen for main experiments.
 
+The next executed revision retains 286 draft questions, archives 14 exclusions and
+proposes 156 rewrites in `data/research_v2/batch_002_revision_001/`. BM25 mining
+produced 14,300 unlabeled candidates; 104 anchors had zero cross-partition lexical
+matches at the selected 0.65 Jaccard threshold. See
+[LITERATURE_REVIEW_2026.md](LITERATURE_REVIEW_2026.md) for the 18-abstract comparison,
+actual access limits and remaining contribution gaps. No novelty or end-to-end
+gain is established by those preparation runs.
+
+48 tests have passed across the protocol, preparation, reconciliation and revision
+suites. Real-data integration checks confirm unchanged parent/legacy hashes,
+reset approvals/qrels for changed queries and the expected strict-gate rejection
+of the unapproved revision. The access probe and literature matrix explicitly
+record that no original PDFs or full journal-year coverage were verified.
+
 This is the preparation phase of the research plan, not evidence that novelty,
 system-level improvements or journal readiness have been established.
 

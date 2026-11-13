@@ -266,4 +266,6 @@ local_backups/
 !.env.example
 *.pem
 *.key
-  
+
+# Keep manuscript sources, builds and archives local.
+/manuscript/
