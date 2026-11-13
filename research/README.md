@@ -1,5 +1,11 @@
 # V2 research workflow
 
+Latest preserved recovery report: [RECOVERY_STATUS_20261102.md](RECOVERY_STATUS_20261102.md).
+The 13 November code/results branch combines the reviewed-revision tools and
+round-two recovery audit with aggregate result tables. Manuscript files remain
+local and are excluded from this branch. The recovery report records historical
+checks; current software verification is reported separately in the branch commit.
+
 Run from `/workspace/Vietnamese-Tourism-RAG-Chatbot` with `.venv/bin/python`.
 Read [PROTOCOL_V2.md](PROTOCOL_V2.md) before finalizing annotations or training.
 No automatic step supplies validated human labels or a novelty/acceptance claim.
