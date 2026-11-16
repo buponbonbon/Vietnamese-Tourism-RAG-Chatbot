@@ -1,0 +1,48 @@
+{
+  "status": "COMPLETE",
+  "plan_sha256": "df39a5bb543885334bc9e373901b596261f791cc9fb63979071bc1f464211c58",
+  "run": {
+    "run_id": "Q_quality_mask_seed_123",
+    "arm": "Q",
+    "seed": 123
+  },
+  "settings": {
+    "microbatch": 4,
+    "max_length": 512,
+    "effective_batch": 64,
+    "epochs": 3,
+    "updates": 408,
+    "presentations": 26004,
+    "zero_weight_presentations": 369,
+    "active_loss_weight_mass": 25635,
+    "margin": 1.0,
+    "loss": "differentiable_weighted_hinge",
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "warmup": 40,
+    "scheduler": "cosine",
+    "clip": 1.0,
+    "attention": "sdpa",
+    "padding": "max_length",
+    "precision": "BF16_forward_FP32_loss",
+    "checkpoint": "final_only_no_early_stopping",
+    "save_every": 20
+  },
+  "test_opened": false,
+  "optimizer_updates": 408,
+  "training_pairs_seen": 26004,
+  "zero_weight_presentations": 369,
+  "active_loss_weight_mass": 25635,
+  "weight_sha256": "2e9782a2c277c874b541aa531df595d357666943e9e3b34c8b35d515a0a7247c",
+  "final_model_hashes": {
+    "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+    "model.safetensors": "2e9782a2c277c874b541aa531df595d357666943e9e3b34c8b35d515a0a7247c",
+    "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+    "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+  }
+}

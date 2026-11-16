@@ -1,0 +1,4161 @@
+[
+  {
+    "benchmark_id": "FAM_005667a103f0bbc86339_answer",
+    "query": "Đợt làm việc của đoàn chuyên gia ADB tại Hà Tĩnh, bắt đầu ngày 17/7, kết thúc vào ngày nào được nguồn nêu?",
+    "source_group_id": "SRC_b0bc41f32a28dd808000",
+    "family_id": "FAM_005667a103f0bbc86339",
+    "source_url": "https://vietnamtourism.gov.vn/post/51331",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HT_037_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HT_037_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "expanded_row_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "benchmark_id": "FAM_005667a103f0bbc86339_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đợt làm việc của đoàn chuyên gia ADB tại Hà Tĩnh bắt đầu ngày 17/7 kết thúc vào ngày 21/7/2023.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_b0bc41f32a28dd808000",
+    "family_id": "FAM_005667a103f0bbc86339",
+    "source_url": "https://vietnamtourism.gov.vn/post/51331",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HT_037_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HT_037_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "expanded_row_ids": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "benchmark_id": "FAM_017b3599f2a6e4ac6f3f_answer",
+    "query": "Đề án phát huy nghệ thuật đờn ca tài tử Nam Bộ của Hậu Giang được nguồn đề cập có mốc đến năm nào?",
+    "source_group_id": "SRC_8736275e110b7bf2447b",
+    "family_id": "FAM_017b3599f2a6e4ac6f3f",
+    "source_url": "https://vietnamtourism.gov.vn/post/49881",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HGI_064_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HGI_064_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "expanded_row_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      700
+    ]
+  },
+  {
+    "benchmark_id": "FAM_017b3599f2a6e4ac6f3f_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đề án phát huy nghệ thuật đờn ca tài tử Nam Bộ của Hậu Giang trong nguồn có mốc đến năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_8736275e110b7bf2447b",
+    "family_id": "FAM_017b3599f2a6e4ac6f3f",
+    "source_url": "https://vietnamtourism.gov.vn/post/49881",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HGI_064_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HGI_064_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "expanded_row_ids": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      701
+    ]
+  },
+  {
+    "benchmark_id": "FAM_01d84255a85adc8623be_answer",
+    "query": "Theo nguồn, 144 khách sạn tại Cần Thơ thuộc dải xếp hạng bao nhiêu sao?",
+    "source_group_id": "SRC_0281d8a9347ac5587e1c",
+    "family_id": "FAM_01d84255a85adc8623be",
+    "source_url": "https://vietnamtourism.gov.vn/post/65859",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "CT_042_chunk_1"
+    ],
+    "original_anchor_chunk_id": "CT_042_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "expanded_row_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      702
+    ]
+  },
+  {
+    "benchmark_id": "FAM_01d84255a85adc8623be_correct",
+    "query": "Theo bài “Xây dựng TP Cần Thơ là trung tâm du lịch sinh thái của Đồng bằng sông Cửu Long”, nhận định “TP có 869 cơ sở lưu trú, khoảng 14.560 phòng, trong đó có 144 khách sạn từ 2-5 sao.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_0281d8a9347ac5587e1c",
+    "family_id": "FAM_01d84255a85adc8623be",
+    "source_url": "https://vietnamtourism.gov.vn/post/65859",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "CT_042_chunk_1"
+    ],
+    "original_anchor_chunk_id": "CT_042_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "expanded_row_ids": [
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  {
+    "benchmark_id": "FAM_049b214e17942a75f518_answer",
+    "query": "Theo lời Chủ tịch UBND xã Măng Đen được trích trong nguồn, tỉnh Quảng Ngãi có chủ trương triển khai Quốc lộ 24 trong năm nào?",
+    "source_group_id": "SRC_b82739a626931cb10d7b",
+    "family_id": "FAM_049b214e17942a75f518",
+    "source_url": "https://vietnamtourism.gov.vn/post/66261",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "QG_030_chunk_6"
+    ],
+    "original_anchor_chunk_id": "QG_030_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "expanded_row_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      703
+    ]
+  },
+  {
+    "benchmark_id": "FAM_049b214e17942a75f518_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Theo lời Chủ tịch UBND xã Măng Đen được trích trong nguồn, tỉnh Quảng Ngãi có chủ trương triển khai Quốc lộ 24 trong năm 2027.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_b82739a626931cb10d7b",
+    "family_id": "FAM_049b214e17942a75f518",
+    "source_url": "https://vietnamtourism.gov.vn/post/66261",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "QG_030_chunk_6"
+    ],
+    "original_anchor_chunk_id": "QG_030_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "expanded_row_ids": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      704
+    ]
+  },
+  {
+    "benchmark_id": "FAM_0a68c627ab953595f2f5_answer",
+    "query": "Hoạt động kích cầu du lịch nội địa với chủ đề “Người Việt đi du lịch Việt - Việt Nam tôi yêu” được nguồn gắn với năm nào?",
+    "source_group_id": "SRC_e031080783ee10a1783d",
+    "family_id": "FAM_0a68c627ab953595f2f5",
+    "source_url": "https://vietnamtourism.gov.vn/post/56694",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "NA_087_chunk_1"
+    ],
+    "original_anchor_chunk_id": "NA_087_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "expanded_row_ids": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ]
+  },
+  {
+    "benchmark_id": "FAM_0a68c627ab953595f2f5_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Hoạt động kích cầu du lịch nội địa với chủ đề “Người Việt đi du lịch Việt - Việt Nam tôi yêu” trong nguồn thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_e031080783ee10a1783d",
+    "family_id": "FAM_0a68c627ab953595f2f5",
+    "source_url": "https://vietnamtourism.gov.vn/post/56694",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "NA_087_chunk_1"
+    ],
+    "original_anchor_chunk_id": "NA_087_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "expanded_row_ids": [
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  {
+    "benchmark_id": "FAM_0ac8f76b76e03a6be438_answer",
+    "query": "Mức tăng 26% của khách quốc tế đến Đà Nẵng được nguồn so sánh với năm nào?",
+    "source_group_id": "SRC_70788d2105dd294fb151",
+    "family_id": "FAM_0ac8f76b76e03a6be438",
+    "source_url": "https://vietnamtourism.gov.vn/post/54177",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BK_097_chunk_10"
+    ],
+    "original_anchor_chunk_id": "BK_097_chunk_10",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "expanded_row_ids": [
+      50,
+      51,
+      52,
+      53,
+      54
+    ]
+  },
+  {
+    "benchmark_id": "FAM_0ac8f76b76e03a6be438_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Mức tăng 26% của khách quốc tế đến Đà Nẵng trong nguồn được so sánh với năm 2024.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_70788d2105dd294fb151",
+    "family_id": "FAM_0ac8f76b76e03a6be438",
+    "source_url": "https://vietnamtourism.gov.vn/post/54177",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BK_097_chunk_10"
+    ],
+    "original_anchor_chunk_id": "BK_097_chunk_10",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "expanded_row_ids": [
+      55,
+      56,
+      57,
+      58,
+      59
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1399a2121ce0a44a4e9c_answer",
+    "query": "Chương trình phát triển du lịch nông thôn gắn với xây dựng nông thôn mới được nhắc tại Ia H’Drai có giai đoạn bắt đầu từ năm nào?",
+    "source_group_id": "SRC_ac351f76d2e8e569bf52",
+    "family_id": "FAM_1399a2121ce0a44a4e9c",
+    "source_url": "https://vietnamtourism.gov.vn/post/57271",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "KT_053_chunk_5"
+    ],
+    "original_anchor_chunk_id": "KT_053_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "expanded_row_ids": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      705
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1399a2121ce0a44a4e9c_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Giai đoạn của Chương trình phát triển du lịch nông thôn được nhắc tại Ia H’Drai bắt đầu từ năm 2022.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_ac351f76d2e8e569bf52",
+    "family_id": "FAM_1399a2121ce0a44a4e9c",
+    "source_url": "https://vietnamtourism.gov.vn/post/57271",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "KT_053_chunk_5"
+    ],
+    "original_anchor_chunk_id": "KT_053_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "expanded_row_ids": [
+      65,
+      66,
+      67,
+      68,
+      69,
+      706
+    ]
+  },
+  {
+    "benchmark_id": "FAM_14878fc033aa52d24759_answer",
+    "query": "Theo bài nguồn, Tiền Giang đón bao nhiêu lượt khách trong năm 2015?",
+    "source_group_id": "SRC_7dc661743e58e2b9858e",
+    "family_id": "FAM_14878fc033aa52d24759",
+    "source_url": "https://vietnamtourism.gov.vn/post/61941",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TG_011_chunk_2"
+    ],
+    "original_anchor_chunk_id": "TG_011_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "expanded_row_ids": [
+      70,
+      71,
+      72,
+      73,
+      74,
+      707
+    ]
+  },
+  {
+    "benchmark_id": "FAM_14878fc033aa52d24759_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tiền Giang được nguồn ghi nhận đón 1.526.129 lượt khách trong năm 2015.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_7dc661743e58e2b9858e",
+    "family_id": "FAM_14878fc033aa52d24759",
+    "source_url": "https://vietnamtourism.gov.vn/post/61941",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TG_011_chunk_2"
+    ],
+    "original_anchor_chunk_id": "TG_011_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "expanded_row_ids": [
+      75,
+      76,
+      77,
+      78,
+      79,
+      708
+    ]
+  },
+  {
+    "benchmark_id": "FAM_151aff95e0a1d878c368_answer",
+    "query": "Báo cáo chỉ số phát triển du lịch cấp tỉnh Việt Nam được nêu trong nội dung hội thảo sử dụng số liệu của năm nào?",
+    "source_group_id": "SRC_3001bda6cae4496d7a77",
+    "family_id": "FAM_151aff95e0a1d878c368",
+    "source_url": "https://vietnamtourism.gov.vn/post/63136",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BD_002_chunk_6"
+    ],
+    "original_anchor_chunk_id": "BD_002_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      80,
+      81,
+      82,
+      83,
+      84
+    ],
+    "expanded_row_ids": [
+      80,
+      81,
+      82,
+      83,
+      84,
+      709
+    ]
+  },
+  {
+    "benchmark_id": "FAM_151aff95e0a1d878c368_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Báo cáo chỉ số phát triển du lịch cấp tỉnh Việt Nam được nêu trong nội dung hội thảo là báo cáo năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_3001bda6cae4496d7a77",
+    "family_id": "FAM_151aff95e0a1d878c368",
+    "source_url": "https://vietnamtourism.gov.vn/post/63136",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BD_002_chunk_6"
+    ],
+    "original_anchor_chunk_id": "BD_002_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      85,
+      86,
+      87,
+      88,
+      89
+    ],
+    "expanded_row_ids": [
+      85,
+      86,
+      87,
+      88,
+      89,
+      710
+    ]
+  },
+  {
+    "benchmark_id": "FAM_15c869688c1d8fab7420_answer",
+    "query": "Các hoạt động Lễ hội mùa vàng và Lễ hội Sơn tra tại Mù Cang Chải được nguồn gắn với dịp Quốc khánh ngày nào?",
+    "source_group_id": "SRC_b4445728aef2333aaa3c",
+    "family_id": "FAM_15c869688c1d8fab7420",
+    "source_url": "https://vietnamtourism.gov.vn/post/58087",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BP_021_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BP_021_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      90,
+      91,
+      92,
+      93,
+      94
+    ],
+    "expanded_row_ids": [
+      90,
+      91,
+      92,
+      93,
+      94,
+      711
+    ]
+  },
+  {
+    "benchmark_id": "FAM_15c869688c1d8fab7420_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Các hoạt động Lễ hội mùa vàng và Lễ hội Sơn tra tại Mù Cang Chải trong nguồn gắn với dịp Quốc khánh 3/9.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_b4445728aef2333aaa3c",
+    "family_id": "FAM_15c869688c1d8fab7420",
+    "source_url": "https://vietnamtourism.gov.vn/post/58087",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BP_021_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BP_021_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "expanded_row_ids": [
+      95,
+      96,
+      97,
+      98,
+      99,
+      712
+    ]
+  },
+  {
+    "benchmark_id": "FAM_161258ad846f899b1b4c_answer",
+    "query": "Kỳ nghỉ lễ Giỗ Tổ Hùng Vương mà Bình Thuận đón trên 85.000 lượt khách trong nguồn thuộc năm nào?",
+    "source_group_id": "SRC_ffdf02c19200931f5df6",
+    "family_id": "FAM_161258ad846f899b1b4c",
+    "source_url": "https://vietnamtourism.gov.vn/post/62299",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BU_016_chunk_9"
+    ],
+    "original_anchor_chunk_id": "BU_016_chunk_9",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ],
+    "expanded_row_ids": [
+      100,
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  {
+    "benchmark_id": "FAM_173443a6cb0ea567eafd_answer",
+    "query": "Theo kế hoạch được nguồn giới thiệu, Sở Văn hóa, Thể thao và Du lịch Đà Nẵng bắt đầu thường xuyên triển khai các chương trình đào tạo, tập huấn và tiếp nhận người học từ quý II của năm nào?",
+    "source_group_id": "SRC_8d09b3cab2c67595990e",
+    "family_id": "FAM_173443a6cb0ea567eafd",
+    "source_url": "https://vietnamtourism.gov.vn/post/67355",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DN_019_chunk_6"
+    ],
+    "original_anchor_chunk_id": "DN_019_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      105,
+      106,
+      107,
+      108,
+      109
+    ],
+    "expanded_row_ids": [
+      105,
+      106,
+      107,
+      108,
+      109,
+      713
+    ]
+  },
+  {
+    "benchmark_id": "FAM_173443a6cb0ea567eafd_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Sở Văn hóa, Thể thao và Du lịch Đà Nẵng bắt đầu thường xuyên triển khai các chương trình đào tạo, tập huấn và tiếp nhận người học từ quý II năm 2027, theo nguồn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_8d09b3cab2c67595990e",
+    "family_id": "FAM_173443a6cb0ea567eafd",
+    "source_url": "https://vietnamtourism.gov.vn/post/67355",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DN_019_chunk_6"
+    ],
+    "original_anchor_chunk_id": "DN_019_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      110,
+      111,
+      112,
+      113,
+      114
+    ],
+    "expanded_row_ids": [
+      110,
+      111,
+      112,
+      113,
+      114,
+      714
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a1ab7f036db614b1469_answer",
+    "query": "Lễ hội Văn hóa dân gian Phố Hiến diễn ra từ ngày 17 đến 19/02 trong nguồn thuộc năm nào?",
+    "source_group_id": "SRC_7bd7b2cfddea946b3305",
+    "family_id": "FAM_1a1ab7f036db614b1469",
+    "source_url": "https://vietnamtourism.gov.vn/post/61292",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HY_048_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HY_048_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "expanded_row_ids": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a1ab7f036db614b1469_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Văn hóa dân gian Phố Hiến diễn ra từ 17 đến 19/02 trong nguồn thuộc năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_7bd7b2cfddea946b3305",
+    "family_id": "FAM_1a1ab7f036db614b1469",
+    "source_url": "https://vietnamtourism.gov.vn/post/61292",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HY_048_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HY_048_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      120,
+      121,
+      122,
+      123,
+      124
+    ],
+    "expanded_row_ids": [
+      120,
+      121,
+      122,
+      123,
+      124
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a30a76c52457aa5d8b0_answer",
+    "query": "Lễ hội Mùa trái chín tại phường Hưng Định, TP. Thuận An, diễn ra từ ngày 15/6 đến 22/6 trong nguồn thuộc năm nào?",
+    "source_group_id": "SRC_101055728f05967ea6f7",
+    "family_id": "FAM_1a30a76c52457aa5d8b0",
+    "source_url": "https://vietnamtourism.gov.vn/post/56659",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_077_chunk_3"
+    ],
+    "original_anchor_chunk_id": "BDU_077_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      125,
+      126,
+      127,
+      128,
+      129
+    ],
+    "expanded_row_ids": [
+      125,
+      126,
+      127,
+      128,
+      129,
+      715
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a30a76c52457aa5d8b0_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Mùa trái chín tại phường Hưng Định, TP. Thuận An, diễn ra từ 15/6 đến 22/6 trong nguồn thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_101055728f05967ea6f7",
+    "family_id": "FAM_1a30a76c52457aa5d8b0",
+    "source_url": "https://vietnamtourism.gov.vn/post/56659",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_077_chunk_3"
+    ],
+    "original_anchor_chunk_id": "BDU_077_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      130,
+      131,
+      132,
+      133,
+      134
+    ],
+    "expanded_row_ids": [
+      130,
+      131,
+      132,
+      133,
+      134,
+      716
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a9521d4da60cf1df12c_answer",
+    "query": "Lễ hội Nghinh Ông Kiên Hải với chủ đề “Đặc khu Kiên Hải - Khát vọng vươn xa” thuộc năm nào theo nguồn?",
+    "source_group_id": "SRC_697403dd6eae6e41dfec",
+    "family_id": "FAM_1a9521d4da60cf1df12c",
+    "source_url": "https://vietnamtourism.gov.vn/post/65823",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "AG_029_chunk_1"
+    ],
+    "original_anchor_chunk_id": "AG_029_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      135,
+      136,
+      137,
+      138,
+      139
+    ],
+    "expanded_row_ids": [
+      135,
+      136,
+      137,
+      138,
+      139,
+      717
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1a9521d4da60cf1df12c_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Nghinh Ông Kiên Hải với chủ đề “Đặc khu Kiên Hải - Khát vọng vươn xa” thuộc năm 2026, theo nguồn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_697403dd6eae6e41dfec",
+    "family_id": "FAM_1a9521d4da60cf1df12c",
+    "source_url": "https://vietnamtourism.gov.vn/post/65823",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "AG_029_chunk_1"
+    ],
+    "original_anchor_chunk_id": "AG_029_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "expanded_row_ids": [
+      140,
+      141,
+      142,
+      143,
+      144,
+      718
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1c2e8f881a76e9b7523b_answer",
+    "query": "Theo nguồn, số lượt khách quốc tế Việt Nam đón trong năm 2025 đã vượt mốc bao nhiêu?",
+    "source_group_id": "SRC_bd6bd759513facb8b945",
+    "family_id": "FAM_1c2e8f881a76e9b7523b",
+    "source_url": "https://vietnamtourism.gov.vn/post/67120",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HN_023_chunk_4"
+    ],
+    "original_anchor_chunk_id": "HN_023_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      145,
+      146,
+      147,
+      148,
+      149
+    ],
+    "expanded_row_ids": [
+      145,
+      146,
+      147,
+      148,
+      149,
+      719
+    ]
+  },
+  {
+    "benchmark_id": "FAM_1f1caa8f112f27757310_answer",
+    "query": "Đoạn được nguồn mô tả là đẹp nhất của sông Rạch Cỏ ở huyện Duyên Hải dài khoảng bao nhiêu kilômét?",
+    "source_group_id": "SRC_0f853d37277af03f7af4",
+    "family_id": "FAM_1f1caa8f112f27757310",
+    "source_url": "https://vietnamtourism.gov.vn/post/48902",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "TV_078_chunk_5"
+    ],
+    "original_anchor_chunk_id": "TV_078_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      150,
+      151,
+      152,
+      153,
+      154
+    ],
+    "expanded_row_ids": [
+      150,
+      151,
+      152,
+      153,
+      154
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2b9ce7aa76f31d1479ec_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đình - đền Nam Cường bắt đầu được tôn tạo vào năm 1999, theo nguồn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_55949b99f7ddd71db908",
+    "family_id": "FAM_2b9ce7aa76f31d1479ec",
+    "source_url": "https://vietnamtourism.gov.vn/post/62175",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "YB_037_chunk_2"
+    ],
+    "original_anchor_chunk_id": "YB_037_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "expanded_row_ids": [
+      155,
+      156,
+      157,
+      158,
+      159,
+      720
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2c3398f6f9ac11bffe21_answer",
+    "query": "Quyết định 1755/QĐ-TTg phê duyệt Chiến lược phát triển các ngành công nghiệp văn hóa Việt Nam được nguồn nhắc tới ban hành ngày nào?",
+    "source_group_id": "SRC_479b07188444be67c23e",
+    "family_id": "FAM_2c3398f6f9ac11bffe21",
+    "source_url": "https://vietnamtourism.gov.vn/post/58439",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_052_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_052_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      160,
+      161,
+      162,
+      163,
+      164
+    ],
+    "expanded_row_ids": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      721
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2c3398f6f9ac11bffe21_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Quyết định 1755/QĐ-TTg phê duyệt Chiến lược phát triển các ngành công nghiệp văn hóa Việt Nam được nguồn nhắc tới ban hành ngày 9/9/2016.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_479b07188444be67c23e",
+    "family_id": "FAM_2c3398f6f9ac11bffe21",
+    "source_url": "https://vietnamtourism.gov.vn/post/58439",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_052_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_052_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      165,
+      166,
+      167,
+      168,
+      169
+    ],
+    "expanded_row_ids": [
+      165,
+      166,
+      167,
+      168,
+      169,
+      722
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2e6b57a192c6a7ec9689_answer",
+    "query": "Theo kế hoạch trong nguồn, Hậu Giang đặt mục tiêu đón khoảng một triệu lượt khách vào năm nào?",
+    "source_group_id": "SRC_86a45363f5d317da130b",
+    "family_id": "FAM_2e6b57a192c6a7ec9689",
+    "source_url": "https://vietnamtourism.gov.vn/post/44939",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HGI_078_chunk_2"
+    ],
+    "original_anchor_chunk_id": "HGI_078_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      170,
+      171,
+      172,
+      173,
+      174
+    ],
+    "expanded_row_ids": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      723
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2f076af24e9095e98e80_answer",
+    "query": "Tuần Văn hóa - Thể thao - Du lịch tỉnh Long An được nguồn giới thiệu có mười chương trình chính thức thuộc năm nào?",
+    "source_group_id": "SRC_9c5af764bdd11973fc1d",
+    "family_id": "FAM_2f076af24e9095e98e80",
+    "source_url": "https://vietnamtourism.gov.vn/post/57134",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_064_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_064_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      175,
+      176,
+      177,
+      178,
+      179
+    ],
+    "expanded_row_ids": [
+      175,
+      176,
+      177,
+      178,
+      179,
+      724
+    ]
+  },
+  {
+    "benchmark_id": "FAM_2f076af24e9095e98e80_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuần Văn hóa - Thể thao - Du lịch Long An với mười chương trình chính thức được nguồn giới thiệu thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_9c5af764bdd11973fc1d",
+    "family_id": "FAM_2f076af24e9095e98e80",
+    "source_url": "https://vietnamtourism.gov.vn/post/57134",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_064_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_064_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      180,
+      181,
+      182,
+      183,
+      184
+    ],
+    "expanded_row_ids": [
+      180,
+      181,
+      182,
+      183,
+      184,
+      725
+    ]
+  },
+  {
+    "benchmark_id": "FAM_36ea0468c9810b2ddb42_answer",
+    "query": "Nhiệm kỳ mà huyện Long Hồ đặt ra các giải pháp phát triển du lịch sông nước miệt vườn trong nguồn bắt đầu từ năm nào?",
+    "source_group_id": "SRC_7f42822ab87d307f2d58",
+    "family_id": "FAM_36ea0468c9810b2ddb42",
+    "source_url": "https://vietnamtourism.gov.vn/post/52570",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VL_100_chunk_1"
+    ],
+    "original_anchor_chunk_id": "VL_100_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      185,
+      186,
+      187,
+      188,
+      189
+    ],
+    "expanded_row_ids": [
+      185,
+      186,
+      187,
+      188,
+      189,
+      726
+    ]
+  },
+  {
+    "benchmark_id": "FAM_36ea0468c9810b2ddb42_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Nhiệm kỳ gắn với các giải pháp phát triển du lịch sông nước miệt vườn của Long Hồ trong nguồn bắt đầu từ năm 2021.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_7f42822ab87d307f2d58",
+    "family_id": "FAM_36ea0468c9810b2ddb42",
+    "source_url": "https://vietnamtourism.gov.vn/post/52570",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VL_100_chunk_1"
+    ],
+    "original_anchor_chunk_id": "VL_100_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
+    "expanded_row_ids": [
+      190,
+      191,
+      192,
+      193,
+      194,
+      727
+    ]
+  },
+  {
+    "benchmark_id": "FAM_3a047372bbd1e15e255f_answer",
+    "query": "Đề án phát triển du lịch huyện Tân Lạc được nhắc trong nguồn có mốc đến năm nào, trước tầm nhìn dài hạn?",
+    "source_group_id": "SRC_723409e66dcf6a92a1a4",
+    "family_id": "FAM_3a047372bbd1e15e255f",
+    "source_url": "https://vietnamtourism.gov.vn/post/62308",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HB_037_chunk_4"
+    ],
+    "original_anchor_chunk_id": "HB_037_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      195,
+      196,
+      197,
+      198,
+      199
+    ],
+    "expanded_row_ids": [
+      195,
+      196,
+      197,
+      198,
+      199,
+      728
+    ]
+  },
+  {
+    "benchmark_id": "FAM_3a047372bbd1e15e255f_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đề án phát triển du lịch huyện Tân Lạc được nhắc trong nguồn có mốc đến năm 2021, trước tầm nhìn dài hạn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_723409e66dcf6a92a1a4",
+    "family_id": "FAM_3a047372bbd1e15e255f",
+    "source_url": "https://vietnamtourism.gov.vn/post/62308",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HB_037_chunk_4"
+    ],
+    "original_anchor_chunk_id": "HB_037_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      200,
+      201,
+      202,
+      203,
+      204
+    ],
+    "expanded_row_ids": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      729
+    ]
+  },
+  {
+    "benchmark_id": "FAM_3ff2ee36ff9687e850ef_answer",
+    "query": "Hội nghị quốc tế lần thứ tám của Mạng lưới Công viên địa chất toàn cầu khu vực châu Á - Thái Bình Dương dự kiến tổ chức đầu tháng 9 tại Cao Bằng thuộc năm nào?",
+    "source_group_id": "SRC_6caa7e3a37891c07cddd",
+    "family_id": "FAM_3ff2ee36ff9687e850ef",
+    "source_url": "https://vietnamtourism.gov.vn/post/54332",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_092_chunk_3"
+    ],
+    "original_anchor_chunk_id": "BDU_092_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      205,
+      206,
+      207,
+      208,
+      209
+    ],
+    "expanded_row_ids": [
+      205,
+      206,
+      207,
+      208,
+      209,
+      730
+    ]
+  },
+  {
+    "benchmark_id": "FAM_3ff2ee36ff9687e850ef_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Hội nghị quốc tế lần thứ tám của Mạng lưới Công viên địa chất toàn cầu khu vực châu Á - Thái Bình Dương tại Cao Bằng được nguồn dự kiến tổ chức đầu tháng 9 năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_6caa7e3a37891c07cddd",
+    "family_id": "FAM_3ff2ee36ff9687e850ef",
+    "source_url": "https://vietnamtourism.gov.vn/post/54332",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_092_chunk_3"
+    ],
+    "original_anchor_chunk_id": "BDU_092_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      210,
+      211,
+      212,
+      213,
+      214
+    ],
+    "expanded_row_ids": [
+      210,
+      211,
+      212,
+      213,
+      214,
+      731
+    ]
+  },
+  {
+    "benchmark_id": "FAM_4084fa3fd4228a9614cb_answer",
+    "query": "Theo kế hoạch kinh tế đêm được nguồn giới thiệu, các dịch vụ ở công viên ven biển Phú Yên hoạt động trong khung giờ nào?",
+    "source_group_id": "SRC_0d2e83b3e6223bd40efc",
+    "family_id": "FAM_4084fa3fd4228a9614cb",
+    "source_url": "https://vietnamtourism.gov.vn/post/58463",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "PY_025_chunk_5"
+    ],
+    "original_anchor_chunk_id": "PY_025_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "expanded_row_ids": [
+      215,
+      216,
+      217,
+      218,
+      219,
+      732
+    ]
+  },
+  {
+    "benchmark_id": "FAM_4084fa3fd4228a9614cb_correct",
+    "query": "Theo bài “Phú Yên: Tận dụng tối đa cơ hội phát triển kinh tế mới”, nhận định “Tại công viên ven biển cũng sẽ có các dịch vụ vui chơi, giải trí, ăn uống, giải khát hoạt động từ 19-23 giờ.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_0d2e83b3e6223bd40efc",
+    "family_id": "FAM_4084fa3fd4228a9614cb",
+    "source_url": "https://vietnamtourism.gov.vn/post/58463",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "PY_025_chunk_5"
+    ],
+    "original_anchor_chunk_id": "PY_025_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      220,
+      221,
+      222,
+      223,
+      224
+    ],
+    "expanded_row_ids": [
+      220,
+      221,
+      222,
+      223,
+      224,
+      733
+    ]
+  },
+  {
+    "benchmark_id": "FAM_457452aaff70434ee35b_answer",
+    "query": "Kiên Giang đón trên 9,8 triệu lượt khách và thu trên 25 nghìn tỷ đồng từ du lịch trong năm nào được nguồn nêu?",
+    "source_group_id": "SRC_8ba565dd3b17ad401bb5",
+    "family_id": "FAM_457452aaff70434ee35b",
+    "source_url": "https://vietnamtourism.gov.vn/post/63017",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "KG_016_chunk_7"
+    ],
+    "original_anchor_chunk_id": "KG_016_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      225,
+      226,
+      227,
+      228,
+      229
+    ],
+    "expanded_row_ids": [
+      225,
+      226,
+      227,
+      228,
+      229
+    ]
+  },
+  {
+    "benchmark_id": "FAM_457452aaff70434ee35b_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Các số liệu trên 9,8 triệu lượt khách và trên 25 nghìn tỷ đồng doanh thu du lịch Kiên Giang trong nguồn thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_8ba565dd3b17ad401bb5",
+    "family_id": "FAM_457452aaff70434ee35b",
+    "source_url": "https://vietnamtourism.gov.vn/post/63017",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "KG_016_chunk_7"
+    ],
+    "original_anchor_chunk_id": "KG_016_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      230,
+      231,
+      232,
+      233,
+      234
+    ],
+    "expanded_row_ids": [
+      230,
+      231,
+      232,
+      233,
+      234
+    ]
+  },
+  {
+    "benchmark_id": "FAM_5263dac13668d5fbad93_answer",
+    "query": "Đợt điều tra tài nguyên du lịch Điện Biên được nhắc trong nguồn thực hiện trong năm nào?",
+    "source_group_id": "SRC_c99174dd90ed477bb7a7",
+    "family_id": "FAM_5263dac13668d5fbad93",
+    "source_url": "https://vietnamtourism.gov.vn/post/65890",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DB_029_chunk_4"
+    ],
+    "original_anchor_chunk_id": "DB_029_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      235,
+      236,
+      237,
+      238,
+      239
+    ],
+    "expanded_row_ids": [
+      235,
+      236,
+      237,
+      238,
+      239,
+      734
+    ]
+  },
+  {
+    "benchmark_id": "FAM_5263dac13668d5fbad93_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đợt điều tra tài nguyên du lịch Điện Biên được nhắc trong nguồn là đợt năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_c99174dd90ed477bb7a7",
+    "family_id": "FAM_5263dac13668d5fbad93",
+    "source_url": "https://vietnamtourism.gov.vn/post/65890",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DB_029_chunk_4"
+    ],
+    "original_anchor_chunk_id": "DB_029_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      240,
+      241,
+      242,
+      243,
+      244
+    ],
+    "expanded_row_ids": [
+      240,
+      241,
+      242,
+      243,
+      244,
+      735
+    ]
+  },
+  {
+    "benchmark_id": "FAM_55f103557ae1effabdd6_answer",
+    "query": "Số liệu Tây Ninh đón 3,2 triệu lượt khách trong năm tháng đầu năm được nguồn ghi nhận cho năm nào?",
+    "source_group_id": "SRC_5347141528f25eeb85d1",
+    "family_id": "FAM_55f103557ae1effabdd6",
+    "source_url": "https://vietnamtourism.gov.vn/post/63166",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TN_050_chunk_1"
+    ],
+    "original_anchor_chunk_id": "TN_050_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      245,
+      246,
+      247,
+      248,
+      249
+    ],
+    "expanded_row_ids": [
+      245,
+      246,
+      247,
+      248,
+      249,
+      736
+    ]
+  },
+  {
+    "benchmark_id": "FAM_55f103557ae1effabdd6_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Số liệu Tây Ninh đón 3,2 triệu lượt khách trong năm tháng đầu năm được nguồn ghi nhận cho năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_5347141528f25eeb85d1",
+    "family_id": "FAM_55f103557ae1effabdd6",
+    "source_url": "https://vietnamtourism.gov.vn/post/63166",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TN_050_chunk_1"
+    ],
+    "original_anchor_chunk_id": "TN_050_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      250,
+      251,
+      252,
+      253,
+      254
+    ],
+    "expanded_row_ids": [
+      250,
+      251,
+      252,
+      253,
+      254,
+      737
+    ]
+  },
+  {
+    "benchmark_id": "FAM_55f1ee6a5ddbea99476b_answer",
+    "query": "Khu Bảo tồn thiên nhiên - văn hóa Đồng Nai có tổng diện tích trên bao nhiêu hécta theo nguồn?",
+    "source_group_id": "SRC_a8e36d211e74d73d6cb2",
+    "family_id": "FAM_55f1ee6a5ddbea99476b",
+    "source_url": "https://vietnamtourism.gov.vn/post/64006",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "DP_073_chunk_2"
+    ],
+    "original_anchor_chunk_id": "DP_073_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      255,
+      256,
+      257,
+      258,
+      259
+    ],
+    "expanded_row_ids": [
+      255,
+      256,
+      257,
+      258,
+      259
+    ]
+  },
+  {
+    "benchmark_id": "FAM_56732be667a4be436646_answer",
+    "query": "Số liệu Lai Châu đón 1,05 triệu lượt khách và thu 784 tỷ đồng từ du lịch được nguồn ghi nhận cho năm nào?",
+    "source_group_id": "SRC_5f8b7c67122acb834212",
+    "family_id": "FAM_56732be667a4be436646",
+    "source_url": "https://vietnamtourism.gov.vn/post/59066",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "LC_083_chunk_5"
+    ],
+    "original_anchor_chunk_id": "LC_083_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      260,
+      261,
+      262,
+      263,
+      264
+    ],
+    "expanded_row_ids": [
+      260,
+      261,
+      262,
+      263,
+      264
+    ]
+  },
+  {
+    "benchmark_id": "FAM_585c2db6de5a46ddc8de_answer",
+    "query": "Theo mục tiêu du lịch Tây Ninh được nguồn nêu, lượng khách quốc tế cần tăng bao nhiêu phần trăm?",
+    "source_group_id": "SRC_651abed80dee1277d919",
+    "family_id": "FAM_585c2db6de5a46ddc8de",
+    "source_url": "https://vietnamtourism.gov.vn/post/67270",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TN_001_chunk_4"
+    ],
+    "original_anchor_chunk_id": "TN_001_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      265,
+      266,
+      267,
+      268,
+      269
+    ],
+    "expanded_row_ids": [
+      265,
+      266,
+      267,
+      268,
+      269,
+      738
+    ]
+  },
+  {
+    "benchmark_id": "FAM_5eb3ea4cba92c54b8f87_answer",
+    "query": "Giai đoạn phát triển công nghiệp, nông nghiệp, đô thị và du lịch Hậu Giang được nêu trong Nghị quyết 04-NQ/TU bắt đầu từ năm nào?",
+    "source_group_id": "SRC_18357037aee7c72304c5",
+    "family_id": "FAM_5eb3ea4cba92c54b8f87",
+    "source_url": "https://vietnamtourism.gov.vn/post/42413",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HGI_094_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HGI_094_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      270,
+      271,
+      272,
+      273,
+      274
+    ],
+    "expanded_row_ids": [
+      270,
+      271,
+      272,
+      273,
+      274,
+      739
+    ]
+  },
+  {
+    "benchmark_id": "FAM_5eb3ea4cba92c54b8f87_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Giai đoạn phát triển công nghiệp, nông nghiệp, đô thị và du lịch Hậu Giang nêu trong Nghị quyết 04-NQ/TU bắt đầu từ năm 2022.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_18357037aee7c72304c5",
+    "family_id": "FAM_5eb3ea4cba92c54b8f87",
+    "source_url": "https://vietnamtourism.gov.vn/post/42413",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HGI_094_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HGI_094_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      275,
+      276,
+      277,
+      278,
+      279
+    ],
+    "expanded_row_ids": [
+      275,
+      276,
+      277,
+      278,
+      279,
+      740
+    ]
+  },
+  {
+    "benchmark_id": "FAM_60d9d0fa26eb9b619969_answer",
+    "query": "Lễ hội du lịch biển Hà Tĩnh gắn với Tuần lễ Văn hóa Du lịch Nguyễn Du được nguồn đề cập diễn ra trong năm nào?",
+    "source_group_id": "SRC_09068c016966cd69bf82",
+    "family_id": "FAM_60d9d0fa26eb9b619969",
+    "source_url": "https://vietnamtourism.gov.vn/post/49224",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_055_chunk_5"
+    ],
+    "original_anchor_chunk_id": "HT_055_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      280,
+      281,
+      282,
+      283,
+      284
+    ],
+    "expanded_row_ids": [
+      280,
+      281,
+      282,
+      283,
+      284,
+      741
+    ]
+  },
+  {
+    "benchmark_id": "FAM_60d9d0fa26eb9b619969_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội du lịch biển Hà Tĩnh gắn với Tuần lễ Văn hóa Du lịch Nguyễn Du trong nguồn diễn ra năm 2024.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_09068c016966cd69bf82",
+    "family_id": "FAM_60d9d0fa26eb9b619969",
+    "source_url": "https://vietnamtourism.gov.vn/post/49224",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_055_chunk_5"
+    ],
+    "original_anchor_chunk_id": "HT_055_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      285,
+      286,
+      287,
+      288,
+      289
+    ],
+    "expanded_row_ids": [
+      285,
+      286,
+      287,
+      288,
+      289,
+      742
+    ]
+  },
+  {
+    "benchmark_id": "FAM_610b7b528a9ae1f1afd8_answer",
+    "query": "Lễ hội Putaleng huyện Tam Đường lần thứ II, với chủ đề “Tam Đường – Miền Đỗ Quyên rực rỡ”, thuộc năm nào theo nguồn?",
+    "source_group_id": "SRC_e83cfbf328a44a91eadd",
+    "family_id": "FAM_610b7b528a9ae1f1afd8",
+    "source_url": "https://vietnamtourism.gov.vn/post/61512",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LC_050_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LC_050_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      290,
+      291,
+      292,
+      293,
+      294
+    ],
+    "expanded_row_ids": [
+      290,
+      291,
+      292,
+      293,
+      294,
+      743
+    ]
+  },
+  {
+    "benchmark_id": "FAM_610b7b528a9ae1f1afd8_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Putaleng huyện Tam Đường lần thứ II với chủ đề “Tam Đường – Miền Đỗ Quyên rực rỡ” được nguồn nêu tổ chức năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_e83cfbf328a44a91eadd",
+    "family_id": "FAM_610b7b528a9ae1f1afd8",
+    "source_url": "https://vietnamtourism.gov.vn/post/61512",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LC_050_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LC_050_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      295,
+      296,
+      297,
+      298,
+      299
+    ],
+    "expanded_row_ids": [
+      295,
+      296,
+      297,
+      298,
+      299,
+      744
+    ]
+  },
+  {
+    "benchmark_id": "FAM_66ca1c2bcbef9a996f8d_answer",
+    "query": "Theo bài về du lịch Tà Xùa, phòng riêng tại các homestay và nhà nghỉ được giới thiệu có sức chứa bao nhiêu người?",
+    "source_group_id": "SRC_3b4948af0bcc191f173d",
+    "family_id": "FAM_66ca1c2bcbef9a996f8d",
+    "source_url": "https://vietnamtourism.gov.vn/post/65282",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "SL_056_chunk_3"
+    ],
+    "original_anchor_chunk_id": "SL_056_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      300,
+      301,
+      302,
+      303,
+      304
+    ],
+    "expanded_row_ids": [
+      300,
+      301,
+      302,
+      303,
+      304
+    ]
+  },
+  {
+    "benchmark_id": "FAM_66ca1c2bcbef9a996f8d_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Sức chứa phòng riêng tại các homestay và nhà nghỉ Tà Xùa được nguồn giới thiệu là 3-4 người.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_3b4948af0bcc191f173d",
+    "family_id": "FAM_66ca1c2bcbef9a996f8d",
+    "source_url": "https://vietnamtourism.gov.vn/post/65282",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "SL_056_chunk_3"
+    ],
+    "original_anchor_chunk_id": "SL_056_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      305,
+      306,
+      307,
+      308,
+      309
+    ],
+    "expanded_row_ids": [
+      305,
+      306,
+      307,
+      308,
+      309,
+      745
+    ]
+  },
+  {
+    "benchmark_id": "FAM_684023812dd707bc0b87_answer",
+    "query": "Giai đoạn thí điểm khai thác các khu vực kinh tế ban đêm của TP. Cà Mau được nguồn nêu bắt đầu từ năm nào?",
+    "source_group_id": "SRC_99fb11834c60d8b284ca",
+    "family_id": "FAM_684023812dd707bc0b87",
+    "source_url": "https://vietnamtourism.gov.vn/post/59059",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "CM_054_chunk_1"
+    ],
+    "original_anchor_chunk_id": "CM_054_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      310,
+      311,
+      312,
+      313,
+      314
+    ],
+    "expanded_row_ids": [
+      310,
+      311,
+      312,
+      313,
+      314,
+      746
+    ]
+  },
+  {
+    "benchmark_id": "FAM_6d790c74ed2df2d1486a_answer",
+    "query": "Theo mục tiêu được nguồn nêu, Sóc Trăng đặt mốc đưa du lịch thành ngành kinh tế mũi nhọn vào năm nào?",
+    "source_group_id": "SRC_25c66567c8e262da06e3",
+    "family_id": "FAM_6d790c74ed2df2d1486a",
+    "source_url": "https://vietnamtourism.gov.vn/post/62980",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ST_008_chunk_4"
+    ],
+    "original_anchor_chunk_id": "ST_008_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      315,
+      316,
+      317,
+      318,
+      319
+    ],
+    "expanded_row_ids": [
+      315,
+      316,
+      317,
+      318,
+      319,
+      747
+    ]
+  },
+  {
+    "benchmark_id": "FAM_6d790c74ed2df2d1486a_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Sóc Trăng đặt mốc đưa du lịch thành ngành kinh tế mũi nhọn vào năm 2031, theo nguồn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_25c66567c8e262da06e3",
+    "family_id": "FAM_6d790c74ed2df2d1486a",
+    "source_url": "https://vietnamtourism.gov.vn/post/62980",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ST_008_chunk_4"
+    ],
+    "original_anchor_chunk_id": "ST_008_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      320,
+      321,
+      322,
+      323,
+      324
+    ],
+    "expanded_row_ids": [
+      320,
+      321,
+      322,
+      323,
+      324,
+      748
+    ]
+  },
+  {
+    "benchmark_id": "FAM_6ff88ced07954baf7858_answer",
+    "query": "Lễ hội Cà phê Buôn Ma Thuột lần thứ 8 trong ảnh minh họa của nguồn được ghi nhận vào năm nào?",
+    "source_group_id": "SRC_78ed582f0601deae9168",
+    "family_id": "FAM_6ff88ced07954baf7858",
+    "source_url": "https://vietnamtourism.gov.vn/post/61689",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "DL_092_chunk_2"
+    ],
+    "original_anchor_chunk_id": "DL_092_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      325,
+      326,
+      327,
+      328,
+      329
+    ],
+    "expanded_row_ids": [
+      325,
+      326,
+      327,
+      328,
+      329
+    ]
+  },
+  {
+    "benchmark_id": "FAM_718bd2579dae894dff3d_answer",
+    "query": "Đợt giám sát chuyên đề về chính sách phát triển du lịch huyện Thuận Nam trong nguồn xem xét giai đoạn bắt đầu từ năm nào?",
+    "source_group_id": "SRC_b107b764a8543165c7d2",
+    "family_id": "FAM_718bd2579dae894dff3d",
+    "source_url": "https://vietnamtourism.gov.vn/post/56517",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "NT_095_chunk_3"
+    ],
+    "original_anchor_chunk_id": "NT_095_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      330,
+      331,
+      332,
+      333,
+      334
+    ],
+    "expanded_row_ids": [
+      330,
+      331,
+      332,
+      333,
+      334,
+      749
+    ]
+  },
+  {
+    "benchmark_id": "FAM_718bd2579dae894dff3d_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Giai đoạn được giám sát trong chuyên đề về chính sách phát triển du lịch Thuận Nam của bài nguồn bắt đầu từ năm 2022.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_b107b764a8543165c7d2",
+    "family_id": "FAM_718bd2579dae894dff3d",
+    "source_url": "https://vietnamtourism.gov.vn/post/56517",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "NT_095_chunk_3"
+    ],
+    "original_anchor_chunk_id": "NT_095_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      335,
+      336,
+      337,
+      338,
+      339
+    ],
+    "expanded_row_ids": [
+      335,
+      336,
+      337,
+      338,
+      339,
+      750
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7b624b89191081cf6ab9_answer",
+    "query": "Các nhiệm vụ trọng tâm phát triển du lịch Tây Ninh được liệt kê trong bài nguồn được đặt ra cho năm nào?",
+    "source_group_id": "SRC_4c61b0d130e083f375c7",
+    "family_id": "FAM_7b624b89191081cf6ab9",
+    "source_url": "https://vietnamtourism.gov.vn/post/63709",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TN_048_chunk_11"
+    ],
+    "original_anchor_chunk_id": "TN_048_chunk_11",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      340,
+      341,
+      342,
+      343,
+      344
+    ],
+    "expanded_row_ids": [
+      340,
+      341,
+      342,
+      343,
+      344,
+      751
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7b624b89191081cf6ab9_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Các nhiệm vụ trọng tâm phát triển du lịch Tây Ninh được liệt kê trong nguồn được đặt ra cho năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_4c61b0d130e083f375c7",
+    "family_id": "FAM_7b624b89191081cf6ab9",
+    "source_url": "https://vietnamtourism.gov.vn/post/63709",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TN_048_chunk_11"
+    ],
+    "original_anchor_chunk_id": "TN_048_chunk_11",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      345,
+      346,
+      347,
+      348,
+      349
+    ],
+    "expanded_row_ids": [
+      345,
+      346,
+      347,
+      348,
+      349,
+      752
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7df77e17d845162f528f_answer",
+    "query": "Đường hoa Nghĩa tình tại khu vực Nhà cổ, đường Bình Đông, được nguồn nêu mở cửa từ ngày 12 đến ngày nào?",
+    "source_group_id": "SRC_f0fafb74beaf7ca64470",
+    "family_id": "FAM_7df77e17d845162f528f",
+    "source_url": "https://vietnamtourism.gov.vn/post/66372",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HCM_011_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HCM_011_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      350,
+      351,
+      352,
+      353,
+      354
+    ],
+    "expanded_row_ids": [
+      350,
+      351,
+      352,
+      353,
+      354
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7e50de8facb0c7728736_answer",
+    "query": "Tuần Văn hóa - Du lịch tỉnh Hòa Bình được đề cập trong cuộc họp chuẩn bị của bài nguồn thuộc năm nào?",
+    "source_group_id": "SRC_bc40020b2d8788fa95ed",
+    "family_id": "FAM_7e50de8facb0c7728736",
+    "source_url": "https://vietnamtourism.gov.vn/post/59424",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HB_079_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HB_079_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      355,
+      356,
+      357,
+      358,
+      359
+    ],
+    "expanded_row_ids": [
+      355,
+      356,
+      357,
+      358,
+      359,
+      753
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7e50de8facb0c7728736_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuần Văn hóa - Du lịch tỉnh Hòa Bình được đề cập trong cuộc họp chuẩn bị của bài nguồn thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_bc40020b2d8788fa95ed",
+    "family_id": "FAM_7e50de8facb0c7728736",
+    "source_url": "https://vietnamtourism.gov.vn/post/59424",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HB_079_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HB_079_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      360,
+      361,
+      362,
+      363,
+      364
+    ],
+    "expanded_row_ids": [
+      360,
+      361,
+      362,
+      363,
+      364,
+      754
+    ]
+  },
+  {
+    "benchmark_id": "FAM_7eaefe0195e0ead84b0f_answer",
+    "query": "Theo nguồn, hồ Hoa Mai thuộc Vườn quốc gia Bù Gia Mập rộng bao nhiêu hécta?",
+    "source_group_id": "SRC_ead63673e46b5be37f18",
+    "family_id": "FAM_7eaefe0195e0ead84b0f",
+    "source_url": "https://vietnamtourism.gov.vn/post/47841",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BP_074_chunk_2",
+      "BP_074_chunk_3"
+    ],
+    "original_anchor_chunk_id": "BP_074_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      365,
+      366,
+      367,
+      368,
+      369
+    ],
+    "expanded_row_ids": [
+      365,
+      366,
+      367,
+      368,
+      369
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8533b689421e09458aae_answer",
+    "query": "Đề án đầu tư một số điểm chùa phục vụ du lịch ở Sóc Trăng, với kinh phí dự kiến khoảng 20 tỷ đồng, có giai đoạn đến năm nào?",
+    "source_group_id": "SRC_0aff2a125b3d5cd497cf",
+    "family_id": "FAM_8533b689421e09458aae",
+    "source_url": "https://vietnamtourism.gov.vn/post/56653",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ST_081_chunk_3"
+    ],
+    "original_anchor_chunk_id": "ST_081_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      370,
+      371,
+      372,
+      373,
+      374
+    ],
+    "expanded_row_ids": [
+      370,
+      371,
+      372,
+      373,
+      374,
+      755
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8533b689421e09458aae_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đề án đầu tư một số điểm chùa phục vụ du lịch ở Sóc Trăng với kinh phí dự kiến khoảng 20 tỷ đồng có giai đoạn đến năm 2031.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_0aff2a125b3d5cd497cf",
+    "family_id": "FAM_8533b689421e09458aae",
+    "source_url": "https://vietnamtourism.gov.vn/post/56653",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ST_081_chunk_3"
+    ],
+    "original_anchor_chunk_id": "ST_081_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      375,
+      376,
+      377,
+      378,
+      379
+    ],
+    "expanded_row_ids": [
+      375,
+      376,
+      377,
+      378,
+      379,
+      756
+    ]
+  },
+  {
+    "benchmark_id": "FAM_85ea1071356483bab869_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đoạn đường vành đai còn chờ đầu tư tại Khuân Bang được nguồn nêu dài 701m.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_c94708a6775b98ae0cbb",
+    "family_id": "FAM_85ea1071356483bab869",
+    "source_url": "https://vietnamtourism.gov.vn/post/65901",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TY_055_chunk_2"
+    ],
+    "original_anchor_chunk_id": "TY_055_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      380,
+      381,
+      382,
+      383,
+      384
+    ],
+    "expanded_row_ids": [
+      380,
+      381,
+      382,
+      383,
+      384,
+      757
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8df9c3aa5d63b8337467_answer",
+    "query": "Giải việt dã chinh phục tháp Bánh Ít lần thứ I do huyện Tuy Phước tổ chức diễn ra vào đầu năm nào?",
+    "source_group_id": "SRC_18d44ddd5288bff3aeba",
+    "family_id": "FAM_8df9c3aa5d63b8337467",
+    "source_url": "https://vietnamtourism.gov.vn/post/58624",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "AG_080_chunk_2"
+    ],
+    "original_anchor_chunk_id": "AG_080_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      385,
+      386,
+      387,
+      388,
+      389
+    ],
+    "expanded_row_ids": [
+      385,
+      386,
+      387,
+      388,
+      389
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8df9c3aa5d63b8337467_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Huyện Tuy Phước tổ chức Giải việt dã chinh phục tháp Bánh Ít lần thứ I vào đầu năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_18d44ddd5288bff3aeba",
+    "family_id": "FAM_8df9c3aa5d63b8337467",
+    "source_url": "https://vietnamtourism.gov.vn/post/58624",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "AG_080_chunk_2"
+    ],
+    "original_anchor_chunk_id": "AG_080_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      390,
+      391,
+      392,
+      393,
+      394
+    ],
+    "expanded_row_ids": [
+      390,
+      391,
+      392,
+      393,
+      394
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8ee78cb8d171c510998f_answer",
+    "query": "Hoạt động đón khách du lịch “xông đất” đầu năm tại Yên Bái được bài nguồn ghi nhận vào năm nào?",
+    "source_group_id": "SRC_158b7205e2ccd6c3f589",
+    "family_id": "FAM_8ee78cb8d171c510998f",
+    "source_url": "https://vietnamtourism.gov.vn/post/61127",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "YB_083_chunk_1"
+    ],
+    "original_anchor_chunk_id": "YB_083_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      395,
+      396,
+      397,
+      398,
+      399
+    ],
+    "expanded_row_ids": [
+      395,
+      396,
+      397,
+      398,
+      399
+    ]
+  },
+  {
+    "benchmark_id": "FAM_8ee78cb8d171c510998f_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Hoạt động đón khách du lịch “xông đất” đầu năm tại Yên Bái được bài nguồn ghi nhận vào năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_158b7205e2ccd6c3f589",
+    "family_id": "FAM_8ee78cb8d171c510998f",
+    "source_url": "https://vietnamtourism.gov.vn/post/61127",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "YB_083_chunk_1"
+    ],
+    "original_anchor_chunk_id": "YB_083_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      400,
+      401,
+      402,
+      403,
+      404
+    ],
+    "expanded_row_ids": [
+      400,
+      401,
+      402,
+      403,
+      404
+    ]
+  },
+  {
+    "benchmark_id": "FAM_9de5a214167eaa74142a_answer",
+    "query": "Lễ hội Hoa Ban và Ngày hội Văn hóa, Thể thao và Du lịch các dân tộc Điện Biên lần thứ VIII được nguồn đề cập diễn ra vào năm nào?",
+    "source_group_id": "SRC_c401b47ac3fa191e942e",
+    "family_id": "FAM_9de5a214167eaa74142a",
+    "source_url": "https://vietnamtourism.gov.vn/post/61341",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "DB_088_chunk_1"
+    ],
+    "original_anchor_chunk_id": "DB_088_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      405,
+      406,
+      407,
+      408,
+      409
+    ],
+    "expanded_row_ids": [
+      405,
+      406,
+      407,
+      408,
+      409
+    ]
+  },
+  {
+    "benchmark_id": "FAM_9de5a214167eaa74142a_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Hoa Ban gắn với Ngày hội các dân tộc Điện Biên lần thứ VIII trong nguồn thuộc năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_c401b47ac3fa191e942e",
+    "family_id": "FAM_9de5a214167eaa74142a",
+    "source_url": "https://vietnamtourism.gov.vn/post/61341",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "DB_088_chunk_1"
+    ],
+    "original_anchor_chunk_id": "DB_088_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      410,
+      411,
+      412,
+      413,
+      414
+    ],
+    "expanded_row_ids": [
+      410,
+      411,
+      412,
+      413,
+      414
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a110519913dbb6905ada_answer",
+    "query": "Festival Sách Biên Hòa được nhắc trong chuỗi hoạt động cuối năm của thành phố thuộc năm nào?",
+    "source_group_id": "SRC_79b512cda0e964277d9d",
+    "family_id": "FAM_a110519913dbb6905ada",
+    "source_url": "https://vietnamtourism.gov.vn/post/58442",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "PY_028_chunk_6"
+    ],
+    "original_anchor_chunk_id": "PY_028_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      415,
+      416,
+      417,
+      418,
+      419
+    ],
+    "expanded_row_ids": [
+      415,
+      416,
+      417,
+      418,
+      419
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a110519913dbb6905ada_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Festival Sách Biên Hòa được nhắc trong chuỗi hoạt động cuối năm của thành phố thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_79b512cda0e964277d9d",
+    "family_id": "FAM_a110519913dbb6905ada",
+    "source_url": "https://vietnamtourism.gov.vn/post/58442",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "PY_028_chunk_6"
+    ],
+    "original_anchor_chunk_id": "PY_028_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      420,
+      421,
+      422,
+      423,
+      424
+    ],
+    "expanded_row_ids": [
+      420,
+      421,
+      422,
+      423,
+      424
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a243f66bedf1c4521ac4_answer",
+    "query": "Tuần lễ Văn hóa, Thể thao và Du lịch chào mừng Lễ hội Ok Om Bok tỉnh Vĩnh Long được nguồn đề cập thuộc năm nào?",
+    "source_group_id": "SRC_6e7639b9d789bc1f2e3e",
+    "family_id": "FAM_a243f66bedf1c4521ac4",
+    "source_url": "https://vietnamtourism.gov.vn/post/65309",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VL_007_chunk_5"
+    ],
+    "original_anchor_chunk_id": "VL_007_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      425,
+      426,
+      427,
+      428,
+      429
+    ],
+    "expanded_row_ids": [
+      425,
+      426,
+      427,
+      428,
+      429,
+      758
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a243f66bedf1c4521ac4_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuần lễ Văn hóa, Thể thao và Du lịch chào mừng Lễ hội Ok Om Bok Vĩnh Long được nguồn đề cập thuộc năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_6e7639b9d789bc1f2e3e",
+    "family_id": "FAM_a243f66bedf1c4521ac4",
+    "source_url": "https://vietnamtourism.gov.vn/post/65309",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VL_007_chunk_5"
+    ],
+    "original_anchor_chunk_id": "VL_007_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      430,
+      431,
+      432,
+      433,
+      434
+    ],
+    "expanded_row_ids": [
+      430,
+      431,
+      432,
+      433,
+      434,
+      759
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a2a00c24650cc58d2895_answer",
+    "query": "Theo bài về Mộc Châu Island, sau khóa đào tạo một tháng, người lao động mới được thử việc trong bao lâu?",
+    "source_group_id": "SRC_a61d7721797deadb779e",
+    "family_id": "FAM_a2a00c24650cc58d2895",
+    "source_url": "https://vietnamtourism.gov.vn/post/67450",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "SL_012_chunk_3"
+    ],
+    "original_anchor_chunk_id": "SL_012_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      435,
+      436,
+      437,
+      438,
+      439
+    ],
+    "expanded_row_ids": [
+      435,
+      436,
+      437,
+      438,
+      439
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a8e07c38d59081883dac_answer",
+    "query": "Theo bài về du lịch TP. Hồ Chí Minh, tuyến metro đầu tiên của thành phố đi vào hoạt động vào cuối năm nào?",
+    "source_group_id": "SRC_5e8bc8b93e842c4b6873",
+    "family_id": "FAM_a8e07c38d59081883dac",
+    "source_url": "https://vietnamtourism.gov.vn/post/63493",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_017_chunk_2",
+      "TB_014_chunk_2"
+    ],
+    "original_anchor_chunk_id": "BDU_017_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      440,
+      441,
+      442,
+      443,
+      444
+    ],
+    "expanded_row_ids": [
+      440,
+      441,
+      442,
+      443,
+      444
+    ]
+  },
+  {
+    "benchmark_id": "FAM_a8e07c38d59081883dac_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuyến metro đầu tiên của TP. Hồ Chí Minh được bài nguồn ghi nhận đi vào hoạt động vào cuối năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_5e8bc8b93e842c4b6873",
+    "family_id": "FAM_a8e07c38d59081883dac",
+    "source_url": "https://vietnamtourism.gov.vn/post/63493",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BDU_017_chunk_2"
+    ],
+    "original_anchor_chunk_id": "BDU_017_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      445,
+      446,
+      447,
+      448,
+      449
+    ],
+    "expanded_row_ids": [
+      445,
+      446,
+      447,
+      448,
+      449,
+      760
+    ]
+  },
+  {
+    "benchmark_id": "FAM_aa155ccab6e40effd2ce_answer",
+    "query": "Đợt kiểm tra chuẩn bị mùa du lịch biển Hà Tĩnh được bài nguồn mô tả dành cho mùa du lịch của năm nào?",
+    "source_group_id": "SRC_0668f9d91769d1d48cb7",
+    "family_id": "FAM_aa155ccab6e40effd2ce",
+    "source_url": "https://vietnamtourism.gov.vn/post/49079",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_063_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HT_063_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      450,
+      451,
+      452,
+      453,
+      454
+    ],
+    "expanded_row_ids": [
+      450,
+      451,
+      452,
+      453,
+      454,
+      761
+    ]
+  },
+  {
+    "benchmark_id": "FAM_aa155ccab6e40effd2ce_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Đợt kiểm tra chuẩn bị mùa du lịch biển Hà Tĩnh được bài nguồn mô tả dành cho mùa du lịch năm 2024.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_0668f9d91769d1d48cb7",
+    "family_id": "FAM_aa155ccab6e40effd2ce",
+    "source_url": "https://vietnamtourism.gov.vn/post/49079",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_063_chunk_1"
+    ],
+    "original_anchor_chunk_id": "HT_063_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      455,
+      456,
+      457,
+      458,
+      459
+    ],
+    "expanded_row_ids": [
+      455,
+      456,
+      457,
+      458,
+      459,
+      762
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b33b0fa146f1fc98b328_answer",
+    "query": "Lễ khai trương du lịch biển Hà Tĩnh tại huyện Nghi Xuân vào tháng 4 được nguồn đề cập thuộc năm nào?",
+    "source_group_id": "SRC_d96ad8dbc5acced9cd30",
+    "family_id": "FAM_b33b0fa146f1fc98b328",
+    "source_url": "https://vietnamtourism.gov.vn/post/48469",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "HT_072_chunk_2"
+    ],
+    "original_anchor_chunk_id": "HT_072_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      460,
+      461,
+      462,
+      463,
+      464
+    ],
+    "expanded_row_ids": [
+      460,
+      461,
+      462,
+      463,
+      464
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b33b0fa146f1fc98b328_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ khai trương du lịch biển Hà Tĩnh tại Nghi Xuân vào tháng 4 được nguồn đề cập thuộc năm 2024.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_d96ad8dbc5acced9cd30",
+    "family_id": "FAM_b33b0fa146f1fc98b328",
+    "source_url": "https://vietnamtourism.gov.vn/post/48469",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_072_chunk_2"
+    ],
+    "original_anchor_chunk_id": "HT_072_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      465,
+      466,
+      467,
+      468,
+      469
+    ],
+    "expanded_row_ids": [
+      465,
+      466,
+      467,
+      468,
+      469,
+      763
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b6536957fe35b14eff51_answer",
+    "query": "Tuần du lịch biển và khinh khí cầu Thái Bình được nguồn đề cập tổ chức trong năm nào?",
+    "source_group_id": "SRC_d3de2b7b497d7a65d471",
+    "family_id": "FAM_b6536957fe35b14eff51",
+    "source_url": "https://vietnamtourism.gov.vn/post/49895",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TB_075_chunk_7"
+    ],
+    "original_anchor_chunk_id": "TB_075_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      470,
+      471,
+      472,
+      473,
+      474
+    ],
+    "expanded_row_ids": [
+      470,
+      471,
+      472,
+      473,
+      474,
+      764
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b6536957fe35b14eff51_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuần du lịch biển và khinh khí cầu Thái Bình được nguồn đề cập thuộc năm 2024.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_d3de2b7b497d7a65d471",
+    "family_id": "FAM_b6536957fe35b14eff51",
+    "source_url": "https://vietnamtourism.gov.vn/post/49895",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TB_075_chunk_7"
+    ],
+    "original_anchor_chunk_id": "TB_075_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      475,
+      476,
+      477,
+      478,
+      479
+    ],
+    "expanded_row_ids": [
+      475,
+      476,
+      477,
+      478,
+      479,
+      765
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b70a41c8642929b343bc_answer",
+    "query": "Giai đoạn I của Dự án 6 tại Bắc Kạn được nguồn nhắc đến bắt đầu từ năm nào?",
+    "source_group_id": "SRC_6e0d12deb47f881fa2b9",
+    "family_id": "FAM_b70a41c8642929b343bc",
+    "source_url": "https://vietnamtourism.gov.vn/post/63536",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BK_007_chunk_5"
+    ],
+    "original_anchor_chunk_id": "BK_007_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      480,
+      481,
+      482,
+      483,
+      484
+    ],
+    "expanded_row_ids": [
+      480,
+      481,
+      482,
+      483,
+      484,
+      766
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b92445677c5064421d6b_answer",
+    "query": "Nghệ An kỷ niệm 995 năm danh xưng Nghệ An và 95 năm phong trào Xô viết Nghệ Tĩnh trong năm nào theo nguồn?",
+    "source_group_id": "SRC_d7888e0f2bfdfb63dc2c",
+    "family_id": "FAM_b92445677c5064421d6b",
+    "source_url": "https://vietnamtourism.gov.vn/post/64672",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "NA_012_chunk_1"
+    ],
+    "original_anchor_chunk_id": "NA_012_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      485,
+      486,
+      487,
+      488,
+      489
+    ],
+    "expanded_row_ids": [
+      485,
+      486,
+      487,
+      488,
+      489
+    ]
+  },
+  {
+    "benchmark_id": "FAM_b92445677c5064421d6b_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Nghệ An kỷ niệm 995 năm danh xưng Nghệ An và 95 năm phong trào Xô viết Nghệ Tĩnh trong năm 2026, theo nguồn.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_d7888e0f2bfdfb63dc2c",
+    "family_id": "FAM_b92445677c5064421d6b",
+    "source_url": "https://vietnamtourism.gov.vn/post/64672",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "NA_012_chunk_1"
+    ],
+    "original_anchor_chunk_id": "NA_012_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      490,
+      491,
+      492,
+      493,
+      494
+    ],
+    "expanded_row_ids": [
+      490,
+      491,
+      492,
+      493,
+      494
+    ]
+  },
+  {
+    "benchmark_id": "FAM_babdd746ebee116be8d7_answer",
+    "query": "Hồ sơ đăng cai Năm Du lịch Quốc gia mà Gia Lai được nhắc đang lấy ý kiến trong nguồn dành cho năm nào?",
+    "source_group_id": "SRC_2eb664bfcb4832eabe99",
+    "family_id": "FAM_babdd746ebee116be8d7",
+    "source_url": "https://vietnamtourism.gov.vn/post/65685",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "GL_090_chunk_2"
+    ],
+    "original_anchor_chunk_id": "GL_090_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      495,
+      496,
+      497,
+      498,
+      499
+    ],
+    "expanded_row_ids": [
+      495,
+      496,
+      497,
+      498,
+      499,
+      767
+    ]
+  },
+  {
+    "benchmark_id": "FAM_babdd746ebee116be8d7_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Hồ sơ đăng cai Năm Du lịch Quốc gia mà Gia Lai được nhắc đang lấy ý kiến trong nguồn dành cho năm 2027.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_2eb664bfcb4832eabe99",
+    "family_id": "FAM_babdd746ebee116be8d7",
+    "source_url": "https://vietnamtourism.gov.vn/post/65685",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "GL_090_chunk_2"
+    ],
+    "original_anchor_chunk_id": "GL_090_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      500,
+      501,
+      502,
+      503,
+      504
+    ],
+    "expanded_row_ids": [
+      500,
+      501,
+      502,
+      503,
+      504,
+      768
+    ]
+  },
+  {
+    "benchmark_id": "FAM_bc1d043424c932acf9f3_answer",
+    "query": "Số liệu hơn một triệu lượt khách đến Lâm Đồng, tăng 22,5% so với cùng kỳ, thuộc quý I của năm nào?",
+    "source_group_id": "SRC_916baa39f700efdd8d4d",
+    "family_id": "FAM_bc1d043424c932acf9f3",
+    "source_url": "https://vietnamtourism.gov.vn/post/67142",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LD_025_chunk_4"
+    ],
+    "original_anchor_chunk_id": "LD_025_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      505,
+      506,
+      507,
+      508,
+      509
+    ],
+    "expanded_row_ids": [
+      505,
+      506,
+      507,
+      508,
+      509,
+      769
+    ]
+  },
+  {
+    "benchmark_id": "FAM_be28629f86a83047b9fb_answer",
+    "query": "Nghị quyết về phát triển văn hóa, thể thao và du lịch Hà Tĩnh được nguồn đề cập được Hội đồng nhân dân tỉnh thông qua ngày nào?",
+    "source_group_id": "SRC_b6b4ba298ff64dce553d",
+    "family_id": "FAM_be28629f86a83047b9fb",
+    "source_url": "https://vietnamtourism.gov.vn/post/47528",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "HT_079_chunk_3"
+    ],
+    "original_anchor_chunk_id": "HT_079_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      510,
+      511,
+      512,
+      513,
+      514
+    ],
+    "expanded_row_ids": [
+      510,
+      511,
+      512,
+      513,
+      514,
+      770
+    ]
+  },
+  {
+    "benchmark_id": "FAM_be499902618d9e62ff9c_answer",
+    "query": "Theo nguồn, huyện Mỹ Tú cách trung tâm thành phố Sóc Trăng khoảng bao nhiêu kilômét?",
+    "source_group_id": "SRC_78104017ec131f959b1f",
+    "family_id": "FAM_be499902618d9e62ff9c",
+    "source_url": "https://vietnamtourism.gov.vn/post/50913",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "ST_100_chunk_1"
+    ],
+    "original_anchor_chunk_id": "ST_100_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      515,
+      516,
+      517,
+      518,
+      519
+    ],
+    "expanded_row_ids": [
+      515,
+      516,
+      517,
+      518,
+      519
+    ]
+  },
+  {
+    "benchmark_id": "FAM_be499902618d9e62ff9c_correct",
+    "query": "Theo bài “Sóc Trăng: Mỹ Tú phát huy tiềm năng du lịch địa phương”, nhận định “Mỹ Tú là huyện nằm ở phía Tây tỉnh Sóc Trăng, cách trung tâm thành phố Sóc Trăng khoảng 19km.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_78104017ec131f959b1f",
+    "family_id": "FAM_be499902618d9e62ff9c",
+    "source_url": "https://vietnamtourism.gov.vn/post/50913",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ST_100_chunk_1"
+    ],
+    "original_anchor_chunk_id": "ST_100_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      520,
+      521,
+      522,
+      523,
+      524
+    ],
+    "expanded_row_ids": [
+      520,
+      521,
+      522,
+      523,
+      524,
+      771
+    ]
+  },
+  {
+    "benchmark_id": "FAM_c58dcdbe83e356a8ab84_answer",
+    "query": "Báo cáo tình hình sản xuất kinh doanh và giải ngân vốn đầu tư công của Sở Du lịch Kiên Giang được nhắc trong nguồn là báo cáo năm nào?",
+    "source_group_id": "SRC_aea714e24d8bbf1072f2",
+    "family_id": "FAM_c58dcdbe83e356a8ab84",
+    "source_url": "https://vietnamtourism.gov.vn/post/61132",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "KG_014_chunk_3"
+    ],
+    "original_anchor_chunk_id": "KG_014_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      525,
+      526,
+      527,
+      528,
+      529
+    ],
+    "expanded_row_ids": [
+      525,
+      526,
+      527,
+      528,
+      529,
+      772
+    ]
+  },
+  {
+    "benchmark_id": "FAM_c58dcdbe83e356a8ab84_correct",
+    "query": "Theo bài “Ngành “công nghiệp không khói” Kiên Giang cán mốc 1 tỷ USD”, nhận định “Báo cáo tình hình sản xuất kinh doanh, giải ngân vốn đầu tư công của Sở Du lịch năm 2024 và đề xuất bố trí vốn các dự án năm 2024.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_aea714e24d8bbf1072f2",
+    "family_id": "FAM_c58dcdbe83e356a8ab84",
+    "source_url": "https://vietnamtourism.gov.vn/post/61132",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "KG_014_chunk_3"
+    ],
+    "original_anchor_chunk_id": "KG_014_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      530,
+      531,
+      532,
+      533,
+      534
+    ],
+    "expanded_row_ids": [
+      530,
+      531,
+      532,
+      533,
+      534
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d0619856d4245c22c140_answer",
+    "query": "Lễ hội Cúng biển Mỹ Long có quy mô cấp tỉnh, dự kiến diễn ra bảy ngày trong nguồn, thuộc năm nào?",
+    "source_group_id": "SRC_540028ffa031748ff6fa",
+    "family_id": "FAM_d0619856d4245c22c140",
+    "source_url": "https://vietnamtourism.gov.vn/post/62753",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BG_009_chunk_1",
+      "TV_007_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BG_009_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      535,
+      536,
+      537,
+      538,
+      539
+    ],
+    "expanded_row_ids": [
+      535,
+      536,
+      537,
+      538,
+      539
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d0619856d4245c22c140_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Lễ hội Cúng biển Mỹ Long có quy mô cấp tỉnh và dự kiến diễn ra bảy ngày được nguồn đề cập thuộc năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_540028ffa031748ff6fa",
+    "family_id": "FAM_d0619856d4245c22c140",
+    "source_url": "https://vietnamtourism.gov.vn/post/62753",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BG_009_chunk_1",
+      "TV_007_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BG_009_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      540,
+      541,
+      542,
+      543,
+      544
+    ],
+    "expanded_row_ids": [
+      540,
+      541,
+      542,
+      543,
+      544
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d3f4ce85c3bdf4f8fdab_answer",
+    "query": "Tuần Văn hóa - Du lịch Bắc Kạn có nội dung hưởng ứng Ngày Văn hóa Việt Nam 19/4 được nguồn đề cập thuộc năm nào?",
+    "source_group_id": "SRC_ba1737d9dc4d13085401",
+    "family_id": "FAM_d3f4ce85c3bdf4f8fdab",
+    "source_url": "https://vietnamtourism.gov.vn/post/55563",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BK_068_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BK_068_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      545,
+      546,
+      547,
+      548,
+      549
+    ],
+    "expanded_row_ids": [
+      545,
+      546,
+      547,
+      548,
+      549,
+      773
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d3f4ce85c3bdf4f8fdab_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Tuần Văn hóa - Du lịch Bắc Kạn có nội dung hưởng ứng Ngày Văn hóa Việt Nam 19/4 được nguồn đề cập thuộc năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_ba1737d9dc4d13085401",
+    "family_id": "FAM_d3f4ce85c3bdf4f8fdab",
+    "source_url": "https://vietnamtourism.gov.vn/post/55563",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BK_068_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BK_068_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      550,
+      551,
+      552,
+      553,
+      554
+    ],
+    "expanded_row_ids": [
+      550,
+      551,
+      552,
+      553,
+      554,
+      774
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d5d4e8dbdc3cc72afc70_answer",
+    "query": "Kế hoạch Lâm Đồng đón 25,8 triệu lượt khách và phấn đấu thuộc nhóm năm địa phương thu hút khách lớn nhất trong nguồn dành cho năm nào?",
+    "source_group_id": "SRC_e57927b8c38bbd5f10b0",
+    "family_id": "FAM_d5d4e8dbdc3cc72afc70",
+    "source_url": "https://vietnamtourism.gov.vn/post/67001",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LD_046_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LD_046_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      555,
+      556,
+      557,
+      558,
+      559
+    ],
+    "expanded_row_ids": [
+      555,
+      556,
+      557,
+      558,
+      559,
+      775
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d5d4e8dbdc3cc72afc70_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Kế hoạch Lâm Đồng đón 25,8 triệu lượt khách và thuộc nhóm năm địa phương thu hút khách lớn nhất được nguồn đặt ra cho năm 2027.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_e57927b8c38bbd5f10b0",
+    "family_id": "FAM_d5d4e8dbdc3cc72afc70",
+    "source_url": "https://vietnamtourism.gov.vn/post/67001",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LD_046_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LD_046_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      560,
+      561,
+      562,
+      563,
+      564
+    ],
+    "expanded_row_ids": [
+      560,
+      561,
+      562,
+      563,
+      564,
+      776
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d66b3887f7275a510cdd_answer",
+    "query": "Phần giới thiệu sự kiện của Nghệ An và Đắk Lắk trong nguồn nói đến bốn tháng cuối của năm nào, trước khi đề cập năm kế tiếp?",
+    "source_group_id": "SRC_b384be5ce1ec58c6b2f0",
+    "family_id": "FAM_d66b3887f7275a510cdd",
+    "source_url": "https://vietnamtourism.gov.vn/post/58088",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "NA_064_chunk_7"
+    ],
+    "original_anchor_chunk_id": "NA_064_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      565,
+      566,
+      567,
+      568,
+      569
+    ],
+    "expanded_row_ids": [
+      565,
+      566,
+      567,
+      568,
+      569,
+      777
+    ]
+  },
+  {
+    "benchmark_id": "FAM_d66b3887f7275a510cdd_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Nguồn giới thiệu hoạt động, sự kiện của Nghệ An và Đắk Lắk trong bốn tháng cuối năm 2025 và năm kế tiếp.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_b384be5ce1ec58c6b2f0",
+    "family_id": "FAM_d66b3887f7275a510cdd",
+    "source_url": "https://vietnamtourism.gov.vn/post/58088",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "NA_064_chunk_7"
+    ],
+    "original_anchor_chunk_id": "NA_064_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      570,
+      571,
+      572,
+      573,
+      574
+    ],
+    "expanded_row_ids": [
+      570,
+      571,
+      572,
+      573,
+      574,
+      778
+    ]
+  },
+  {
+    "benchmark_id": "FAM_dc4321c6c663eb38f223_answer",
+    "query": "Giai đoạn xã ở Đồng Nai tổ chức 128 buổi chiếu phim lưu động được nguồn nhắc đến bắt đầu từ năm nào?",
+    "source_group_id": "SRC_f1a90c2ff29a4734e0b1",
+    "family_id": "FAM_dc4321c6c663eb38f223",
+    "source_url": "https://vietnamtourism.gov.vn/post/66196",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DP_025_chunk_7"
+    ],
+    "original_anchor_chunk_id": "DP_025_chunk_7",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      575,
+      576,
+      577,
+      578,
+      579
+    ],
+    "expanded_row_ids": [
+      575,
+      576,
+      577,
+      578,
+      579,
+      779
+    ]
+  },
+  {
+    "benchmark_id": "FAM_df9b983abecaabb2903c_answer",
+    "query": "Hội nghị doanh nghiệp du lịch gắn với việc trao chứng nhận du lịch xanh Quảng Nam trong nguồn diễn ra vào năm nào?",
+    "source_group_id": "SRC_708c2976a538823136c7",
+    "family_id": "FAM_df9b983abecaabb2903c",
+    "source_url": "https://vietnamtourism.gov.vn/post/60779",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "QM_098_chunk_1"
+    ],
+    "original_anchor_chunk_id": "QM_098_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      580,
+      581,
+      582,
+      583,
+      584
+    ],
+    "expanded_row_ids": [
+      580,
+      581,
+      582,
+      583,
+      584
+    ]
+  },
+  {
+    "benchmark_id": "FAM_e3d56f1dc795bac78e91_answer",
+    "query": "Công văn 1654 về kích cầu du lịch nội địa được nêu trong nguồn nhằm đón mùa du lịch hè của năm nào?",
+    "source_group_id": "SRC_6aaf0d8e88c7db185369",
+    "family_id": "FAM_e3d56f1dc795bac78e91",
+    "source_url": "https://vietnamtourism.gov.vn/post/56325",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BL_047_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BL_047_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      585,
+      586,
+      587,
+      588,
+      589
+    ],
+    "expanded_row_ids": [
+      585,
+      586,
+      587,
+      588,
+      589
+    ]
+  },
+  {
+    "benchmark_id": "FAM_e3d56f1dc795bac78e91_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Công văn 1654 về kích cầu du lịch nội địa được nêu trong nguồn nhằm đón mùa du lịch hè năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_6aaf0d8e88c7db185369",
+    "family_id": "FAM_e3d56f1dc795bac78e91",
+    "source_url": "https://vietnamtourism.gov.vn/post/56325",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BL_047_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BL_047_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      590,
+      591,
+      592,
+      593,
+      594
+    ],
+    "expanded_row_ids": [
+      590,
+      591,
+      592,
+      593,
+      594,
+      780
+    ]
+  },
+  {
+    "benchmark_id": "FAM_e4d39e9c1503abfd5ed5_answer",
+    "query": "Theo nguồn, sân golf Đầm Vạc được xây dựng với quy mô gần bao nhiêu hécta?",
+    "source_group_id": "SRC_006301d4c08c6bad46b7",
+    "family_id": "FAM_e4d39e9c1503abfd5ed5",
+    "source_url": "https://vietnamtourism.gov.vn/post/58678",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VP_025_chunk_5"
+    ],
+    "original_anchor_chunk_id": "VP_025_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      595,
+      596,
+      597,
+      598,
+      599
+    ],
+    "expanded_row_ids": [
+      595,
+      596,
+      597,
+      598,
+      599,
+      781
+    ]
+  },
+  {
+    "benchmark_id": "FAM_e4d39e9c1503abfd5ed5_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Sân golf Đầm Vạc được nguồn mô tả có quy mô gần 101 ha.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_006301d4c08c6bad46b7",
+    "family_id": "FAM_e4d39e9c1503abfd5ed5",
+    "source_url": "https://vietnamtourism.gov.vn/post/58678",
+    "recorded_split": "calibration",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VP_025_chunk_5"
+    ],
+    "original_anchor_chunk_id": "VP_025_chunk_5",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      600,
+      601,
+      602,
+      603,
+      604
+    ],
+    "expanded_row_ids": [
+      600,
+      601,
+      602,
+      603,
+      604,
+      782
+    ]
+  },
+  {
+    "benchmark_id": "FAM_edc1200d9de926c5d554_answer",
+    "query": "Danh hiệu “Điểm đến văn hóa hàng đầu thế giới” gắn với Công viên Địa chất toàn cầu Cao nguyên đá Đồng Văn trong nguồn thuộc năm nào?",
+    "source_group_id": "SRC_3b5ff639378c737c8742",
+    "family_id": "FAM_edc1200d9de926c5d554",
+    "source_url": "https://vietnamtourism.gov.vn/post/65965",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TQ_038_chunk_3"
+    ],
+    "original_anchor_chunk_id": "TQ_038_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      605,
+      606,
+      607,
+      608,
+      609
+    ],
+    "expanded_row_ids": [
+      605,
+      606,
+      607,
+      608,
+      609,
+      783
+    ]
+  },
+  {
+    "benchmark_id": "FAM_edc1200d9de926c5d554_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Danh hiệu “Điểm đến văn hóa hàng đầu thế giới” gắn với Cao nguyên đá Đồng Văn được nguồn ghi nhận cho năm 2026.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_3b5ff639378c737c8742",
+    "family_id": "FAM_edc1200d9de926c5d554",
+    "source_url": "https://vietnamtourism.gov.vn/post/65965",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TQ_038_chunk_3"
+    ],
+    "original_anchor_chunk_id": "TQ_038_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      610,
+      611,
+      612,
+      613,
+      614
+    ],
+    "expanded_row_ids": [
+      610,
+      611,
+      612,
+      613,
+      614,
+      784
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f28119c1ff85abc344a8_answer",
+    "query": "Kế hoạch hợp tác văn hóa và du lịch Việt Nam - Trung Quốc được nêu trong nguồn có giai đoạn bắt đầu từ năm nào?",
+    "source_group_id": "SRC_701c821f4f4bf1121467",
+    "family_id": "FAM_f28119c1ff85abc344a8",
+    "source_url": "https://vietnamtourism.gov.vn/post/67741",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "DN_001_chunk_6"
+    ],
+    "original_anchor_chunk_id": "DN_001_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      615,
+      616,
+      617,
+      618,
+      619
+    ],
+    "expanded_row_ids": [
+      615,
+      616,
+      617,
+      618,
+      619,
+      785
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f348869a3025c4816e0b_answer",
+    "query": "Trong bài về nghỉ lễ ở Bà Rịa - Vũng Tàu, ngày lễ nào được nêu ngay trước ngày 01/5 trong dịp khách đặt phòng tăng?",
+    "source_group_id": "SRC_dd8b8339ece46f8e97a3",
+    "family_id": "FAM_f348869a3025c4816e0b",
+    "source_url": "https://vietnamtourism.gov.vn/post/55862",
+    "recorded_split": "train",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BR_061_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BR_061_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      620,
+      621,
+      622,
+      623,
+      624
+    ],
+    "expanded_row_ids": [
+      620,
+      621,
+      622,
+      623,
+      624
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f348869a3025c4816e0b_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Dịp nghỉ lễ có lượng đặt phòng tăng ở Bà Rịa - Vũng Tàu được nguồn nêu là 29/4 và 01/5.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_dd8b8339ece46f8e97a3",
+    "family_id": "FAM_f348869a3025c4816e0b",
+    "source_url": "https://vietnamtourism.gov.vn/post/55862",
+    "recorded_split": "train",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BR_061_chunk_1"
+    ],
+    "original_anchor_chunk_id": "BR_061_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      625,
+      626,
+      627,
+      628,
+      629
+    ],
+    "expanded_row_ids": [
+      625,
+      626,
+      627,
+      628,
+      629
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f8537e311ca564e4b45d_answer",
+    "query": "Theo nguồn, 745 buổi biểu diễn do ngành văn hóa Bạc Liêu tổ chức thu hút trên bao nhiêu lượt người xem?",
+    "source_group_id": "SRC_ff0e3fdd699140940a93",
+    "family_id": "FAM_f8537e311ca564e4b45d",
+    "source_url": "https://vietnamtourism.gov.vn/post/51374",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BL_062_chunk_2"
+    ],
+    "original_anchor_chunk_id": "BL_062_chunk_2",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      630,
+      631,
+      632,
+      633,
+      634
+    ],
+    "expanded_row_ids": [
+      630,
+      631,
+      632,
+      633,
+      634
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f9efc2cbb5852a304e76_answer",
+    "query": "Phần tổng kết hoạt động văn hóa, thể thao và du lịch Long An tại hội nghị triển khai nhiệm vụ được trích trong nguồn nói về năm nào?",
+    "source_group_id": "SRC_ca75c0a405185b3b2997",
+    "family_id": "FAM_f9efc2cbb5852a304e76",
+    "source_url": "https://vietnamtourism.gov.vn/post/60837",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_019_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_019_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      635,
+      636,
+      637,
+      638,
+      639
+    ],
+    "expanded_row_ids": [
+      635,
+      636,
+      637,
+      638,
+      639,
+      786
+    ]
+  },
+  {
+    "benchmark_id": "FAM_f9efc2cbb5852a304e76_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Phần tổng kết hoạt động văn hóa, thể thao và du lịch Long An tại hội nghị triển khai nhiệm vụ trong nguồn nói về năm 2025.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_ca75c0a405185b3b2997",
+    "family_id": "FAM_f9efc2cbb5852a304e76",
+    "source_url": "https://vietnamtourism.gov.vn/post/60837",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "LA_019_chunk_1"
+    ],
+    "original_anchor_chunk_id": "LA_019_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      640,
+      641,
+      642,
+      643,
+      644
+    ],
+    "expanded_row_ids": [
+      640,
+      641,
+      642,
+      643,
+      644,
+      787
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fa894093b5e22239ee7d_answer",
+    "query": "Festival 100 năm cây Dừa sáp Trà Vinh được nguồn nêu diễn ra tại Cầu Kè từ ngày nào trong tháng 8?",
+    "source_group_id": "SRC_c8b129f7a4c8cebfef10",
+    "family_id": "FAM_fa894093b5e22239ee7d",
+    "source_url": "https://vietnamtourism.gov.vn/post/56233",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "TV_043_chunk_1"
+    ],
+    "original_anchor_chunk_id": "TV_043_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      645,
+      646,
+      647,
+      648,
+      649
+    ],
+    "expanded_row_ids": [
+      645,
+      646,
+      647,
+      648,
+      649
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fa894093b5e22239ee7d_correct",
+    "query": "Theo bài “Lần đầu tiên tổ chức Festival 100 năm cây Dừa sáp Trà Vinh”, nhận định “Các hoạt động diễn ra trên địa bàn huyện Cầu Kè, từ ngày 26/8 - 31/8/2024.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_c8b129f7a4c8cebfef10",
+    "family_id": "FAM_fa894093b5e22239ee7d",
+    "source_url": "https://vietnamtourism.gov.vn/post/56233",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "TV_043_chunk_1"
+    ],
+    "original_anchor_chunk_id": "TV_043_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      650,
+      651,
+      652,
+      653,
+      654
+    ],
+    "expanded_row_ids": [
+      650,
+      651,
+      652,
+      653,
+      654,
+      788
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fcbbd695e7faa6428748_answer",
+    "query": "Theo nguồn, Khu di tích Căn cứ Tỉnh ủy Bình Thuận đã đón và phục vụ gần bao nhiêu lượt khách trong năm 2023?",
+    "source_group_id": "SRC_dbf9aaa31af306506247",
+    "family_id": "FAM_fcbbd695e7faa6428748",
+    "source_url": "https://vietnamtourism.gov.vn/post/54521",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BU_079_chunk_10"
+    ],
+    "original_anchor_chunk_id": "BU_079_chunk_10",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      655,
+      656,
+      657,
+      658,
+      659
+    ],
+    "expanded_row_ids": [
+      655,
+      656,
+      657,
+      658,
+      659,
+      789
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fcbbd695e7faa6428748_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Khu di tích Căn cứ Tỉnh ủy Bình Thuận được nguồn ghi nhận đón và phục vụ gần 31.000 lượt khách trong năm 2023.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_dbf9aaa31af306506247",
+    "family_id": "FAM_fcbbd695e7faa6428748",
+    "source_url": "https://vietnamtourism.gov.vn/post/54521",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "BU_079_chunk_10"
+    ],
+    "original_anchor_chunk_id": "BU_079_chunk_10",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      660,
+      661,
+      662,
+      663,
+      664
+    ],
+    "expanded_row_ids": [
+      660,
+      661,
+      662,
+      663,
+      664,
+      790
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fcfc273029bccc04ec82_answer",
+    "query": "Theo lời cô Nguyễn Thị Bích Vân trong nguồn, trước khi mô hình du lịch cồn Chim phát triển, chỉ có khoảng bao nhiêu hộ tham gia?",
+    "source_group_id": "SRC_fccffa324745f1e4edd6",
+    "family_id": "FAM_fcfc273029bccc04ec82",
+    "source_url": "https://vietnamtourism.gov.vn/post/47924",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "TV_084_chunk_6"
+    ],
+    "original_anchor_chunk_id": "TV_084_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      665,
+      666,
+      667,
+      668,
+      669
+    ],
+    "expanded_row_ids": [
+      665,
+      666,
+      667,
+      668,
+      669
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fcfc273029bccc04ec82_correct",
+    "query": "Theo bài “Du lịch thích ứng biến đổi khí hậu ở cồn Chim (Trà Vinh)”, nhận định “Cô Nguyễn Thị Bích Vân cho biết: “Ngày trước chỉ có 7-7 hộ làm du lịch thôi, nhưng giờ mô hình hiệu quả bà con tham gia ngày càng nhiều.” có chính xác không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_fccffa324745f1e4edd6",
+    "family_id": "FAM_fcfc273029bccc04ec82",
+    "source_url": "https://vietnamtourism.gov.vn/post/47924",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "TV_084_chunk_6"
+    ],
+    "original_anchor_chunk_id": "TV_084_chunk_6",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      670,
+      671,
+      672,
+      673,
+      674
+    ],
+    "expanded_row_ids": [
+      670,
+      671,
+      672,
+      673,
+      674
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fe9cd2e93cfff37548aa_answer",
+    "query": "Luật Du lịch được viện dẫn khi khai mạc khóa cập nhật kiến thức cho hướng dẫn viên trong nguồn là luật năm nào?",
+    "source_group_id": "SRC_0d3b96150200197973fe",
+    "family_id": "FAM_fe9cd2e93cfff37548aa",
+    "source_url": "https://vietnamtourism.gov.vn/post/49343",
+    "recorded_split": "validation",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ND_067_chunk_1"
+    ],
+    "original_anchor_chunk_id": "ND_067_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      675,
+      676,
+      677,
+      678,
+      679
+    ],
+    "expanded_row_ids": [
+      675,
+      676,
+      677,
+      678,
+      679,
+      791
+    ]
+  },
+  {
+    "benchmark_id": "FAM_fe9cd2e93cfff37548aa_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Luật Du lịch được viện dẫn khi khai mạc khóa cập nhật kiến thức cho hướng dẫn viên trong nguồn là Luật Du lịch 2018.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_0d3b96150200197973fe",
+    "family_id": "FAM_fe9cd2e93cfff37548aa",
+    "source_url": "https://vietnamtourism.gov.vn/post/49343",
+    "recorded_split": "validation",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "ND_067_chunk_1"
+    ],
+    "original_anchor_chunk_id": "ND_067_chunk_1",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      680,
+      681,
+      682,
+      683,
+      684
+    ],
+    "expanded_row_ids": [
+      680,
+      681,
+      682,
+      683,
+      684,
+      792
+    ]
+  },
+  {
+    "benchmark_id": "FAM_feb4f391688324f13c47_answer",
+    "query": "Chương trình phát triển du lịch nông thôn gắn với xây dựng nông thôn mới ở Vĩnh Phúc được nguồn đánh giá triển khai chưa đồng bộ thuộc giai đoạn bắt đầu từ năm nào?",
+    "source_group_id": "SRC_81f0971463a74e064e1a",
+    "family_id": "FAM_feb4f391688324f13c47",
+    "source_url": "https://vietnamtourism.gov.vn/post/54540",
+    "recorded_split": "test",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VP_095_chunk_3"
+    ],
+    "original_anchor_chunk_id": "VP_095_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      685,
+      686,
+      687,
+      688,
+      689
+    ],
+    "expanded_row_ids": [
+      685,
+      686,
+      687,
+      688,
+      689,
+      793
+    ]
+  },
+  {
+    "benchmark_id": "FAM_feb4f391688324f13c47_correct",
+    "query": "Theo nguồn đã lưu, nhận định “Giai đoạn của Chương trình phát triển du lịch nông thôn gắn với xây dựng nông thôn mới ở Vĩnh Phúc được nguồn đánh giá bắt đầu từ năm 2022.” có đúng không? Nếu sai, hãy sửa và dẫn bằng chứng.",
+    "source_group_id": "SRC_81f0971463a74e064e1a",
+    "family_id": "FAM_feb4f391688324f13c47",
+    "source_url": "https://vietnamtourism.gov.vn/post/54540",
+    "recorded_split": "test",
+    "behavior": "correct",
+    "has_grade2_in_native_pool": false,
+    "reviewed_grade2_chunk_ids": [
+      "VP_095_chunk_3"
+    ],
+    "original_anchor_chunk_id": "VP_095_chunk_3",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      690,
+      691,
+      692,
+      693,
+      694
+    ],
+    "expanded_row_ids": [
+      690,
+      691,
+      692,
+      693,
+      694,
+      794
+    ]
+  },
+  {
+    "benchmark_id": "FAM_ff4849870b0d04759d63_answer",
+    "query": "Theo thời điểm của bài nguồn, Khu du lịch tâm linh - sinh thái Tây Yên Tử mở cửa đón khách từ ngày nào, tức mùng 2 Tết?",
+    "source_group_id": "SRC_e562843b6d839efe1b42",
+    "family_id": "FAM_ff4849870b0d04759d63",
+    "source_url": "https://vietnamtourism.gov.vn/post/67024",
+    "recorded_split": "calibration",
+    "behavior": "answer",
+    "has_grade2_in_native_pool": true,
+    "reviewed_grade2_chunk_ids": [
+      "BN_022_chunk_4"
+    ],
+    "original_anchor_chunk_id": "BN_022_chunk_4",
+    "original_anchor_has_consensus_grade2": true,
+    "native_row_ids": [
+      695,
+      696,
+      697,
+      698,
+      699
+    ],
+    "expanded_row_ids": [
+      695,
+      696,
+      697,
+      698,
+      699
+    ]
+  }
+]

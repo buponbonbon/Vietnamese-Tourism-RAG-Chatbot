@@ -1,0 +1,500 @@
+{
+  "status": "COMPARED_ORIGINALS_UNCHANGED",
+  "files": {
+    "R1_completed": {
+      "filename": "reviewer_01_round2_completed.xlsx",
+      "sha256": "ab242188f977562fed86f9ed473439db8cd59ae2b62671db7efca46c2672aa2e",
+      "question_rows": 268,
+      "passage_rows": 1688,
+      "issues_by_type": {
+        "STATUS_NOT_DONE": 103
+      },
+      "affected_question_ids": 103,
+      "affected_passage_pairs": 0,
+      "categorical_counts": {
+        "behavior:answer": 93,
+        "decision:KEEP": 259,
+        "behavior:unclear": 103,
+        "behavior:correct": 72,
+        "decision:REVISE": 9,
+        "grade:0": 1333,
+        "grade:1": 180,
+        "grade:2": 175
+      },
+      "blank_editable_cells_by_field": {
+        "CAU_HOI:behavior_label": 0,
+        "CAU_HOI:question_decision": 0,
+        "CAU_HOI:reference_answer": 0,
+        "CAU_HOI:query_revision": 259,
+        "CAU_HOI:task_type": 0,
+        "CAU_HOI:evidence_search_notes": 0,
+        "CAU_HOI:reviewer_id": 0,
+        "CAU_HOI:review_status": 0,
+        "CAU_HOI:reviewer_notes": 159,
+        "BANG_CHUNG:relevance_grade": 0,
+        "BANG_CHUNG:evidence_quote": 1333,
+        "BANG_CHUNG:reviewer_id": 0,
+        "BANG_CHUNG:review_status": 0,
+        "BANG_CHUNG:reviewer_notes": 0
+      }
+    },
+    "R2_FINAL": {
+      "filename": "reviewer_02_round2_FINAL.xlsx",
+      "sha256": "629ddb644c25e992e7af3eecf3e92f65702be37e779264f25bc4e0d2a0704ef3",
+      "question_rows": 268,
+      "passage_rows": 1688,
+      "issues_by_type": {
+        "REQUIRED_BLANK": 3701,
+        "INVALID_BEHAVIOR": 164,
+        "STATUS_NOT_DONE": 1789,
+        "INVALID_GRADE": 1685,
+        "QUOTE_NOT_LITERAL": 1
+      },
+      "affected_question_ids": 267,
+      "affected_passage_pairs": 1688,
+      "categorical_counts": {
+        "behavior:": 164,
+        "decision:KEEP": 265,
+        "behavior:unclear": 103,
+        "decision:REVISE": 3,
+        "behavior:answer": 1,
+        "grade:": 1685,
+        "grade:1": 1,
+        "grade:0": 2
+      },
+      "blank_editable_cells_by_field": {
+        "CAU_HOI:behavior_label": 164,
+        "CAU_HOI:question_decision": 0,
+        "CAU_HOI:reference_answer": 164,
+        "CAU_HOI:query_revision": 265,
+        "CAU_HOI:task_type": 0,
+        "CAU_HOI:evidence_search_notes": 0,
+        "CAU_HOI:reviewer_id": 0,
+        "CAU_HOI:review_status": 0,
+        "CAU_HOI:reviewer_notes": 265,
+        "BANG_CHUNG:relevance_grade": 1685,
+        "BANG_CHUNG:evidence_quote": 1687,
+        "BANG_CHUNG:reviewer_id": 1688,
+        "BANG_CHUNG:review_status": 0,
+        "BANG_CHUNG:reviewer_notes": 1685
+      }
+    },
+    "R2_COMPLETED": {
+      "filename": "reviewer_02_round2_COMPLETED.xlsx",
+      "sha256": "7aa4f4646c584308389136554d2a712dbe324d36d88f899e41b2ba4b5c7c182b",
+      "question_rows": 268,
+      "passage_rows": 1688,
+      "issues_by_type": {
+        "STATUS_NOT_DONE": 221
+      },
+      "affected_question_ids": 103,
+      "affected_passage_pairs": 118,
+      "categorical_counts": {
+        "behavior:answer": 93,
+        "decision:KEEP": 265,
+        "behavior:correct": 72,
+        "behavior:unclear": 103,
+        "decision:REVISE": 3,
+        "grade:0": 1332,
+        "grade:1": 164,
+        "grade:2": 192
+      },
+      "blank_editable_cells_by_field": {
+        "CAU_HOI:behavior_label": 0,
+        "CAU_HOI:question_decision": 0,
+        "CAU_HOI:reference_answer": 0,
+        "CAU_HOI:query_revision": 265,
+        "CAU_HOI:task_type": 0,
+        "CAU_HOI:evidence_search_notes": 0,
+        "CAU_HOI:reviewer_id": 0,
+        "CAU_HOI:review_status": 0,
+        "CAU_HOI:reviewer_notes": 265,
+        "BANG_CHUNG:relevance_grade": 0,
+        "BANG_CHUNG:evidence_quote": 1332,
+        "BANG_CHUNG:reviewer_id": 0,
+        "BANG_CHUNG:review_status": 0,
+        "BANG_CHUNG:reviewer_notes": 0
+      }
+    }
+  },
+  "R2_membership": {
+    "CAU_HOI": {
+      "only_FINAL": 0,
+      "only_COMPLETED": 0
+    },
+    "BANG_CHUNG": {
+      "only_FINAL": 0,
+      "only_COMPLETED": 0
+    }
+  },
+  "R2_changed_cells": 7427,
+  "R2_changes_by_field": {
+    "CAU_HOI:behavior_label": 164,
+    "CAU_HOI:reference_answer": 164,
+    "BANG_CHUNG:relevance_grade": 1685,
+    "BANG_CHUNG:reviewer_id": 1688,
+    "BANG_CHUNG:review_status": 1685,
+    "BANG_CHUNG:reviewer_notes": 1685,
+    "BANG_CHUNG:evidence_quote": 356
+  },
+  "R2_blanks_filled": 5741,
+  "R2_nonblank_values_changed": 1686,
+  "R2_immutable_fields_changed": 0,
+  "R1_comparisons": {
+    "R2_FINAL": {
+      "matched_queries": 268,
+      "matched_passages": 1688,
+      "question_text_membership_equal": true,
+      "passage_membership_equal": true,
+      "behavior_label": {
+        "n": 268,
+        "equal": 104,
+        "observed_agreement": 0.3880597014925373,
+        "expected_agreement": 0.14900311873468478,
+        "cohen_kappa": 0.28091358267072414,
+        "confusion": [
+          {
+            "first": "answer",
+            "second": "",
+            "count": 92
+          },
+          {
+            "first": "answer",
+            "second": "answer",
+            "count": 1
+          },
+          {
+            "first": "correct",
+            "second": "",
+            "count": 72
+          },
+          {
+            "first": "unclear",
+            "second": "unclear",
+            "count": 103
+          }
+        ]
+      },
+      "question_decision": {
+        "n": 268,
+        "equal": 262,
+        "observed_agreement": 0.9776119402985075,
+        "expected_agreement": 0.9559757184228114,
+        "cohen_kappa": 0.4914611005692604,
+        "confusion": [
+          {
+            "first": "KEEP",
+            "second": "KEEP",
+            "count": 259
+          },
+          {
+            "first": "REVISE",
+            "second": "KEEP",
+            "count": 6
+          },
+          {
+            "first": "REVISE",
+            "second": "REVISE",
+            "count": 3
+          }
+        ]
+      },
+      "task_type": {
+        "n": 268,
+        "equal": 232,
+        "observed_agreement": 0.8656716417910447,
+        "expected_agreement": 0.2541907997326799,
+        "cohen_kappa": 0.8198891108331622,
+        "confusion": [
+          {
+            "first": "access_logistics",
+            "second": "access_logistics",
+            "count": 7
+          },
+          {
+            "first": "access_logistics",
+            "second": "destination_choice",
+            "count": 1
+          },
+          {
+            "first": "access_logistics",
+            "second": "other",
+            "count": 1
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "cultural_event_information",
+            "count": 54
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "destination_choice",
+            "count": 2
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "other",
+            "count": 4
+          },
+          {
+            "first": "destination_choice",
+            "second": "cultural_event_information",
+            "count": 3
+          },
+          {
+            "first": "destination_choice",
+            "second": "destination_choice",
+            "count": 17
+          },
+          {
+            "first": "destination_choice",
+            "second": "other",
+            "count": 6
+          },
+          {
+            "first": "other",
+            "second": "cultural_event_information",
+            "count": 4
+          },
+          {
+            "first": "other",
+            "second": "other",
+            "count": 48
+          },
+          {
+            "first": "price_eligibility",
+            "second": "price_eligibility",
+            "count": 100
+          },
+          {
+            "first": "visit_timing",
+            "second": "cultural_event_information",
+            "count": 5
+          },
+          {
+            "first": "visit_timing",
+            "second": "other",
+            "count": 10
+          },
+          {
+            "first": "visit_timing",
+            "second": "visit_timing",
+            "count": 6
+          }
+        ]
+      },
+      "relevance_grade": {
+        "n": 1688,
+        "equal": 2,
+        "observed_agreement": 0.001184834123222749,
+        "expected_agreement": 0.0009988263965319737,
+        "cohen_kappa": 0.00018619370187507604,
+        "confusion": [
+          {
+            "first": "0",
+            "second": "",
+            "count": 1330
+          },
+          {
+            "first": "0",
+            "second": "0",
+            "count": 2
+          },
+          {
+            "first": "0",
+            "second": "1",
+            "count": 1
+          },
+          {
+            "first": "1",
+            "second": "",
+            "count": 180
+          },
+          {
+            "first": "2",
+            "second": "",
+            "count": 175
+          }
+        ]
+      }
+    },
+    "R2_COMPLETED": {
+      "matched_queries": 268,
+      "matched_passages": 1688,
+      "question_text_membership_equal": true,
+      "passage_membership_equal": true,
+      "behavior_label": {
+        "n": 268,
+        "equal": 268,
+        "observed_agreement": 1.0,
+        "expected_agreement": 0.34030407663176654,
+        "cohen_kappa": 1.0,
+        "confusion": [
+          {
+            "first": "answer",
+            "second": "answer",
+            "count": 93
+          },
+          {
+            "first": "correct",
+            "second": "correct",
+            "count": 72
+          },
+          {
+            "first": "unclear",
+            "second": "unclear",
+            "count": 103
+          }
+        ]
+      },
+      "question_decision": {
+        "n": 268,
+        "equal": 262,
+        "observed_agreement": 0.9776119402985075,
+        "expected_agreement": 0.9559757184228114,
+        "cohen_kappa": 0.4914611005692604,
+        "confusion": [
+          {
+            "first": "KEEP",
+            "second": "KEEP",
+            "count": 259
+          },
+          {
+            "first": "REVISE",
+            "second": "KEEP",
+            "count": 6
+          },
+          {
+            "first": "REVISE",
+            "second": "REVISE",
+            "count": 3
+          }
+        ]
+      },
+      "task_type": {
+        "n": 268,
+        "equal": 232,
+        "observed_agreement": 0.8656716417910447,
+        "expected_agreement": 0.2541907997326799,
+        "cohen_kappa": 0.8198891108331622,
+        "confusion": [
+          {
+            "first": "access_logistics",
+            "second": "access_logistics",
+            "count": 7
+          },
+          {
+            "first": "access_logistics",
+            "second": "destination_choice",
+            "count": 1
+          },
+          {
+            "first": "access_logistics",
+            "second": "other",
+            "count": 1
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "cultural_event_information",
+            "count": 54
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "destination_choice",
+            "count": 2
+          },
+          {
+            "first": "cultural_event_information",
+            "second": "other",
+            "count": 4
+          },
+          {
+            "first": "destination_choice",
+            "second": "cultural_event_information",
+            "count": 3
+          },
+          {
+            "first": "destination_choice",
+            "second": "destination_choice",
+            "count": 17
+          },
+          {
+            "first": "destination_choice",
+            "second": "other",
+            "count": 6
+          },
+          {
+            "first": "other",
+            "second": "cultural_event_information",
+            "count": 4
+          },
+          {
+            "first": "other",
+            "second": "other",
+            "count": 48
+          },
+          {
+            "first": "price_eligibility",
+            "second": "price_eligibility",
+            "count": 100
+          },
+          {
+            "first": "visit_timing",
+            "second": "cultural_event_information",
+            "count": 5
+          },
+          {
+            "first": "visit_timing",
+            "second": "other",
+            "count": 10
+          },
+          {
+            "first": "visit_timing",
+            "second": "visit_timing",
+            "count": 6
+          }
+        ]
+      },
+      "relevance_grade": {
+        "n": 1688,
+        "equal": 1662,
+        "observed_agreement": 0.9845971563981043,
+        "expected_agreement": 0.6452980054356371,
+        "cohen_kappa": 0.9565752551777638,
+        "confusion": [
+          {
+            "first": "0",
+            "second": "0",
+            "count": 1332
+          },
+          {
+            "first": "0",
+            "second": "1",
+            "count": 1
+          },
+          {
+            "first": "1",
+            "second": "1",
+            "count": 159
+          },
+          {
+            "first": "1",
+            "second": "2",
+            "count": 21
+          },
+          {
+            "first": "2",
+            "second": "1",
+            "count": 4
+          },
+          {
+            "first": "2",
+            "second": "2",
+            "count": 171
+          }
+        ]
+      }
+    }
+  },
+  "provenance_limit": "Completeness, literal quotes and archived byte identity do not certify semantic correctness or a fresh blind independent review. R2_COMPLETED is a post-feedback version."
+}

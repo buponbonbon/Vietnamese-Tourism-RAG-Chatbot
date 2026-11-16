@@ -1,0 +1,45 @@
+{
+  "run": "R03_full_trap_reference_weighted_e3_seed_999",
+  "drive_file_id": "1kOOAERmRnOpQEjAev9vyfiUpMYBDf-BC",
+  "archive_bytes": 986929005,
+  "downloaded_bytes_for_small_records_and_header": 115614,
+  "range_requests": 14,
+  "small_files": [
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/final_model/config.json",
+      "bytes": 876,
+      "sha256": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/manifest.json",
+      "bytes": 1263,
+      "sha256": "c26a2cf2de2bafbc150711b44496b6340eda6586b84ca73495798157f2dd6d36"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/progress.jsonl",
+      "bytes": 112682,
+      "sha256": "54b513a400dd2385b8fa466fa99837fdf56664feb4120d9da70da6adee6250ae"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/test_scores.json",
+      "bytes": 212767,
+      "sha256": "21e6aed21944366f07ab9a54fbd8348bbeadb8aca73d0ae8648d56ef2a054de1"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/validation_epoch_1.json",
+      "bytes": 176095,
+      "sha256": "2783c51d010e988f422c9cdffe429c0736241869124f34255f2801cc3db3ff8f"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/validation_epoch_2.json",
+      "bytes": 176030,
+      "sha256": "12377918df217cd9c8c1e65d0da5226adef39086c5e39e3796aa77f545fa0f04"
+    },
+    {
+      "path": "R03_full_trap_reference_weighted_e3_seed_999/validation_epoch_3.json",
+      "bytes": 176151,
+      "sha256": "f414e34a5b837c202a45c3b3ab48ad30203f85bd83f502529d525ea2cf5d865c"
+    }
+  ],
+  "large_weight_sha256_recomputed": false
+}

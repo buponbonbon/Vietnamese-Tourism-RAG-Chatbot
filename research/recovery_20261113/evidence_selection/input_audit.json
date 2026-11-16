@@ -1,0 +1,168 @@
+{
+  "status": "COMPLETE",
+  "normalization": "Unicode NFC, collapsed whitespace, case preserved",
+  "cohort_queries": 140,
+  "native_grade_counts": {
+    "2": 49,
+    "0": 622,
+    "1": 29
+  },
+  "behavior_counts": {
+    "answer": 79,
+    "correct": 61
+  },
+  "recorded_split_counts": {
+    "train": 31,
+    "test": 32,
+    "calibration": 35,
+    "validation": 42
+  },
+  "family_ids": 81,
+  "duplicate_same_query_text_groups": 25,
+  "duplicate_text_grade_conflicts": 0,
+  "duplicate_rows": [
+    [
+      16,
+      17
+    ],
+    [
+      51,
+      52
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      82,
+      83
+    ],
+    [
+      138,
+      139
+    ],
+    [
+      158,
+      159
+    ],
+    [
+      176,
+      177
+    ],
+    [
+      183,
+      184
+    ],
+    [
+      202,
+      203
+    ],
+    [
+      215,
+      216
+    ],
+    [
+      260,
+      261
+    ],
+    [
+      266,
+      267
+    ],
+    [
+      303,
+      304
+    ],
+    [
+      307,
+      308
+    ],
+    [
+      355,
+      356
+    ],
+    [
+      382,
+      383
+    ],
+    [
+      437,
+      438
+    ],
+    [
+      440,
+      441
+    ],
+    [
+      467,
+      468
+    ],
+    [
+      535,
+      536
+    ],
+    [
+      541,
+      542
+    ],
+    [
+      558,
+      559
+    ],
+    [
+      608,
+      609
+    ],
+    [
+      657,
+      658
+    ],
+    [
+      683,
+      684
+    ]
+  ],
+  "exposure": {
+    "train_moc_0.json": {
+      "sha256": "e701677e4073b167e69734d9d67e5beb32f6a84e074f41cf7901d3cd3e9132f1",
+      "training_or_pair_rows": 7618,
+      "exact_query_overlap": 0,
+      "scored_rows_with_exact_passage_overlap": 0,
+      "exact_query_passage_overlap": 0,
+      "native_rows_with_exact_passage_overlap": 0,
+      "oracle_rows_with_exact_passage_overlap": 0
+    },
+    "train_moc_13.json": {
+      "sha256": "cf28b8bf4fded1337b5e8e31bf310083e6535a73cf9d07219300ce217e7a0a16",
+      "training_or_pair_rows": 8668,
+      "exact_query_overlap": 0,
+      "scored_rows_with_exact_passage_overlap": 15,
+      "exact_query_passage_overlap": 0,
+      "native_rows_with_exact_passage_overlap": 15,
+      "oracle_rows_with_exact_passage_overlap": 0
+    },
+    "cross_encoder_VAL.json": {
+      "sha256": "ecb977cfae667f0654cfabc945d4da6a2ea869e996138bd75a359d18a093bab3",
+      "training_or_pair_rows": 1033,
+      "exact_query_overlap": 0,
+      "scored_rows_with_exact_passage_overlap": 1,
+      "exact_query_passage_overlap": 0,
+      "native_rows_with_exact_passage_overlap": 1,
+      "oracle_rows_with_exact_passage_overlap": 0
+    },
+    "cross_encoder_TEST.json": {
+      "sha256": "473d43d8376ba6ab828dfe92b84af2995d4555ee4b47e53364df7a8c83089558",
+      "training_or_pair_rows": 1136,
+      "exact_query_overlap": 0,
+      "scored_rows_with_exact_passage_overlap": 0,
+      "exact_query_passage_overlap": 0,
+      "native_rows_with_exact_passage_overlap": 0,
+      "oracle_rows_with_exact_passage_overlap": 0
+    }
+  },
+  "limits": [
+    "Development cohort pools multiple recorded splits, not a newly held-out test.",
+    "Exact passage reuse is a limit on generalization; it does not prove query-dependent relevance labels contradictory.",
+    "No exact overlap does not establish semantic disjointness or absence of pretrained exposure."
+  ]
+}

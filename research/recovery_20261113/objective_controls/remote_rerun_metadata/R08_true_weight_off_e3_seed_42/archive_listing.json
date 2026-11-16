@@ -1,0 +1,74 @@
+[
+  {
+    "name": "R08_true_weight_off_e3_seed_42/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/final_model/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/final_model/config.json",
+    "size": 876,
+    "compressed_bytes": 419,
+    "crc32": "dbcafd30"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/final_model/model.safetensors",
+    "size": 1112201932,
+    "compressed_bytes": 982836060,
+    "crc32": "ba1a39d5"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/final_model/tokenizer.json",
+    "size": 17098349,
+    "compressed_bytes": 4009696,
+    "crc32": "a78cc96c"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/final_model/tokenizer_config.json",
+    "size": 423,
+    "compressed_bytes": 206,
+    "crc32": "31bcce88"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/manifest.json",
+    "size": 1231,
+    "compressed_bytes": 628,
+    "crc32": "07e8f6d2"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/progress.jsonl",
+    "size": 112637,
+    "compressed_bytes": 26973,
+    "crc32": "50ec89e0"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/test_scores.json",
+    "size": 212421,
+    "compressed_bytes": 13826,
+    "crc32": "f5322b25"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/validation_epoch_1.json",
+    "size": 176075,
+    "compressed_bytes": 12597,
+    "crc32": "2cd62383"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/validation_epoch_2.json",
+    "size": 176083,
+    "compressed_bytes": 12419,
+    "crc32": "a3ba1027"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_42/validation_epoch_3.json",
+    "size": 175938,
+    "compressed_bytes": 12438,
+    "crc32": "ccf2ebfb"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE",
+  "models": [
+    {
+      "model": "BGE_pretrained",
+      "sha256": "860ab5d98e2efc2796e03b9b37f5aa58fde797374daecf8135f828949c099cb1"
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_42",
+      "sha256": "6379e84dbf7e72d098dcf01bd1cc78837e61d5b8aa463bc57a497a2bfde25b06"
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_123",
+      "sha256": "d1fc2a147d86fa9ebbbd9b28248e534d1f13c0d8c65934d4c83c2b083b59aa40"
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_999",
+      "sha256": "bb26d85148fd543a77d4d3656d9985f591a116416d9ee0d10515c4a9baeaaffb"
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_42",
+      "sha256": "73603ee901d89a9ef797359aaf977828a592f6716cf931857db752c0c0d85353"
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_123",
+      "sha256": "49b5ff7ec30e6c25411caac8e4448b19d6daebba086af25342c77cfe8f07f6bc"
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_999",
+      "sha256": "26e3691edad6d6bd7d5ad8c7427ec7edf83b4f68e035ae9001616af3e98c063a"
+    },
+    {
+      "model": "Q_quality_mask_seed_42",
+      "sha256": "24abaf299fbb01f163e3ae65c9220715d936912c37955d0aa55d44b952628cdd"
+    },
+    {
+      "model": "Q_quality_mask_seed_123",
+      "sha256": "1c293a20d7e645785d40cc60f8be6520e8b8dca02dc097ec8b777729ed68f308"
+    },
+    {
+      "model": "Q_quality_mask_seed_999",
+      "sha256": "c65cc90e42847d44762456785491b3dd9af31b78b7ec6ad08a32542c5edd279d"
+    },
+    {
+      "model": "R_quality_mask_seed_42",
+      "sha256": "207379681c3b37f294c4a2a67e4c2e90c6d5b9de6befeebe524e42d0a4961fd4"
+    },
+    {
+      "model": "R_quality_mask_seed_123",
+      "sha256": "d269c4e86cf491c00d6a02441c0e84986ff438fc4998083d1026b8767235ab02"
+    },
+    {
+      "model": "R_quality_mask_seed_999",
+      "sha256": "a4677235d6a433d284a0d638f571d9a10daed8dc9a4ad63300e0b5f6ae806adf"
+    }
+  ],
+  "protocol_sha256": "851fb56c2d43b7389b8af9f23d88b13d5247d92ae9cf0576a3ef15677424608d",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "device": "cpu",
+    "dtype": "float32",
+    "attention": "sdpa",
+    "threads": 4,
+    "batch_size": 4,
+    "padding": "dynamic_longest",
+    "max_length": 512,
+    "deterministic_algorithms": true
+  },
+  "elapsed_current_invocation_seconds": 1734.6661947279936
+}

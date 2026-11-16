@@ -1,0 +1,45 @@
+{
+  "run": "R08_true_weight_off_e3_seed_999",
+  "drive_file_id": "1Uxp0am3cfZAWYJtrCjq--zmmlJPyEIUO",
+  "archive_bytes": 986929819,
+  "downloaded_bytes_for_small_records_and_header": 114744,
+  "range_requests": 14,
+  "small_files": [
+    {
+      "path": "R08_true_weight_off_e3_seed_999/final_model/config.json",
+      "bytes": 876,
+      "sha256": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/manifest.json",
+      "bytes": 1234,
+      "sha256": "55db14274929ba2823a7b21c33e4a48a44f1d659934dd5ac97c15ec565bcf369"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/progress.jsonl",
+      "bytes": 112497,
+      "sha256": "7a1590bee9f53fce734c00e94f3cb8884ea90e944f6c06092168ed8c05758937"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/test_scores.json",
+      "bytes": 212577,
+      "sha256": "96bc23cfc6ac5e968ae1ce43239f3c3f8f3813326f6a4ae3b7e1b847b1f350d9"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/validation_epoch_1.json",
+      "bytes": 176321,
+      "sha256": "23a8bae20368fc63d7c351a4b5601e09d5e5a7f53289dee1b577802269339ed8"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/validation_epoch_2.json",
+      "bytes": 175909,
+      "sha256": "07fd073b0ae0785203fac7cb0d0fb84c0e7d78b9552c93991b28f5a46148c558"
+    },
+    {
+      "path": "R08_true_weight_off_e3_seed_999/validation_epoch_3.json",
+      "bytes": 176072,
+      "sha256": "e26cdb27a6e15b39e19a21f658694e0f86345fe72effcb505ef691827b8b66be"
+    }
+  ],
+  "large_weight_sha256_recomputed": false
+}

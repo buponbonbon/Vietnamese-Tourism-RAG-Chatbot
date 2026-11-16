@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "scope": "Recalculation of exported logits and run logs, plus structural weight headers. No fresh R03/R05/R08 inference or full large-weight checksum recomputation.",
+  "test_sha256": "473d43d8376ba6ab828dfe92b84af2995d4555ee4b47e53364df7a8c83089558",
+  "plan_sha256_recorded": "5fc0eff84dcd1f4bc32b4d4897f662c01e4ec5e7c39591bcffa6137a7d07ea0f",
+  "returned_config_transformers_version": [
+    "5.14.1"
+  ],
+  "runs": [
+    {
+      "condition": "R03",
+      "seed": 123,
+      "correct": 1103,
+      "ties": 7,
+      "accuracy": 0.9709507042253521,
+      "filtered_accuracy": 0.9769503546099291,
+      "half_tie_accuracy": 0.9740316901408451,
+      "test_scores_sha256": "2862a75158ff079fea3935549b85ad708393e9a737d45f0f5007056a1dfcdfc0",
+      "declared_weight_sha256": "27c0dd7b943bc66c41c28e1bfbab31348754cf6858e2e7fc559e6cc13c2c58ef",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R03",
+      "seed": 42,
+      "correct": 1095,
+      "ties": 14,
+      "accuracy": 0.9639084507042254,
+      "filtered_accuracy": 0.9698581560283688,
+      "half_tie_accuracy": 0.9700704225352113,
+      "test_scores_sha256": "eef053d72994b9c0f18b96e0298bfcb3a2aca89da4458042798658bf1e7688ff",
+      "declared_weight_sha256": "56fa5427583d53a92dd1cd1ca8e77030a851177f6e3e75fa858fa8ad4979d9c2",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R03",
+      "seed": 999,
+      "correct": 1104,
+      "ties": 7,
+      "accuracy": 0.971830985915493,
+      "filtered_accuracy": 0.9778368794326241,
+      "half_tie_accuracy": 0.9749119718309859,
+      "test_scores_sha256": "21e6aed21944366f07ab9a54fbd8348bbeadb8aca73d0ae8648d56ef2a054de1",
+      "declared_weight_sha256": "ed5d915f1411e4b6de2927207045f8e1a46ce25a8f4112cf9e39179bf98c51b1",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R05",
+      "seed": 123,
+      "correct": 1102,
+      "ties": 7,
+      "accuracy": 0.9700704225352113,
+      "filtered_accuracy": 0.976063829787234,
+      "half_tie_accuracy": 0.9731514084507042,
+      "test_scores_sha256": "e5ce1ec6697c2f1178cbc867b2cc74d022bed43759fc31d9df1c63b127857571",
+      "declared_weight_sha256": "7bfec64a482064222e4a2fbee5db556f9c9231ae2c904f403ffae2b6bbbccd15",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R05",
+      "seed": 42,
+      "correct": 1102,
+      "ties": 8,
+      "accuracy": 0.9700704225352113,
+      "filtered_accuracy": 0.976063829787234,
+      "half_tie_accuracy": 0.9735915492957746,
+      "test_scores_sha256": "58b42b15a072a75eca2b92500637fe4418cb2b9426695e782bf23f4bc5d62a28",
+      "declared_weight_sha256": "a27a3b29d9a53146567ae16050a9c9199ba264d2cba3c0d2eddb7658fb71aff6",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R05",
+      "seed": 999,
+      "correct": 1099,
+      "ties": 9,
+      "accuracy": 0.9674295774647887,
+      "filtered_accuracy": 0.973404255319149,
+      "half_tie_accuracy": 0.9713908450704225,
+      "test_scores_sha256": "3869441d71e2454e30c01f3a4a5c670cc6e8c20f40fabd4c02d34541360f9e5c",
+      "declared_weight_sha256": "6b08e60254b3224e11c7fe81fc6c0b4544908ef6a9d44a2cab155f44a76b55e6",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R08",
+      "seed": 123,
+      "correct": 1100,
+      "ties": 8,
+      "accuracy": 0.9683098591549296,
+      "filtered_accuracy": 0.974290780141844,
+      "half_tie_accuracy": 0.971830985915493,
+      "test_scores_sha256": "428fe3c38099c80bc396712842b7f2a69505cb3a19533e3605d2d813995ab9a1",
+      "declared_weight_sha256": "913319d5783c8ff258e3012f02446ef80b133e530cea86b7b78d92e465fbe2e8",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R08",
+      "seed": 42,
+      "correct": 1099,
+      "ties": 12,
+      "accuracy": 0.9674295774647887,
+      "filtered_accuracy": 0.973404255319149,
+      "half_tie_accuracy": 0.9727112676056338,
+      "test_scores_sha256": "a7914c6c64fed18350ed84f025bbe9e526eca5776a2457691d0b197aaa13cbe5",
+      "declared_weight_sha256": "6749434b7b22e2050a171d6e234e130bb9550ad037bd08077282542d3c21e737",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    },
+    {
+      "condition": "R08",
+      "seed": 999,
+      "correct": 1104,
+      "ties": 8,
+      "accuracy": 0.971830985915493,
+      "filtered_accuracy": 0.9778368794326241,
+      "half_tie_accuracy": 0.9753521126760564,
+      "test_scores_sha256": "96bc23cfc6ac5e968ae1ce43239f3c3f8f3813326f6a4ae3b7e1b847b1f350d9",
+      "declared_weight_sha256": "60432d070e54968f2994a842a5d93b9963802ab4c26db64d4c507400c99fedd4",
+      "optimizer_updates": 408,
+      "pair_presentations": 26004
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "R03",
+      "correct_by_seed": [
+        1095,
+        1103,
+        1104
+      ],
+      "ties_by_seed": [
+        14,
+        7,
+        7
+      ],
+      "mean_accuracy": 0.9688967136150235,
+      "population_sd": 0.0035454947105617906,
+      "filtered_mean_accuracy": 0.9748817966903073,
+      "half_tie_mean_accuracy": 0.9730046948356809
+    },
+    {
+      "condition": "R05",
+      "correct_by_seed": [
+        1102,
+        1102,
+        1099
+      ],
+      "ties_by_seed": [
+        8,
+        7,
+        9
+      ],
+      "mean_accuracy": 0.9691901408450704,
+      "population_sd": 0.0012449063049058788,
+      "filtered_mean_accuracy": 0.975177304964539,
+      "half_tie_mean_accuracy": 0.9727112676056339
+    },
+    {
+      "condition": "R08",
+      "correct_by_seed": [
+        1099,
+        1100,
+        1104
+      ],
+      "ties_by_seed": [
+        12,
+        8,
+        8
+      ],
+      "mean_accuracy": 0.9691901408450705,
+      "population_sd": 0.0019016257917863501,
+      "filtered_mean_accuracy": 0.975177304964539,
+      "half_tie_mean_accuracy": 0.9732981220657276
+    }
+  ],
+  "paired_tests": [
+    {
+      "reference": "R03",
+      "other": "R05",
+      "seed": 42,
+      "reference_only": 1,
+      "other_only": 8,
+      "p_exact_two_sided": 0.0390625,
+      "p_holm": 0.234375
+    },
+    {
+      "reference": "R03",
+      "other": "R05",
+      "seed": 123,
+      "reference_only": 2,
+      "other_only": 1,
+      "p_exact_two_sided": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "R03",
+      "other": "R05",
+      "seed": 999,
+      "reference_only": 6,
+      "other_only": 1,
+      "p_exact_two_sided": 0.125,
+      "p_holm": 0.625
+    },
+    {
+      "reference": "R03",
+      "other": "R08",
+      "seed": 42,
+      "reference_only": 5,
+      "other_only": 9,
+      "p_exact_two_sided": 0.4239501953125,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "R03",
+      "other": "R08",
+      "seed": 123,
+      "reference_only": 4,
+      "other_only": 1,
+      "p_exact_two_sided": 0.375,
+      "p_holm": 1.0
+    },
+    {
+      "reference": "R03",
+      "other": "R08",
+      "seed": 999,
+      "reference_only": 2,
+      "other_only": 2,
+      "p_exact_two_sided": 1.0,
+      "p_holm": 1.0
+    }
+  ],
+  "exploratory_source_group_bootstrap": [
+    {
+      "other_minus_R03": "R05",
+      "mean_difference": 0.00029342723004694836,
+      "exploratory_group_bootstrap_95_percentile_interval": [
+        -0.0017841213202497768,
+        0.0023641711701497714
+      ],
+      "replicates": 20000,
+      "seed": 20261112
+    },
+    {
+      "other_minus_R03": "R08",
+      "mean_difference": 0.00029342723004694836,
+      "exploratory_group_bootstrap_95_percentile_interval": [
+        -0.002483495146962805,
+        0.0028763735096106295
+      ],
+      "replicates": 20000,
+      "seed": 20261112
+    }
+  ],
+  "invalid_test_rows_zero_based": [
+    1008,
+    1014,
+    1018,
+    1019,
+    1047,
+    1079,
+    1087,
+    1088
+  ],
+  "source_groups": 247,
+  "bootstrap_note": "Fresh exploratory reanalysis on 12 November with explicitly recorded seed; replaces the unrecorded-seed rounded bootstrap intervals in the uploaded draft."
+}

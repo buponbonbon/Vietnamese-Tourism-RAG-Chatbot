@@ -1,0 +1,17 @@
+# JSON reports are intentionally tracked only inside this review bundle.
+!*.json
+!*.jsonl
+__pycache__/
+*.pyc
+*.xlsx
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.tex
+*.bib
+*.pdf
+*.zip
+.env*
+evidence_selection/source_inputs/
+objective_controls/source_inputs/

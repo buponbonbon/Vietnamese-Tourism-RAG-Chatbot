@@ -1,0 +1,74 @@
+[
+  {
+    "name": "R08_true_weight_off_e3_seed_123/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/final_model/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/final_model/config.json",
+    "size": 876,
+    "compressed_bytes": 419,
+    "crc32": "dbcafd30"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/final_model/model.safetensors",
+    "size": 1112201932,
+    "compressed_bytes": 982845409,
+    "crc32": "a811c41d"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/final_model/tokenizer.json",
+    "size": 17098349,
+    "compressed_bytes": 4009696,
+    "crc32": "a78cc96c"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/final_model/tokenizer_config.json",
+    "size": 423,
+    "compressed_bytes": 206,
+    "crc32": "31bcce88"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/manifest.json",
+    "size": 1234,
+    "compressed_bytes": 627,
+    "crc32": "58454af8"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/progress.jsonl",
+    "size": 112410,
+    "compressed_bytes": 26961,
+    "crc32": "055d27ee"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/test_scores.json",
+    "size": 212587,
+    "compressed_bytes": 13964,
+    "crc32": "91e74b04"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/validation_epoch_1.json",
+    "size": 176466,
+    "compressed_bytes": 12726,
+    "crc32": "222738ef"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/validation_epoch_2.json",
+    "size": 175893,
+    "compressed_bytes": 12522,
+    "crc32": "1147d6a6"
+  },
+  {
+    "name": "R08_true_weight_off_e3_seed_123/validation_epoch_3.json",
+    "size": 175982,
+    "compressed_bytes": 12520,
+    "crc32": "68873a64"
+  }
+]

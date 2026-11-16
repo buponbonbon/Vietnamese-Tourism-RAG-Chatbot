@@ -1,0 +1,56 @@
+{
+  "status": "COMPLETE",
+  "models": [
+    {
+      "model_name": "BGE_pretrained",
+      "scores_sha256": "2c8bb14a5db5427ff71c3d0c8c45d895171652deadd61d158bf7bb184e4ddd9b",
+      "rows": 2341
+    },
+    {
+      "model_name": "M0_fixed_1p0_weighted_matched_seed_42",
+      "scores_sha256": "9403745adc49437a659627260dd8bbc6d44423192d761d740c060bd01060f217",
+      "rows": 2341
+    },
+    {
+      "model_name": "M0_fixed_1p0_weighted_matched_seed_123",
+      "scores_sha256": "a483b70f930520babd523ee86ed8f66b90e6fad30a555e6f3f5d0aeb62f9d186",
+      "rows": 2341
+    },
+    {
+      "model_name": "M0_fixed_1p0_weighted_matched_seed_999",
+      "scores_sha256": "82de9a67f880300ba9f3fb71a5f59f505106f776668af59e3189a74a8a0b55ed",
+      "rows": 2341
+    },
+    {
+      "model_name": "M1_fixed_1p0_weighted_matched_seed_42",
+      "scores_sha256": "de66ec8a68eb5c24ddc02b496a8810a689642e708c6f2afc8657b30545425ce2",
+      "rows": 2341
+    },
+    {
+      "model_name": "M1_fixed_1p0_weighted_matched_seed_123",
+      "scores_sha256": "da664ddb434f9d493501d4cb606265ed021bf259ee04752c4441ff56afc1930a",
+      "rows": 2341
+    },
+    {
+      "model_name": "M1_fixed_1p0_weighted_matched_seed_999",
+      "scores_sha256": "396c9b21fc7f4cfefb0d6440cd9700487189b045f0c377ba33b49d17bae0fa51",
+      "rows": 2341
+    }
+  ],
+  "protocol_sha256": "5b776f63b7c30e9aeb6c3b99bea728c95e112911d087acda25560109edc067c9",
+  "runtime": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "python": "3.12.14",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "batch_size": 4,
+    "max_length": 512,
+    "attention": "sdpa",
+    "padding": "dynamic_longest",
+    "deterministic_algorithms": true
+  },
+  "elapsed_current_invocation_seconds": 825.9123934219999
+}

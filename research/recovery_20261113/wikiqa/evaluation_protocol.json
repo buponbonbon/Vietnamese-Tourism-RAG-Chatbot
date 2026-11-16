@@ -1,0 +1,146 @@
+{
+  "schema": "wikiqa-external-cpu-recovery-v1",
+  "frozen_utc": "2026-11-12T07:32:09.036474+00:00",
+  "dataset": {
+    "repository": "microsoft/wiki_qa",
+    "revision": "3f104672b5de699878fe7907afc486f0de325eb5",
+    "test_parquet_sha256": "eb309da359eda13c4a68fcd0dbff5cc7fc4b73d8fda2585d162606dc035b9c48",
+    "cohort": "All native test queries with at least one positive and one negative; all their native sentence candidates retained",
+    "queries": 237,
+    "candidate_rows": 2341,
+    "source_title_groups": 234,
+    "input": "question and candidate sentence; title only used for uncertainty grouping",
+    "tie_rule": "Equal logits retain original native test-row order"
+  },
+  "runtime": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "python": "3.12.14",
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "batch_size": 4,
+    "padding": "dynamic_longest",
+    "maximum_length": 512,
+    "attention": "sdpa",
+    "optimization": false
+  },
+  "models": [
+    {
+      "name": "BGE_pretrained",
+      "condition": "BGE",
+      "seed": null,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/hf_cache/models--BAAI--bge-reranker-base/snapshots/2cfc18c9415c912f9d8155881c133215df768a70",
+      "file_sha256": {
+        "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+        "model.safetensors": "ced967c45fd1902eb92716c9ceeca7c95a936770ea9db611f5a841b926e33fbd",
+        "special_tokens_map.json": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535",
+        "tokenizer.json": "9eb652ac4e40cc093272bbbe0f55d521cf67570060227109b5cdc20945a4489e",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+        "config.json": "289adf7ada1eb6b4afa7589a48a032d45a076cf2e46dcdb3b4cabc33be14f708"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_42",
+      "condition": "M0",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "77545c92bb05568bc77b9a41e8fc34f171cb2ca20be920df69bcbfdd94b2c5ae",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_123",
+      "condition": "M0",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "e7104b51f2f0ca4d6b075cd13e85105e00a3ddd4953aca1b6e7f12004f110aee",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_999",
+      "condition": "M0",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "47b561b0689a8bd912e368e11958f7a2f1c821c469102bca2872b52b8612c6bd",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_42",
+      "condition": "M1",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "a27a3b29d9a53146567ae16050a9c9199ba264d2cba3c0d2eddb7658fb71aff6",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_123",
+      "condition": "M1",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "7bfec64a482064222e4a2fbee5db556f9c9231ae2c904f403ffae2b6bbbccd15",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_999",
+      "condition": "M1",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "6b08e60254b3224e11c7fe81fc6c0b4544908ef6a9d44a2cab155f44a76b55e6",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    }
+  ],
+  "primary": {
+    "contrast": "M1 minus M0",
+    "metric": "query MRR",
+    "aggregation": "Mean over paired seeds 42, 123, 999 within each query, then query mean",
+    "bootstrap_unit": "provided document_title",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 20261111,
+    "confidence": "95% percentile interval with group resampling; query-weighted within each sampled collection of source groups"
+  },
+  "secondary": {
+    "metrics": [
+      "MAP",
+      "Hit@1"
+    ],
+    "intervals": "Exploratory unadjusted; cannot replace primary MRR based on observed results"
+  },
+  "uncertainty_scope": "Conditional on the existing fixed three seeds, selected WikiQA cohort and these checkpoints; does not estimate future training-seed uncertainty.",
+  "input_sha256": "7f5106323d6817a86564d768b19843a9fc2559d8e9fa14d8177857a71299ceca",
+  "pre_inference_script_sha256": {
+    "analyze_wikiqa.py": "c62ce78aaba6a3393c80b6a125b9699b257e515e1c621a90f154abf4d07b2dcc",
+    "prepare_inputs.py": "361cd246b84353574baf94d26d8f1563c937d7109f1314f5ddeb728e3606b61d",
+    "score_wikiqa_cpu.py": "22becd58ff37eef3b7c15f013a68f6c8768673ce2ebbf5c4dd0f228832aba650"
+  },
+  "recovery": "This is a fresh full seven-model inference after restoration. The previous partial WikiQA score exports and scoring scripts were not found in the restored snapshot; no previous partial result is treated as completed or compared numerically. The primary metric, contrast, cohort, seeds and bootstrap settings follow the preserved discussion. This is not a preregistration.",
+  "interpretation_limits": [
+    "English answer-sentence ranking is different from Vietnamese tourism grade-2 evidence sufficiency.",
+    "Language, domain and passage granularity change jointly; their causal effects are not separated.",
+    "No new corpus training, generated-answer evaluation or hallucination reduction claim."
+  ]
+}

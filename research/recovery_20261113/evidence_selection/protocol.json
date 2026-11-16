@@ -1,0 +1,262 @@
+{
+  "schema": "restored-tourism-evidence-selection-v1",
+  "frozen_utc": "2026-11-13T06:41:29.812693+00:00",
+  "source_artifacts": {
+    "status": "ELIGIBILITY_ASSESSED_NO_MODEL_SCORES_READ",
+    "reviewer_questions": 268,
+    "reviewer_passages": 1688,
+    "declared_eligibility_rule": [
+      "Both question records DONE and KEEP; same answer/correct behavior; no query rewrite field",
+      "Every native frozen BM25 top-5 candidate reviewed by both, DONE, and same numeric grade",
+      "At least one DONE consensus-grade-2 passage exists among the reviewed records"
+    ],
+    "eligible_queries": 140,
+    "native_candidate_rows": 700,
+    "source_groups": 81,
+    "native_pools_with_grade2": 45,
+    "oracle_missing_pools": 95,
+    "oracle_source_groups": 57,
+    "oracle_addition_uses_original_anchor": 95,
+    "single_positive_native_pools": 41,
+    "excluded_query_counts_by_flag": {
+      "BEHAVIOR_NOT_AGREED_ANSWER_OR_CORRECT": 103,
+      "NO_REVIEWED_GRADE2_PASSAGE": 103,
+      "QUESTION_STATUS_NOT_DONE": 103,
+      "POOL_ROW_STATUS_NOT_DONE": 16,
+      "POOL_GRADE_NOT_AGREED": 23,
+      "QUESTION_NOT_BOTH_KEEP": 9,
+      "WORDING_REVISION_PRESENT": 9
+    },
+    "eligibility_not_tuned_on_model_outcomes": true,
+    "lost_original_cohort_export_byte_identity_not_asserted": true,
+    "input_hashes": {
+      "reviewer1": "ab242188f977562fed86f9ed473439db8cd59ae2b62671db7efca46c2672aa2e",
+      "reviewer2": "7aa4f4646c584308389136554d2a712dbe324d36d88f899e41b2ba4b5c7c182b",
+      "benchmark": "e79ca318b867d5d9c11cc6f14ccfec83736e2297c9bfefe5443834b6cb0ff8fa",
+      "corpus": "bf7f14d4640e0bffea770e3859e1e297ced5f5609364df481956eb3f4ae5b390",
+      "native_bm25_top50": "05625a048e4cfb61d2eb4b3fddcbd9b2de9ffaae68b53554a8a0748abd87d400"
+    }
+  },
+  "cohort_sha256": "5e8d37ce60e9daee4775da599fbae792f83411f94af06e4b215a0eb67d9add52",
+  "scoring_pairs_sha256": "137263e516ccb1b155af975f7aad69b6c9c9fcb23e07a36c96d5c208a8f808fd",
+  "models": [
+    {
+      "name": "BGE_pretrained",
+      "condition": "BGE",
+      "seed": null,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/hf_cache/models--BAAI--bge-reranker-base/snapshots/2cfc18c9415c912f9d8155881c133215df768a70",
+      "file_sha256": {
+        "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+        "model.safetensors": "ced967c45fd1902eb92716c9ceeca7c95a936770ea9db611f5a841b926e33fbd",
+        "special_tokens_map.json": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535",
+        "tokenizer.json": "9eb652ac4e40cc093272bbbe0f55d521cf67570060227109b5cdc20945a4489e",
+        "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+        "config.json": "289adf7ada1eb6b4afa7589a48a032d45a076cf2e46dcdb3b4cabc33be14f708"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_42",
+      "condition": "M0",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "77545c92bb05568bc77b9a41e8fc34f171cb2ca20be920df69bcbfdd94b2c5ae",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_123",
+      "condition": "M0",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "e7104b51f2f0ca4d6b075cd13e85105e00a3ddd4953aca1b6e7f12004f110aee",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M0_fixed_1p0_weighted_matched_seed_999",
+      "condition": "M0",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M0_fixed_1p0_weighted_matched_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "47b561b0689a8bd912e368e11958f7a2f1c821c469102bca2872b52b8612c6bd",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_42",
+      "condition": "M1",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "a27a3b29d9a53146567ae16050a9c9199ba264d2cba3c0d2eddb7658fb71aff6",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_123",
+      "condition": "M1",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "7bfec64a482064222e4a2fbee5db556f9c9231ae2c904f403ffae2b6bbbccd15",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "M1_fixed_1p0_weighted_matched_seed_999",
+      "condition": "M1",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/recovery_20261112_001/matched_recovered/runs/M1_fixed_1p0_weighted_matched_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "6b08e60254b3224e11c7fe81fc6c0b4544908ef6a9d44a2cab155f44a76b55e6",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "Q_quality_mask_seed_42",
+      "condition": "Q",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/Q_quality_mask_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "d026ff61a1b12c20176d584d12ece49875097ff6fff606204f04c82e4723e153",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "Q_quality_mask_seed_123",
+      "condition": "Q",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/Q_quality_mask_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "2e9782a2c277c874b541aa531df595d357666943e9e3b34c8b35d515a0a7247c",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "Q_quality_mask_seed_999",
+      "condition": "Q",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/Q_quality_mask_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "52268ace09d8d5302ecff9053a3a7d3d643480464eb2231dc4ef9996cedeed2b",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "R_quality_mask_seed_42",
+      "condition": "R",
+      "seed": 42,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/R_quality_mask_seed_42/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "ae18547bf6d1c54af6347964df4a43037be6fc1c88299a740972ba9bbee86d96",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "R_quality_mask_seed_123",
+      "condition": "R",
+      "seed": 123,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/R_quality_mask_seed_123/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "73844dce311a319e1f0aedab650f6aca619abfa403a977668a9d4d74e19470eb",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    },
+    {
+      "name": "R_quality_mask_seed_999",
+      "condition": "R",
+      "seed": 999,
+      "path": "/workspace/Vietnamese-Tourism-RAG-Chatbot/data/oracle_recovery_20261113_001/quality_models/R_quality_mask_seed_999/final_model",
+      "file_sha256": {
+        "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+        "model.safetensors": "4edc24035c752f1c4ef0bf44d19bf37b608fd7d47895313b7661208ba5ce729e",
+        "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+        "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+      }
+    }
+  ],
+  "runtime": {
+    "device": "cpu",
+    "dtype": "float32",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.57.6",
+    "numpy": "2.5.4",
+    "threads": 4,
+    "batch_size": 4,
+    "attention": "sdpa",
+    "padding": "dynamic_longest",
+    "max_length": 512
+  },
+  "primary": {
+    "contrast": "M1 minus M0",
+    "outcome": "Native-pool grade-2 Hit@1",
+    "queries": 140,
+    "uncertainty": "20000 source_group_id bootstrap replicates, seed 20261113; average paired fixed seed differences within query first"
+  },
+  "oracle": {
+    "cohort": "All 95 eligible queries without consensus grade-2 evidence in the native top five",
+    "intervention": "Append the original reviewed consensus-grade-2 anchor; retain native order for ties. Leave the other 45 pools unchanged.",
+    "outcomes": [
+      "M1 minus M0 on oracle95",
+      "M1 minus M0 on all140 after intervention",
+      "Paired difference in oracle gains on the SAME full140 queries"
+    ],
+    "role": "development diagnostic; not an independent blind test"
+  },
+  "K_sweep": {
+    "cohort": "All 41 eligible native pools with exactly one grade-2 and four lower-grade candidates",
+    "K": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "subsets": "ALL combinations of K-1 distractors, each with the one sufficient passage. Preserve native row order for ties.",
+    "aggregation": "Mean subset selection rate within query, then mean query and mean fixed seeds. Do not count combinations as independent queries.",
+    "role": "diagnostic; not a new algorithm or independent tests"
+  },
+  "quality_control": {
+    "contrast": "Q minus R",
+    "role": "development/mechanism diagnostic per archived quality plan; zero-mask exposure patterns also differ"
+  },
+  "ties": "Highest pointwise score; tied scores retain native order. Oracle anchor appended last, without optimistic tie preference.",
+  "inference_reuse": "Score each of the 795 unique query/passage inputs once per model; derive all pool and subset outcomes from these pointwise scores.",
+  "uncertainty_limits": "Conditional on these 3 existing fixed seeds and these source-grouped development queries. No population-of-seeds or equivalence claim. Diagnostic intervals unadjusted.",
+  "provenance_limits": [
+    "Exact original workbook, corpus, benchmark and BM25 hashes are recovered; no byte identity with the missing previous cohort export is asserted.",
+    "Scores are freshly re-inferred; missing old logits are not reconstructed from aggregate numbers.",
+    "R2 COMPLETED is a post-feedback return; agreement is not a new blind reliability estimate.",
+    "No labels changed or filled; NEEDS_REVIEW, rewrites and nonconsensus native pools excluded by declared rule.",
+    "Unavailability means absence of grade-2 evidence in the fixed BM25 top five, not corpus-wide unanswerability.",
+    "No generation, hallucination, user utility or deployable oracle claim."
+  ],
+  "script_hashes": {
+    "prepare_protocol.py": "a5144ad43f51390e47f776341ca935653c70acd5efd68b7678adcde2478567ea",
+    "analyze_results.py": "e066cc0df909953efeee3ee1e328ef91231e78e2da19e1d0074683ed34b221c3",
+    "score_models.py": "df65a19a7e429f36a4a6722ff66f0a0d3a41cbba060fd093d6ee811e046dfc87"
+  }
+}

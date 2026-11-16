@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "native_queries": 633,
+  "native_rows": 6165,
+  "query_categories": {
+    "mixed": 237,
+    "no_positive": 390,
+    "all_positive": 6
+  },
+  "selected_queries": 237,
+  "selected_rows": 2341,
+  "source_title_groups": 234,
+  "same_query_exact_duplicate_sentence_rows_retained": [
+    {
+      "query_id": "Q1065",
+      "first_row": 2109,
+      "duplicate_row": 2110,
+      "same_label": true
+    }
+  ],
+  "overlap_checks": {
+    "normalization": "Unicode NFKC, casefold, whitespace collapse",
+    "tourism_inputs": [
+      {
+        "file": "train_moc_13.json",
+        "rows": 8668,
+        "sha256": "cf28b8bf4fded1337b5e8e31bf310083e6535a73cf9d07219300ce217e7a0a16"
+      },
+      {
+        "file": "cross_encoder_VAL.json",
+        "rows": 1033,
+        "sha256": "ecb977cfae667f0654cfabc945d4da6a2ea869e996138bd75a359d18a093bab3"
+      },
+      {
+        "file": "cross_encoder_TEST.json",
+        "rows": 1136,
+        "sha256": "473d43d8376ba6ab828dfe92b84af2995d4555ee4b47e53364df7a8c83089558"
+      }
+    ],
+    "exact_query_overlap": 0,
+    "exact_passage_overlap": 0,
+    "scope": "Only the three recovered hashed tourism pair files; no semantic or pretraining-exposure claim; later tourism benchmark exports were not recovered."
+  },
+  "native_order_preserved": true,
+  "per_candidate_filtering": false
+}

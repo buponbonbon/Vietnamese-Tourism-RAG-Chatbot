@@ -1,5 +1,12 @@
 # V2 research workflow
 
+The [13 November recovery and saved-score bundle](recovery_20261113/README.md)
+records the completed native/oracle/K analysis, nine objective controls and
+seven-model WikiQA evaluation. It includes reproducible metric checks without
+manuscripts, model weights or private reviewer workbooks. Its 140-question
+cohort remains development evidence; it is not a new blind benchmark or a
+demonstration of hallucination reduction.
+
 Latest preserved recovery report: [RECOVERY_STATUS_20261102.md](RECOVERY_STATUS_20261102.md).
 The 13 November code/results branch combines the reviewed-revision tools and
 round-two recovery audit with aggregate result tables. Manuscript files remain
