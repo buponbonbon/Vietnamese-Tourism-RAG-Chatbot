@@ -1,0 +1,6 @@
+{
+  "status": "Secondary diagnostic defined after inspecting retrieval counts and before inspecting reranking outcomes.",
+  "condition": "For each question whose accepted forum answer is absent from BM25 top five, replace BM25 rank five with the accepted answer. Preserve the first four competitors and input order. The same five-pair budget is preserved.",
+  "estimand": "On the subset missing the reference in BM25 top five, count how often each fixed checkpoint selects the reference. This is a controlled diagnostic with known IDs. It estimates neither new retriever performance nor the acceptance or factuality of other answers.",
+  "inference": "Reuse identical prior logits for the four retained answers and any cached accepted IDs. Otherwise infer the missing pair with the same tokenizer, max length/precision, batch size and model manifests. Ties follow pool order."
+}

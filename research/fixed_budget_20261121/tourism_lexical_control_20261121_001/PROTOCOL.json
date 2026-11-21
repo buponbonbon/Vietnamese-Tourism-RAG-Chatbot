@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-21",
+  "scope": "Follow-up on the existing tourism development panel. The use of symmetric Unicode tokenization was motivated by the completed external MLQA test. No new labels or checkpoint training.",
+  "pool": "Same 140 queries, 81 source groups, and 56984 text chunks from the archived tourism evaluation. Freeze legacy BM25, prior dense (Potion multilingual 128M) and legacy RRF rank artifacts.",
+  "new_arms": {
+    "unicode": "BM25 using exactly the Unicode term representation from MLQA. Use same lowercasing, stopwords, whitespace length, k1=1.5, b=.75, idf and tie by existing corpus row. Both text and query terms use Unicode alphanumeric sequences.",
+    "rrf_unicode": "RRF between the new Unicode BM25 and existing dense, per branch top 50, k=60, ties by lexical rank then dense rank then chunk ID, as in the tourism fusion implementation."
+  },
+  "primary_comparisons": ["Unicode BM25 vs legacy BM25", "RRF with Unicode vs Unicode BM25"],
+  "secondary_comparisons": ["Dense vs Unicode BM25", "RRF with legacy BM25 vs Unicode BM25", "M0 vs BGE in each fixed pool", "Raw rank 1", "Evidence-availability contrast"],
+  "endpoints": "Grade-2 Hit@1 after M0 seed42 at fixed top5, then grade-2 evidence available in top5. Also grade-2 analyst-confirmed misses due to absence vs selection under missing labels.",
+  "cross_encoder": "Archived BGE pretrained and M0 seed42. Every arm scores exactly 700 pairs. Use cached logits for identical archived query-chunk inputs, verify on eight rerun logits, and score unique new pairs under CPU FP32 SDPA, max 512, batch4, same precedence of exact archived texts. Ties follow original pool order. Token counts can differ.",
+  "judgments": "Use previously agreed grades and verified archived scoring-pair grades. Unknown query-chunk pairs remain unknown. Sharp paired bounds over binary grade-2 completions, holding any pair shared by both policies in a comparison to the same value. Bounds describe this fixed panel, not sampling intervals.",
+  "reporting": "Raw rate and loss split ranges, paired absolute differences and percent relative to the fixed old exact BM25 denominator where applicable. State a direction only when the full paired bound excludes zero. No numeric novelty or acceptance probabilities."
+}

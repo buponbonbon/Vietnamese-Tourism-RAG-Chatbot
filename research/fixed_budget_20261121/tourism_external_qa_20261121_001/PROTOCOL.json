@@ -1,0 +1,21 @@
+{
+  "study": "External Vietnamese extractive QA transfer at a fixed cross-encoder pair budget",
+  "date": "2026-11-21",
+  "scope": "A new reading of the prior tourism contrast on an independent Wikipedia source. MLQA is cross-domain. Its released gold is a known answer-bearing paragraph. Other paragraphs are unjudged.",
+  "source": "https://dl.fbaipublicfiles.com/MLQA/MLQA_V1.zip",
+  "source_archive_sha256": "246e8089933d13007fe80684d5c5c0713d6834cf8b3b4a0ec7c66f0a0d2baac8",
+  "member": "MLQA_V1/test/test-context-vi-question-vi.json",
+  "source_member_sha256": "4783e233c1811e788cfeb48e40a1e64670f17c2856c5b87c1e5b0fb1b076c098",
+  "corpus": "All exact distinct context texts in the official Vietnamese-context Vietnamese-question test file. No original question text, title augmentation, gold injection, or answer-span features in the ranks.",
+  "cohort": "All 5495 questions for retrieval. Before scoring choose 140 distinct article titles by ascending SHA256('tourism-external-qa-v1|article|' + title), then one question per article by ascending SHA256('tourism-external-qa-v1|question|' + official ID). Eligibility requires at least one validated exact answer offset and no exact normalized query or gold-passage overlap with archived M0 baseline training inputs. Keep full corpus for every arm.",
+  "primary": "RRF minus BM25 at official-gold Hit@1, M0 seed 42, sampled cohort, exactly five pairs per query in each arm.",
+  "supporting": ["Gold availability Hit@5 on all queries and on the cohort", "Dense-only alongside RRF and BM25", "Same rank-1 contrasts for BGE pretrained", "M0 minus BGE within a fixed pool", "Raw rank 1", "Partition gold misses into absent and present-not-selected"],
+  "bm25": "Project per-document underthesea segmentation and Vietnamese stop words, project query token handling, whitespace document lengths, k1=1.5, b=0.75, natural-log positive idf. Tie by corpus row. Append ties at zero when needed. Unicode letter/digit tokens on both sides are a secondary BM25-alone availability sensitivity.",
+  "dense": "minishlab/potion-multilingual-128M revision 73908c3438cf03b6a01bcb9611d62b23d0726f08. Mean static embeddings excluding unknown tokens, L2 normalize float32, max 512, no special tokens. Exact inner product over the full corpus, ties by corpus row.",
+  "rrf": "60 constant, top 50 of each branch, ties by lexical rank then dense rank then corpus row.",
+  "reranker": ["BGE_pretrained", "M0_fixed_1p0_weighted_matched_seed_42"],
+  "pool_size": 5,
+  "scoring": "Use each checkpoint's archived tokenizer and weights after SHA256 validation. CPU FP32 SDPA, deterministic PyTorch, descending logit and input order ties, max length 512, dynamic padding, batch size four. Reuse an identical query-paragraph score across pools. Record scored pairs and non-padding input tokens.",
+  "interval": "Paired percentile bootstrap with 20000 article-level draws and seed 20261121. Fixed checkpoints and sampled queries. All secondary results descriptive.",
+  "reuse_rules": "Use only the official gold ID for correctness. Treat other contexts as unjudged. Report absence and selection of the official gold, and report actual totals separately from application latency."
+}
