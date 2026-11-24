@@ -1,0 +1,190 @@
+{
+  "native_available": 20,
+  "native_missing": 4,
+  "n_new": 24,
+  "n_corpus": 437,
+  "n_scored_pairs": 124,
+  "n_checkpoint_logits": 868,
+  "models": {
+    "BM25": {
+      "native_hit": 16,
+      "replacement_hit": 0,
+      "available_native_fail": 4,
+      "metadata": {}
+    },
+    "BGE": {
+      "native_hit": 20,
+      "replacement_hit": 3,
+      "available_native_fail": 0,
+      "metadata": {
+        "checkpoint": "BGE_pretrained",
+        "checkpoint_files": {
+          "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+          "model.safetensors": "ced967c45fd1902eb92716c9ceeca7c95a936770ea9db611f5a841b926e33fbd",
+          "special_tokens_map.json": "d5469a60db23249c7f8945013d78df30b44b6bf686c6bb4740f4223f77b1b535",
+          "tokenizer.json": "9eb652ac4e40cc093272bbbe0f55d521cf67570060227109b5cdc20945a4489e",
+          "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+          "config.json": "289adf7ada1eb6b4afa7589a48a032d45a076cf2e46dcdb3b4cabc33be14f708"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 5.7220458984375e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M0_42": {
+      "native_hit": 20,
+      "replacement_hit": 3,
+      "available_native_fail": 0,
+      "metadata": {
+        "checkpoint": "M0_fixed_1p0_weighted_matched_seed_42",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "77545c92bb05568bc77b9a41e8fc34f171cb2ca20be920df69bcbfdd94b2c5ae",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 7.62939453125e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M0_123": {
+      "native_hit": 20,
+      "replacement_hit": 3,
+      "available_native_fail": 0,
+      "metadata": {
+        "checkpoint": "M0_fixed_1p0_weighted_matched_seed_123",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "e7104b51f2f0ca4d6b075cd13e85105e00a3ddd4953aca1b6e7f12004f110aee",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 1.621246337890625e-05,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M0_999": {
+      "native_hit": 20,
+      "replacement_hit": 3,
+      "available_native_fail": 0,
+      "metadata": {
+        "checkpoint": "M0_fixed_1p0_weighted_matched_seed_999",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "47b561b0689a8bd912e368e11958f7a2f1c821c469102bca2872b52b8612c6bd",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 3.5762786865234375e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M1_42": {
+      "native_hit": 10,
+      "replacement_hit": 0,
+      "available_native_fail": 10,
+      "metadata": {
+        "checkpoint": "M1_fixed_1p0_weighted_matched_seed_42",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "a27a3b29d9a53146567ae16050a9c9199ba264d2cba3c0d2eddb7658fb71aff6",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 3.0994415283203125e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M1_123": {
+      "native_hit": 10,
+      "replacement_hit": 0,
+      "available_native_fail": 10,
+      "metadata": {
+        "checkpoint": "M1_fixed_1p0_weighted_matched_seed_123",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "7bfec64a482064222e4a2fbee5db556f9c9231ae2c904f403ffae2b6bbbccd15",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 3.814697265625e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    },
+    "M1_999": {
+      "native_hit": 8,
+      "replacement_hit": 0,
+      "available_native_fail": 12,
+      "metadata": {
+        "checkpoint": "M1_fixed_1p0_weighted_matched_seed_999",
+        "checkpoint_files": {
+          "config.json": "78ae53d9dc6f4f262a266d03b381c564b6c16bfc52f0d621a8382ed89d9743cb",
+          "model.safetensors": "6b08e60254b3224e11c7fe81fc6c0b4544908ef6a9d44a2cab155f44a76b55e6",
+          "tokenizer.json": "4aea5be506ad4a746e4f2b939514140340f03af70dc086354ee4566fa1107d0d",
+          "tokenizer_config.json": "7f8e591fccaa155b910473a53702be26990095e8904323a4241f7750ecc0273e"
+        },
+        "torch": "2.5.1+cu121",
+        "transformers": "4.57.6",
+        "dtype": "float32",
+        "device": "CPU",
+        "max_tokens": 491,
+        "dynamic_padding": true,
+        "batch_size": 8,
+        "batch_consistency_max_abs_delta": 6.556510925292969e-06,
+        "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23"
+      }
+    }
+  },
+  "n_cumulative": 60,
+  "n_cumulative_native": 50,
+  "benchmark_sha256": "40cc8229e9ecb682986b145715994bab1766b3572aef17664f874dfdaa322b23",
+  "source_question_archives": {
+    "vietnam_travel_natural_20261121": 3,
+    "tourism_vietnamese_operators_20261121": 7,
+    "tourism_stage4_20261121": 11,
+    "tourism_stage4_stage5_20261122": 7,
+    "tourism_reader_scale_20261122": 8,
+    "tourism_reader_target_20261123": 24
+  }
+}

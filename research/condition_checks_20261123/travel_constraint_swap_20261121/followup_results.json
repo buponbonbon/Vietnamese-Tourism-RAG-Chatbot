@@ -1,0 +1,238 @@
+{
+  "original_sha256": "173683bb3e20deacc90db1f89ccd65d5925815e5bbd5a7de4fc5547bb2683e0a",
+  "equal_stop_sha256": "0df066392d2b732521683c97632074caebd4f39413d32eb41b3860cc3b999f3f",
+  "followup_protocol_sha256": "ed587ba94a263c3f11bc142432880653ac063f8e83f700ae26b387d6c4ebab3a",
+  "equal_stop_families_changed": 63,
+  "equal_stop_excluded": 0,
+  "seed_runs": {
+    "BGE": {
+      "42": {
+        "both_strict_pair": 82,
+        "both_unique_top1": 82,
+        "single_queries_correct": 172,
+        "same_unique_winner": 8,
+        "families": 90,
+        "query_outcomes": {
+          "gold": 172,
+          "reverse": 8
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 0
+      }
+    },
+    "M0": {
+      "42": {
+        "both_strict_pair": 87,
+        "both_unique_top1": 85,
+        "single_queries_correct": 175,
+        "same_unique_winner": 3,
+        "families": 90,
+        "query_outcomes": {
+          "reverse": 3,
+          "gold": 175,
+          "other": 2
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 2
+      },
+      "123": {
+        "both_strict_pair": 87,
+        "both_unique_top1": 87,
+        "single_queries_correct": 177,
+        "same_unique_winner": 3,
+        "families": 90,
+        "query_outcomes": {
+          "gold": 177,
+          "reverse": 3
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 1,
+        "pair_both_failed_full_pool": 0
+      },
+      "999": {
+        "both_strict_pair": 88,
+        "both_unique_top1": 88,
+        "single_queries_correct": 178,
+        "same_unique_winner": 2,
+        "families": 90,
+        "query_outcomes": {
+          "gold": 178,
+          "reverse": 2
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 0
+      }
+    },
+    "M1": {
+      "42": {
+        "both_strict_pair": 87,
+        "both_unique_top1": 13,
+        "single_queries_correct": 39,
+        "same_unique_winner": 27,
+        "families": 90,
+        "query_outcomes": {
+          "gold": 39,
+          "other": 141
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 74
+      },
+      "123": {
+        "both_strict_pair": 84,
+        "both_unique_top1": 1,
+        "single_queries_correct": 9,
+        "same_unique_winner": 50,
+        "families": 90,
+        "query_outcomes": {
+          "other": 171,
+          "gold": 9
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 83
+      },
+      "999": {
+        "both_strict_pair": 82,
+        "both_unique_top1": 3,
+        "single_queries_correct": 14,
+        "same_unique_winner": 46,
+        "families": 90,
+        "query_outcomes": {
+          "other": 166,
+          "gold": 14
+        },
+        "exact_pair_margin_ties": 0,
+        "nonzero_pair_margins_below_1e_3": 0,
+        "pair_both_failed_full_pool": 79
+      }
+    }
+  },
+  "equal_stop_runs": {
+    "BGE": {
+      "both_strict_pair": 82,
+      "both_unique_top1": 82,
+      "single_queries_correct": 172,
+      "same_unique_winner": 8,
+      "families": 90,
+      "query_outcomes": {
+        "gold": 172,
+        "reverse": 8
+      },
+      "exact_pair_margin_ties": 0,
+      "nonzero_pair_margins_below_1e_3": 0,
+      "pair_both_failed_full_pool": 0
+    },
+    "M0": {
+      "both_strict_pair": 87,
+      "both_unique_top1": 86,
+      "single_queries_correct": 176,
+      "same_unique_winner": 3,
+      "families": 90,
+      "query_outcomes": {
+        "reverse": 3,
+        "gold": 176,
+        "other": 1
+      },
+      "exact_pair_margin_ties": 0,
+      "nonzero_pair_margins_below_1e_3": 0,
+      "pair_both_failed_full_pool": 1
+    },
+    "M1": {
+      "both_strict_pair": 87,
+      "both_unique_top1": 6,
+      "single_queries_correct": 22,
+      "same_unique_winner": 35,
+      "families": 90,
+      "query_outcomes": {
+        "other": 158,
+        "gold": 22
+      },
+      "exact_pair_margin_ties": 0,
+      "nonzero_pair_margins_below_1e_3": 0,
+      "pair_both_failed_full_pool": 81
+    }
+  },
+  "comparisons": {
+    "BGE_equal_stop_minus_original": {
+      "pp": 0,
+      "interval_pp": [
+        0.0,
+        0.0
+      ],
+      "gained": 0,
+      "lost": 0,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M0_equal_stop_minus_original": {
+      "pp": 1.1111111111111112,
+      "interval_pp": [
+        0.0,
+        3.3333333333333335
+      ],
+      "gained": 1,
+      "lost": 0,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M1_equal_stop_minus_original": {
+      "pp": -7.777777777777778,
+      "interval_pp": [
+        -14.444444444444443,
+        -1.1111111111111112
+      ],
+      "gained": 1,
+      "lost": 8,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M1_minus_M0_seed_42": {
+      "pp": -80.0,
+      "interval_pp": [
+        -87.77777777777777,
+        -71.11111111111111
+      ],
+      "gained": 1,
+      "lost": 73,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M1_minus_M0_seed_123": {
+      "pp": -95.55555555555556,
+      "interval_pp": [
+        -98.88888888888889,
+        -92.22222222222223
+      ],
+      "gained": 0,
+      "lost": 86,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M1_minus_M0_seed_999": {
+      "pp": -94.44444444444444,
+      "interval_pp": [
+        -97.77777777777777,
+        -90.0
+      ],
+      "gained": 0,
+      "lost": 85,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    },
+    "M1_minus_M0_fixed_seed_averaged": {
+      "pp": -90.0,
+      "interval_pp": [
+        -92.96296296296298,
+        -86.66666666666669
+      ],
+      "gained": 0,
+      "lost": 88,
+      "bootstrap_groups": 30,
+      "replications": 20000
+    }
+  }
+}

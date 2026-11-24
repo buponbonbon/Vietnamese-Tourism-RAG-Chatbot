@@ -1,0 +1,14 @@
+{
+  "reader_cohort_index.json": "09a0d772b3355555951a4321161fa5255a7e02966e72c9b276191b6bcfc7aec8",
+  "reader_pools_s20.json": "7bb517eaad95cfb9281fa9429690e8963a1fe9eb589ba1bc782cca54b980dd70",
+  "reader_results.json": "4a370fb147a878b1122dae00e6680f71dbd987543731a3167a2c409201987ab6",
+  "reader_scores_BGE.json": "b0d9135f8a54dac6c9ecff6c3bbb53d3fcab8092c42b11e77fee3e8a5b301e15",
+  "reader_scores_M0_123.json": "0889ed92174c17d6c60b7fa9ba82b178710740c8aab2e8ca6caa443020b4b01f",
+  "reader_scores_M0_42.json": "5cd8e3d34862f057c36dab2d4a96011302304b56bae97cb9d46a3f0d25704590",
+  "reader_scores_M0_999.json": "d012c6b72f3ffa48466dce67df4a4b48fe20b10e74ed59719c63e70bf5a0c2f7",
+  "reader_scores_M1_123.json": "6f3e896275867f6b6b3173251b6e5c6050d138bce448a624af977685f48642f5",
+  "reader_scores_M1_42.json": "2197ba554a252f620f69271023be55f25574a4b27ec7dd7d5e76779e873e8a5d",
+  "reader_scores_M1_999.json": "652c388f94ae5309753a513e35517388573e1a0a5ff0c8c899b884bf9bd34a1b",
+  "reader_selection_trace.csv": "f885f169cd9f7a8ee7a0295d2d6b226baaa6a3df7ad9a0709a523f3df6a9ebc5",
+  "reader_verification.json": "772a0707388f582237c2d0570ce68d18de56424a6ec42c8f1b3d801ddb264687"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "Exploratory robustness checks specified after examining primary seed-42 results and before running these checks.",
+  "seed_check": "Replay the same frozen plain-text pools with recovered M0 and M1 seed 123 and 999 checkpoints. Report every seed and the signed matched difference. No seed selection.",
+  "length_check": "Keep all 90 primary families, queries, route/date, gold and reversed passages. Reselect the three distractors by the same network-specific unigram BM25 order and the same strict eligibility rule, additionally requiring exactly the same number of stops as the two reference passages. Use BGE, M0 seed 42 and M1 seed 42. Report any insufficient candidate count as an exclusion. The number of stops is matched; token lengths can still differ. The changed distractor pools are a robustness test, not an isolated causal estimate.",
+  "outcome": "Both strict reference-versus-reverse comparisons and both unique top-one selections among all five candidates. Use archived primary logits on identical input pairs and new CPU float32 logits on missing pairs.",
+  "artifacts": ["benchmark.json", "equal_stop.json", "scores_seed_*.json", "scores_equal_*.json"]
+}

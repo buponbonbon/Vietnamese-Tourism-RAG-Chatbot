@@ -1,0 +1,718 @@
+[
+  {
+    "id": "T01",
+    "native": [
+      "vna_pet_booking",
+      "caav_liquid2016",
+      "pq_port.29",
+      "air_ped.05",
+      "foreign_cash_border"
+    ],
+    "oracle": [
+      "vna_pet_booking",
+      "caav_liquid2016",
+      "pq_port.29",
+      "air_ped.05",
+      "rail_pet"
+    ],
+    "rating": {
+      "vna_pet_booking": 0,
+      "caav_liquid2016": 0,
+      "pq_port.29": 0,
+      "air_ped.05": 0,
+      "foreign_cash_border": 0
+    },
+    "native_sufficient": [],
+    "oracle_sufficient": [
+      "rail_pet"
+    ]
+  },
+  {
+    "id": "T02",
+    "native": [
+      "rail_discount_overlap",
+      "rail_discount_senior",
+      "air_senior_fare",
+      "air_disability_fare",
+      "e_id.02"
+    ],
+    "oracle": [
+      "rail_discount_overlap",
+      "rail_discount_senior",
+      "air_senior_fare",
+      "air_disability_fare",
+      "e_id.02"
+    ],
+    "rating": {
+      "rail_discount_overlap": 2,
+      "rail_discount_senior": 1,
+      "air_senior_fare": 1,
+      "air_disability_fare": 0,
+      "e_id.02": 0
+    },
+    "native_sufficient": [
+      "rail_discount_overlap"
+    ],
+    "oracle_sufficient": [
+      "rail_discount_overlap"
+    ]
+  },
+  {
+    "id": "T03",
+    "native": [
+      "rail_discount_senior",
+      "air_senior_fare",
+      "pq_port.37",
+      "air_disability_fare",
+      "vin_book.09"
+    ],
+    "oracle": [
+      "rail_discount_senior",
+      "air_senior_fare",
+      "pq_port.37",
+      "air_disability_fare",
+      "vin_book.09"
+    ],
+    "rating": {
+      "rail_discount_senior": 2,
+      "air_senior_fare": 1,
+      "pq_port.37": 0,
+      "air_disability_fare": 0,
+      "vin_book.09": 0
+    },
+    "native_sufficient": [
+      "rail_discount_senior"
+    ],
+    "oracle_sufficient": [
+      "rail_discount_senior"
+    ]
+  },
+  {
+    "id": "T04",
+    "native": [
+      "pas_lost.00",
+      "pas_lost.01",
+      "pas_lost.10",
+      "pas_lost.06",
+      "pas_lost.11"
+    ],
+    "oracle": [
+      "pas_lost.00",
+      "pas_lost.01",
+      "pas_lost.10",
+      "pas_lost.06",
+      "passport_later_office"
+    ],
+    "rating": {
+      "pas_lost.00": 0,
+      "pas_lost.01": 0,
+      "pas_lost.10": 0,
+      "pas_lost.06": 0,
+      "pas_lost.11": 0
+    },
+    "native_sufficient": [],
+    "oracle_sufficient": [
+      "passport_later_office"
+    ]
+  },
+  {
+    "id": "T05",
+    "native": [
+      "air_comp.09",
+      "park_pack.12",
+      "visa_types.07",
+      "air_family.10",
+      "air_infant_birth"
+    ],
+    "oracle": [
+      "air_comp.09",
+      "park_pack.12",
+      "visa_types.07",
+      "air_family.10",
+      "air_infant_birth"
+    ],
+    "rating": {
+      "air_comp.09": 0,
+      "park_pack.12": 0,
+      "visa_types.07": 0,
+      "air_family.10": 0,
+      "air_infant_birth": 2
+    },
+    "native_sufficient": [
+      "air_infant_birth"
+    ],
+    "oracle_sufficient": [
+      "air_infant_birth"
+    ]
+  },
+  {
+    "id": "T06",
+    "native": [
+      "air_delay_refund",
+      "air_comp.16",
+      "air_comp.00",
+      "air_comp.06",
+      "air_comp.09"
+    ],
+    "oracle": [
+      "air_delay_refund",
+      "air_comp.16",
+      "air_comp.00",
+      "air_comp.06",
+      "air_comp.09"
+    ],
+    "rating": {
+      "air_delay_refund": 2,
+      "air_comp.16": 0,
+      "air_comp.00": 0,
+      "air_comp.06": 0,
+      "air_comp.09": 0
+    },
+    "native_sufficient": [
+      "air_delay_refund"
+    ],
+    "oracle_sufficient": [
+      "air_delay_refund"
+    ]
+  },
+  {
+    "id": "T07",
+    "native": [
+      "air_weather",
+      "air_comp.17",
+      "air_delay_refund",
+      "air_comp.09",
+      "air_comp.15"
+    ],
+    "oracle": [
+      "air_weather",
+      "air_comp.17",
+      "air_delay_refund",
+      "air_comp.09",
+      "air_comp.15"
+    ],
+    "rating": {
+      "air_weather": 2,
+      "air_comp.17": 1,
+      "air_delay_refund": 0,
+      "air_comp.09": 0,
+      "air_comp.15": 0
+    },
+    "native_sufficient": [
+      "air_weather"
+    ],
+    "oracle_sufficient": [
+      "air_weather"
+    ]
+  },
+  {
+    "id": "T08",
+    "native": [
+      "vat_departure",
+      "foreign_cash_border",
+      "vn_departure_old",
+      "visa_jp.09",
+      "border_permit_loss_abroad"
+    ],
+    "oracle": [
+      "vat_departure",
+      "foreign_cash_border",
+      "vn_departure_old",
+      "visa_jp.09",
+      "border_permit_loss_abroad"
+    ],
+    "rating": {
+      "vat_departure": 2,
+      "foreign_cash_border": 0,
+      "vn_departure_old": 0,
+      "visa_jp.09": 0,
+      "border_permit_loss_abroad": 0
+    },
+    "native_sufficient": [
+      "vat_departure"
+    ],
+    "oracle_sufficient": [
+      "vat_departure"
+    ]
+  },
+  {
+    "id": "T09",
+    "native": [
+      "air_family.10",
+      "passport_first_office",
+      "park_pack.19",
+      "air_family.08",
+      "park_pack.18"
+    ],
+    "oracle": [
+      "air_family.10",
+      "passport_first_office",
+      "park_pack.19",
+      "air_family.08",
+      "park_pack.18"
+    ],
+    "rating": {
+      "air_family.10": 0,
+      "passport_first_office": 2,
+      "park_pack.19": 0,
+      "air_family.08": 0,
+      "park_pack.18": 0
+    },
+    "native_sufficient": [
+      "passport_first_office"
+    ],
+    "oracle_sufficient": [
+      "passport_first_office"
+    ]
+  },
+  {
+    "id": "T10",
+    "native": [
+      "card_passport_expiry",
+      "visa_de_15",
+      "visa_substitute",
+      "bca_old_format",
+      "vn_departure_old"
+    ],
+    "oracle": [
+      "card_passport_expiry",
+      "visa_de_15",
+      "visa_substitute",
+      "bca_old_format",
+      "vn_departure_old"
+    ],
+    "rating": {
+      "card_passport_expiry": 2,
+      "visa_de_15": 0,
+      "visa_substitute": 0,
+      "bca_old_format": 0,
+      "vn_departure_old": 0
+    },
+    "native_sufficient": [
+      "card_passport_expiry"
+    ],
+    "oracle_sufficient": [
+      "card_passport_expiry"
+    ]
+  },
+  {
+    "id": "T11",
+    "native": [
+      "vn_visa_reentry",
+      "air_in.00",
+      "vn_departure_old",
+      "foreign_cash_border",
+      "visa_substitute"
+    ],
+    "oracle": [
+      "vn_visa_reentry",
+      "air_in.00",
+      "vn_departure_old",
+      "foreign_cash_border",
+      "visa_substitute"
+    ],
+    "rating": {
+      "vn_visa_reentry": 1,
+      "air_in.00": 0,
+      "vn_departure_old": 0,
+      "foreign_cash_border": 0,
+      "visa_substitute": 2
+    },
+    "native_sufficient": [
+      "visa_substitute"
+    ],
+    "oracle_sufficient": [
+      "visa_substitute"
+    ]
+  },
+  {
+    "id": "T12",
+    "native": [
+      "visa_de_15",
+      "vn_departure_old",
+      "vn_visa_reentry",
+      "evisa_entry_types",
+      "vna_residency"
+    ],
+    "oracle": [
+      "visa_de_15",
+      "vn_departure_old",
+      "vn_visa_reentry",
+      "evisa_entry_types",
+      "vna_residency"
+    ],
+    "rating": {
+      "visa_de_15": 2,
+      "vn_departure_old": 0,
+      "vn_visa_reentry": 1,
+      "evisa_entry_types": 0,
+      "vna_residency": 0
+    },
+    "native_sufficient": [
+      "visa_de_15"
+    ],
+    "oracle_sufficient": [
+      "visa_de_15"
+    ]
+  },
+  {
+    "id": "T13",
+    "native": [
+      "evisa_limit_90",
+      "evisa_entry_types",
+      "vn_departure_old",
+      "air_comp.06",
+      "air_comp.10"
+    ],
+    "oracle": [
+      "evisa_limit_90",
+      "evisa_entry_types",
+      "vn_departure_old",
+      "air_comp.06",
+      "air_comp.10"
+    ],
+    "rating": {
+      "evisa_limit_90": 2,
+      "evisa_entry_types": 2,
+      "vn_departure_old": 0,
+      "air_comp.06": 0,
+      "air_comp.10": 0
+    },
+    "native_sufficient": [
+      "evisa_limit_90",
+      "evisa_entry_types"
+    ],
+    "oracle_sufficient": [
+      "evisa_limit_90",
+      "evisa_entry_types"
+    ]
+  },
+  {
+    "id": "T14",
+    "native": [
+      "evisa_entry_types",
+      "vn_visa_reentry",
+      "vn_departure_old",
+      "evisa_allnationalities",
+      "air_id.02"
+    ],
+    "oracle": [
+      "evisa_entry_types",
+      "vn_visa_reentry",
+      "vn_departure_old",
+      "evisa_allnationalities",
+      "air_id.02"
+    ],
+    "rating": {
+      "evisa_entry_types": 2,
+      "vn_visa_reentry": 0,
+      "vn_departure_old": 0,
+      "evisa_allnationalities": 1,
+      "air_id.02": 0
+    },
+    "native_sufficient": [
+      "evisa_entry_types"
+    ],
+    "oracle_sufficient": [
+      "evisa_entry_types"
+    ]
+  },
+  {
+    "id": "T15",
+    "native": [
+      "border_vn_cn",
+      "vn_departure_old",
+      "air_cover.00",
+      "evisa_entry_types",
+      "air_in.00"
+    ],
+    "oracle": [
+      "border_vn_cn",
+      "vn_departure_old",
+      "air_cover.00",
+      "evisa_entry_types",
+      "border_permit_period"
+    ],
+    "rating": {
+      "border_vn_cn": 0,
+      "vn_departure_old": 0,
+      "air_cover.00": 0,
+      "evisa_entry_types": 0,
+      "air_in.00": 0
+    },
+    "native_sufficient": [],
+    "oracle_sufficient": [
+      "border_permit_period"
+    ]
+  },
+  {
+    "id": "T16",
+    "native": [
+      "air_ped.09",
+      "border_permit_loss_abroad",
+      "passport_report",
+      "air_comp.06",
+      "air_comp.17"
+    ],
+    "oracle": [
+      "air_ped.09",
+      "border_permit_loss_abroad",
+      "passport_report",
+      "air_comp.06",
+      "air_comp.17"
+    ],
+    "rating": {
+      "air_ped.09": 0,
+      "border_permit_loss_abroad": 2,
+      "passport_report": 0,
+      "air_comp.06": 0,
+      "air_comp.17": 0
+    },
+    "native_sufficient": [
+      "border_permit_loss_abroad"
+    ],
+    "oracle_sufficient": [
+      "border_permit_loss_abroad"
+    ]
+  },
+  {
+    "id": "T17",
+    "native": [
+      "vn_departure_old",
+      "metro_launch.03",
+      "visa_de_15",
+      "air_family.07",
+      "evisa_entry_types"
+    ],
+    "oracle": [
+      "vn_departure_old",
+      "metro_launch.03",
+      "visa_de_15",
+      "air_family.07",
+      "evisa_entry_types"
+    ],
+    "rating": {
+      "vn_departure_old": 2,
+      "metro_launch.03": 0,
+      "visa_de_15": 0,
+      "air_family.07": 0,
+      "evisa_entry_types": 0
+    },
+    "native_sufficient": [
+      "vn_departure_old"
+    ],
+    "oracle_sufficient": [
+      "vn_departure_old"
+    ]
+  },
+  {
+    "id": "T18",
+    "native": [
+      "foreign_cash_border",
+      "vn_departure_old",
+      "border_permit_loss_abroad",
+      "vat_departure",
+      "pq_port.29"
+    ],
+    "oracle": [
+      "foreign_cash_border",
+      "vn_departure_old",
+      "border_permit_loss_abroad",
+      "vat_departure",
+      "pq_port.29"
+    ],
+    "rating": {
+      "foreign_cash_border": 2,
+      "vn_departure_old": 0,
+      "border_permit_loss_abroad": 0,
+      "vat_departure": 0,
+      "pq_port.29": 0
+    },
+    "native_sufficient": [
+      "foreign_cash_border"
+    ],
+    "oracle_sufficient": [
+      "foreign_cash_border"
+    ]
+  },
+  {
+    "id": "T19",
+    "native": [
+      "passport_child_duration",
+      "vn_visa_reentry",
+      "vn_departure_old",
+      "passport_restore",
+      "air_infant_birth"
+    ],
+    "oracle": [
+      "passport_child_duration",
+      "vn_visa_reentry",
+      "vn_departure_old",
+      "passport_restore",
+      "air_infant_birth"
+    ],
+    "rating": {
+      "passport_child_duration": 2,
+      "vn_visa_reentry": 0,
+      "vn_departure_old": 0,
+      "passport_restore": 0,
+      "air_infant_birth": 0
+    },
+    "native_sufficient": [
+      "passport_child_duration"
+    ],
+    "oracle_sufficient": [
+      "passport_child_duration"
+    ]
+  },
+  {
+    "id": "T20",
+    "native": [
+      "passport_restore",
+      "passport_report",
+      "vn_visa_reentry",
+      "bca_old_format",
+      "pas_lost.10"
+    ],
+    "oracle": [
+      "passport_restore",
+      "passport_report",
+      "vn_visa_reentry",
+      "bca_old_format",
+      "pas_lost.10"
+    ],
+    "rating": {
+      "passport_restore": 2,
+      "passport_report": 1,
+      "vn_visa_reentry": 0,
+      "bca_old_format": 0,
+      "pas_lost.10": 0
+    },
+    "native_sufficient": [
+      "passport_restore"
+    ],
+    "oracle_sufficient": [
+      "passport_restore"
+    ]
+  },
+  {
+    "id": "T21",
+    "native": [
+      "pq_port.37",
+      "air_family.00",
+      "vin_book.18",
+      "air_comp.06",
+      "air_disability_fare"
+    ],
+    "oracle": [
+      "pq_port.37",
+      "air_family.00",
+      "vin_book.18",
+      "air_comp.06",
+      "air_child_fare"
+    ],
+    "rating": {
+      "pq_port.37": 0,
+      "air_family.00": 0,
+      "vin_book.18": 0,
+      "air_comp.06": 0,
+      "air_disability_fare": 0
+    },
+    "native_sufficient": [],
+    "oracle_sufficient": [
+      "air_child_fare"
+    ]
+  },
+  {
+    "id": "T22",
+    "native": [
+      "air_disability_fare",
+      "pq_port.17",
+      "metro_fare.01",
+      "air_senior_fare",
+      "pq_port.16"
+    ],
+    "oracle": [
+      "air_disability_fare",
+      "pq_port.17",
+      "metro_fare.01",
+      "air_senior_fare",
+      "pq_port.16"
+    ],
+    "rating": {
+      "air_disability_fare": 2,
+      "pq_port.17": 0,
+      "metro_fare.01": 0,
+      "air_senior_fare": 0,
+      "pq_port.16": 0
+    },
+    "native_sufficient": [
+      "air_disability_fare"
+    ],
+    "oracle_sufficient": [
+      "air_disability_fare"
+    ]
+  },
+  {
+    "id": "T23",
+    "native": [
+      "air_certified_copy",
+      "air_id.01",
+      "air_id.10",
+      "air_infant_birth",
+      "air_id.09"
+    ],
+    "oracle": [
+      "air_certified_copy",
+      "air_id.01",
+      "air_id.10",
+      "air_infant_birth",
+      "air_id.09"
+    ],
+    "rating": {
+      "air_certified_copy": 2,
+      "air_id.01": 1,
+      "air_id.10": 1,
+      "air_infant_birth": 1,
+      "air_id.09": 0
+    },
+    "native_sufficient": [
+      "air_certified_copy"
+    ],
+    "oracle_sufficient": [
+      "air_certified_copy"
+    ]
+  },
+  {
+    "id": "T24",
+    "native": [
+      "air_senior_fare",
+      "rail_discount_senior",
+      "vin_book.18",
+      "metro_fare.01",
+      "pq_port.16"
+    ],
+    "oracle": [
+      "air_senior_fare",
+      "rail_discount_senior",
+      "vin_book.18",
+      "metro_fare.01",
+      "pq_port.16"
+    ],
+    "rating": {
+      "air_senior_fare": 2,
+      "rail_discount_senior": 2,
+      "vin_book.18": 0,
+      "metro_fare.01": 0,
+      "pq_port.16": 0
+    },
+    "native_sufficient": [
+      "air_senior_fare",
+      "rail_discount_senior"
+    ],
+    "oracle_sufficient": [
+      "air_senior_fare",
+      "rail_discount_senior"
+    ]
+  }
+]

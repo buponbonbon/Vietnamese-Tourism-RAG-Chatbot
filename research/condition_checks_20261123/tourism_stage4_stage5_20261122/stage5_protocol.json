@@ -1,0 +1,20 @@
+{
+  "version": "2026-11-22 preregistered in project before scoring",
+  "purpose": "Test whether compatibility priority repairs controlled evidence selection on unseen network snapshots under a five-candidate budget.",
+  "development_only": "Previous NYC MTA subway/NYC Ferry contrast families suggested that near-tied fine-tuned rankers promote out-of-route or missing-stop distractors. The held-out Chicago CTA, Boston MBTA and Portland TriMet snapshots were never used for that diagnosis.",
+  "service_date": "2026-11-18",
+  "agencies": {"cta": "CTA Chicago", "mbta": "MBTA Boston", "trimet": "TriMet Portland"},
+  "route_types": ["0", "1", "2"],
+  "lengths": [3, 4, 5, 6],
+  "max_families_per_route": 4,
+  "metadata_priority": "Verified incompatible candidates are ranked after all remaining candidates. Keep original order otherwise. Complete metadata includes network, route and unordered physical stop IDs. Route-only omits stop membership. Empty or masked fields abstain separately. Do not use direction, ordering, boarding/alighting, or evidence labels.",
+  "conditions": {
+    "natural": "BM25 top-five from all observed eligible windows of the three feeds. Nothing is inserted. Report availability and top-one with denominator all questions and conditional on at least one gold.",
+    "stress": "Five same-budget candidates: one sufficient window, two different same-route reverse windows containing both endpoints, one same-route missing at least one stop, one different route. Choose by BM25 score without cross-encoder use. The complete gate always leaves at least three candidates including both reverses.",
+    "unreliable_metadata_negative_control": "Exclude no candidates with missing fields in a fixed deterministic 25 percent missing-candidate metadata mask. Report gains and false exclusion under that mask. No claim about incorrect populated metadata is implied."
+  },
+  "label": "Evidence is one archived active dated trip window on the queried agency and route. It must contain the two physical stops in the requested order with regular pickup at origin and regular drop-off at destination within that same window. All matched pairs use a single recorded trip per window.",
+  "metrics": "Availability at 5, top-1 coverage, top-1 among available, paired repair/regression, complete/masked incompatibility on sufficient windows, strict-tie rule for neural top-1, and descriptive per-agency/route aggregates. Distinct directions belong to the same family.",
+  "comparators": "BM25 unigram; BM25 with route only and with route plus stops; BGE, M0/M1 seed42 and optionally seeds123/999 with matching support; an order-aware metadata verifier as a diagnostic ceiling because it shares the label fields.",
+  "inference": "Frozen weights. CPU FP32. No LLM, no supervised training."
+}

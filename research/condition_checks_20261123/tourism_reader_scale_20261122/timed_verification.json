@@ -1,0 +1,11 @@
+{
+  "reference_windows_checked": 214,
+  "questions": 84,
+  "schedule_dates": [
+    "2026-11-23",
+    "2026-11-29"
+  ],
+  "route_groups": 21,
+  "frozen_logits": 4438,
+  "native_available": 64
+}

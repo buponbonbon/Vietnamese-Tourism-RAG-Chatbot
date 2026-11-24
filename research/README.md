@@ -1,5 +1,15 @@
 # V2 research workflow
 
+## Manuscript audit code
+
+- [Evidence-selection recovery](recovery_20261113/README.md) covers the
+  140-query development panel, oracle insertion, loss controls and WikiQA.
+- [Fixed-budget retrieval comparisons](fixed_budget_20261121/README.md) cover
+  the tourism lexical configuration, Travel Stack Exchange and Vietnamese MLQA.
+- [Condition-sensitive retrieval checks](condition_checks_20261123/README.md)
+  cover the transport and reader studies through the 24-question S20 cohort,
+  with an offline replay of the archived S20 scores.
+
 The [13 November recovery and saved-score bundle](recovery_20261113/README.md)
 records the completed native/oracle/K analysis, nine objective controls and
 seven-model WikiQA evaluation. It includes reproducible metric checks without
