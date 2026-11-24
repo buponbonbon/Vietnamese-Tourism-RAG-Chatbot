@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "verification_method": "Independent candidate outranker counts and positive-rank counts, then source-resampling frequency matrix; no imports from scoring/analysis scripts",
+  "native_cohort_order_text_label_integrity": "PASS",
+  "query_model_combinations_checked": 1659,
+  "maximum_exported_metric_absolute_error": 1.1102230246251565e-16,
+  "maximum_bootstrap_interval_absolute_error": 1.734723475976807e-18,
+  "tokenization_common_across_models": true,
+  "runtime_common_across_models": true,
+  "no_truncation": true,
+  "models": [
+    {
+      "model": "BGE_pretrained",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 4.76837158203125e-06,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_42",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 5.841255187988281e-06,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_123",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 5.125999450683594e-06,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M0_fixed_1p0_weighted_matched_seed_999",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 5.245208740234375e-06,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_42",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 1.4722347259521484e-05,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_123",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 1.1146068572998047e-05,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    },
+    {
+      "model": "M1_fixed_1p0_weighted_matched_seed_999",
+      "queries": 237,
+      "batch_consistency_check": {
+        "kind": "Same restored model and first 16 WikiQA rows: batch 1 versus batch 4; not a comparison to missing previous score exports",
+        "maximum_absolute_difference": 5.7220458984375e-06,
+        "tolerance": 0.0001,
+        "status": "PASS"
+      }
+    }
+  ],
+  "scope": "Recomputes results from the exported raw score files and native Parquet; does not regenerate logits without model weights."
+}

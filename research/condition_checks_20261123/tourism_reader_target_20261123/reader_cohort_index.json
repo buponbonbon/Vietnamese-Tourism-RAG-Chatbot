@@ -1,0 +1,362 @@
+[
+  {
+    "case": "p2_05",
+    "cohort": "vietnam_travel_natural_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "p3_11",
+    "cohort": "vietnam_travel_natural_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "p4_09",
+    "cohort": "vietnam_travel_natural_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V01",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V02",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V03",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V04",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V05",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V06",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "V07",
+    "cohort": "tourism_vietnamese_operators_20261121",
+    "mode": "older pilot",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N01",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N02",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N03",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N04",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N05",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N06",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N07",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N08",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N09",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N10",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "N11",
+    "cohort": "tourism_stage4_20261121",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E01",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E02",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E03",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E04",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E05",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E06",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "E07",
+    "cohort": "tourism_stage4_stage5_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U01",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U02",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U03",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U04",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U05",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U06",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U07",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "U08",
+    "cohort": "tourism_reader_scale_20261122",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T01",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T02",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T03",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T04",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T05",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T06",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T07",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T08",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T09",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T10",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T11",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T12",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T13",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T14",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T15",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T16",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T17",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T18",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T19",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T20",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T21",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T22",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T23",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  },
+  {
+    "case": "T24",
+    "cohort": "tourism_reader_target_20261123",
+    "mode": "native top five",
+    "evidence_language": "vi"
+  }
+]

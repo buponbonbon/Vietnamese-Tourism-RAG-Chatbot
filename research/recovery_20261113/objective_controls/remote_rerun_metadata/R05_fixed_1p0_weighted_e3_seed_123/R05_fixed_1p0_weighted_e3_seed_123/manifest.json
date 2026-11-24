@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "plan_sha256": "5fc0eff84dcd1f4bc32b4d4897f662c01e4ec5e7c39591bcffa6137a7d07ea0f",
+  "run": {
+    "run_id": "R05_fixed_1p0_weighted_e3_seed_123",
+    "case": "R05",
+    "seed": 123,
+    "label": "fixed_1p0_weighted_e3",
+    "dataset": "train_moc_13.json",
+    "epochs": 3,
+    "margin": 1.0,
+    "loss": "weighted",
+    "rows": 8668,
+    "margin_histogram": {
+      "1.0": 8668
+    },
+    "updates": 408
+  },
+  "settings": {
+    "microbatch": 4,
+    "accumulation": 16,
+    "effective_batch": 64,
+    "precision": "cuda_bf16",
+    "loss_dtype": "float32",
+    "max_length": 512,
+    "attention": "sdpa",
+    "gradient_checkpointing": true,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "clip_norm": 1.0,
+    "save_every": 20,
+    "early_stopping": false,
+    "checkpoint_selection": "final_update",
+    "deterministic_algorithms": true
+  },
+  "test_opened": false,
+  "started_unix": 1793951984.0580692,
+  "optimizer_updates": 408,
+  "training_pairs_seen": 26004,
+  "weight_sha256": "7bfec64a482064222e4a2fbee5db556f9c9231ae2c904f403ffae2b6bbbccd15",
+  "finished_unix": 1793953566.0430975
+}

@@ -1,0 +1,5 @@
+{
+  "original_script_sha256": "bf8854d68cfb4dab4ab72697eff84b1f8c9249e481b53892d4e011f8c353ebca",
+  "adapted_script_sha256": "94e94c631c9fbbf48136e5779b2069b990f3cb16b796d3107295a49377252b61",
+  "change": "Only repository-root lookup adapted to this public directory; metric and test-file hash checks unchanged. The original TEST is not redistributed."
+}

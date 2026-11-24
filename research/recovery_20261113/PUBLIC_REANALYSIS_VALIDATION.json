@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "commands_passed": [
+    "native-analysis",
+    "native-public-verifier",
+    "objective-public-verifier",
+    "wikiqa-analysis",
+    "wikiqa-verifier"
+  ],
+  "three_result_JSONs_unchanged": true,
+  "copied_original_file_hashes_verified": 161,
+  "training_or_inference_launched": false,
+  "private_workbooks_used_in_public_reanalysis": false
+}

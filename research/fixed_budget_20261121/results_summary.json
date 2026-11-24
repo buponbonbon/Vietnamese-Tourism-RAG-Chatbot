@@ -1,0 +1,556 @@
+{
+  "tourism_development": {
+    "questions": 140,
+    "source_groups": 81,
+    "legacy_top5_any_selector_ceiling": 45,
+    "cell_bounds": {
+      "legacy_Raw": {
+        "availability": [
+          45,
+          45
+        ],
+        "hit1": [
+          20,
+          20
+        ]
+      },
+      "legacy_BGE": {
+        "availability": [
+          45,
+          45
+        ],
+        "hit1": [
+          40,
+          40
+        ]
+      },
+      "legacy_M0": {
+        "availability": [
+          45,
+          45
+        ],
+        "hit1": [
+          43,
+          43
+        ]
+      },
+      "rrf_legacy_Raw": {
+        "availability": [
+          70,
+          140
+        ],
+        "hit1": [
+          29,
+          72
+        ]
+      },
+      "rrf_legacy_BGE": {
+        "availability": [
+          70,
+          140
+        ],
+        "hit1": [
+          57,
+          122
+        ]
+      },
+      "rrf_legacy_M0": {
+        "availability": [
+          70,
+          140
+        ],
+        "hit1": [
+          62,
+          122
+        ]
+      },
+      "dense_Raw": {
+        "availability": [
+          72,
+          140
+        ],
+        "hit1": [
+          37,
+          136
+        ]
+      },
+      "dense_BGE": {
+        "availability": [
+          72,
+          140
+        ],
+        "hit1": [
+          61,
+          132
+        ]
+      },
+      "dense_M0": {
+        "availability": [
+          72,
+          140
+        ],
+        "hit1": [
+          65,
+          130
+        ]
+      },
+      "unicode_Raw": {
+        "availability": [
+          104,
+          140
+        ],
+        "hit1": [
+          78,
+          125
+        ]
+      },
+      "unicode_BGE": {
+        "availability": [
+          104,
+          140
+        ],
+        "hit1": [
+          75,
+          131
+        ]
+      },
+      "unicode_M0": {
+        "availability": [
+          104,
+          140
+        ],
+        "hit1": [
+          92,
+          134
+        ]
+      },
+      "rrf_unicode_Raw": {
+        "availability": [
+          93,
+          140
+        ],
+        "hit1": [
+          65,
+          127
+        ]
+      },
+      "rrf_unicode_BGE": {
+        "availability": [
+          93,
+          140
+        ],
+        "hit1": [
+          73,
+          128
+        ]
+      },
+      "rrf_unicode_M0": {
+        "availability": [
+          93,
+          140
+        ],
+        "hit1": [
+          83,
+          129
+        ]
+      }
+    },
+    "paired_rank_one_count_bounds": {
+      "unicode_minus_legacy_Raw": [
+        58,
+        105
+      ],
+      "unicode_minus_legacy_BGE": [
+        35,
+        91
+      ],
+      "unicode_minus_legacy_M0": [
+        49,
+        91
+      ],
+      "rrf_unicode_minus_unicode_Raw": [
+        -44,
+        33
+      ],
+      "rrf_unicode_minus_unicode_BGE": [
+        -36,
+        31
+      ],
+      "rrf_unicode_minus_unicode_M0": [
+        -34,
+        20
+      ],
+      "rrf_legacy_minus_unicode_Raw": [
+        -91,
+        -11
+      ],
+      "rrf_legacy_minus_unicode_BGE": [
+        -57,
+        30
+      ],
+      "rrf_legacy_minus_unicode_M0": [
+        -57,
+        15
+      ],
+      "dense_minus_unicode_Raw": [
+        -81,
+        51
+      ],
+      "dense_minus_unicode_BGE": [
+        -55,
+        42
+      ],
+      "dense_minus_unicode_M0": [
+        -55,
+        24
+      ],
+      "rrf_unicode_minus_rrf_legacy_Raw": [
+        4,
+        87
+      ],
+      "rrf_unicode_minus_rrf_legacy_BGE": [
+        -29,
+        51
+      ],
+      "rrf_unicode_minus_rrf_legacy_M0": [
+        -20,
+        48
+      ],
+      "M0_minus_BGE_legacy": [
+        3,
+        3
+      ],
+      "M0_minus_BGE_rrf_legacy": [
+        -13,
+        18
+      ],
+      "M0_minus_BGE_dense": [
+        -26,
+        28
+      ],
+      "M0_minus_BGE_unicode": [
+        -8,
+        28
+      ],
+      "M0_minus_BGE_rrf_unicode": [
+        -6,
+        17
+      ],
+      "unicode_Raw_minus_legacy_M0": [
+        35,
+        82
+      ],
+      "unicode_BGE_minus_legacy_M0": [
+        32,
+        88
+      ]
+    }
+  },
+  "travel_forum": {
+    "questions": 80,
+    "indexed_answers": 76725,
+    "retrieval": {
+      "text": {
+        "bm25": {
+          "1": 25,
+          "5": 36,
+          "10": 41,
+          "20": 50,
+          "50": 58
+        },
+        "dense": {
+          "1": 10,
+          "5": 22,
+          "10": 25,
+          "20": 31,
+          "50": 34
+        },
+        "rrf": {
+          "1": 20,
+          "5": 28,
+          "10": 37,
+          "20": 45,
+          "50": 53
+        }
+      },
+      "title": {
+        "bm25": {
+          "1": 12,
+          "5": 23,
+          "10": 27,
+          "20": 33,
+          "50": 39
+        },
+        "dense": {
+          "1": 2,
+          "5": 9,
+          "10": 16,
+          "20": 21,
+          "50": 23
+        },
+        "rrf": {
+          "1": 7,
+          "5": 15,
+          "10": 22,
+          "20": 32,
+          "50": 41
+        }
+      }
+    },
+    "results": {
+      "bm25": {
+        "raw": {
+          "hit1": 25,
+          "availability5": 36,
+          "accepted_absent": 44,
+          "accepted_present_not_selected": 11,
+          "pairs": 0,
+          "tokens": 0,
+          "truncated_pairs": 0
+        },
+        "BGE": {
+          "hit1": 21,
+          "availability5": 36,
+          "accepted_absent": 44,
+          "accepted_present_not_selected": 15,
+          "pairs": 400,
+          "tokens": 150870,
+          "truncated_pairs": 104
+        },
+        "M0": {
+          "hit1": 22,
+          "availability5": 36,
+          "accepted_absent": 44,
+          "accepted_present_not_selected": 14,
+          "pairs": 400,
+          "tokens": 150870,
+          "truncated_pairs": 104
+        }
+      },
+      "dense": {
+        "raw": {
+          "hit1": 10,
+          "availability5": 22,
+          "accepted_absent": 58,
+          "accepted_present_not_selected": 12,
+          "pairs": 0,
+          "tokens": 0,
+          "truncated_pairs": 0
+        },
+        "BGE": {
+          "hit1": 15,
+          "availability5": 22,
+          "accepted_absent": 58,
+          "accepted_present_not_selected": 7,
+          "pairs": 400,
+          "tokens": 149954,
+          "truncated_pairs": 115
+        },
+        "M0": {
+          "hit1": 15,
+          "availability5": 22,
+          "accepted_absent": 58,
+          "accepted_present_not_selected": 7,
+          "pairs": 400,
+          "tokens": 149954,
+          "truncated_pairs": 115
+        }
+      },
+      "rrf": {
+        "raw": {
+          "hit1": 20,
+          "availability5": 28,
+          "accepted_absent": 52,
+          "accepted_present_not_selected": 8,
+          "pairs": 0,
+          "tokens": 0,
+          "truncated_pairs": 0
+        },
+        "BGE": {
+          "hit1": 20,
+          "availability5": 28,
+          "accepted_absent": 52,
+          "accepted_present_not_selected": 8,
+          "pairs": 400,
+          "tokens": 158869,
+          "truncated_pairs": 133
+        },
+        "M0": {
+          "hit1": 20,
+          "availability5": 28,
+          "accepted_absent": 52,
+          "accepted_present_not_selected": 8,
+          "pairs": 400,
+          "tokens": 158869,
+          "truncated_pairs": 133
+        }
+      }
+    },
+    "fixed_size_substitution": {
+      "reference_absent_queries": 44,
+      "selected": {
+        "BGE": 21,
+        "M0": 19
+      }
+    }
+  },
+  "mlqa": {
+    "test_queries": 5495,
+    "test_docs": 4795,
+    "all_query_availability": {
+      "bm25": {
+        "at_1": 1743,
+        "at_5": 2617,
+        "at_10": 2948,
+        "at_20": 3226,
+        "at_50": 3605
+      },
+      "dense": {
+        "at_1": 1416,
+        "at_5": 2344,
+        "at_10": 2783,
+        "at_20": 3208,
+        "at_50": 3736
+      },
+      "rrf": {
+        "at_1": 1659,
+        "at_5": 2825,
+        "at_10": 3411,
+        "at_20": 3878,
+        "at_50": 4314
+      },
+      "bm25_unicode": {
+        "at_1": 2841,
+        "at_5": 3806,
+        "at_10": 4116,
+        "at_20": 4360,
+        "at_50": 4665
+      }
+    },
+    "reranked_cohort": {
+      "bm25": {
+        "available": 69,
+        "models": {
+          "Raw": {
+            "retriever": "bm25",
+            "reranker": "Raw",
+            "questions": 140,
+            "available": 69,
+            "gold_hit1": 48,
+            "absent": 71,
+            "present_not_selected": 21,
+            "conditional_gold_hit1": 0.6956521739130435,
+            "inference_pairs": 0,
+            "inference_unpadded_tokens": 0
+          },
+          "BGE": {
+            "retriever": "bm25",
+            "reranker": "BGE",
+            "questions": 140,
+            "available": 69,
+            "gold_hit1": 59,
+            "absent": 71,
+            "present_not_selected": 10,
+            "conditional_gold_hit1": 0.855072463768116,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 163830
+          },
+          "M0": {
+            "retriever": "bm25",
+            "reranker": "M0",
+            "questions": 140,
+            "available": 69,
+            "gold_hit1": 66,
+            "absent": 71,
+            "present_not_selected": 3,
+            "conditional_gold_hit1": 0.9565217391304348,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 163718
+          }
+        }
+      },
+      "dense": {
+        "available": 56,
+        "models": {
+          "Raw": {
+            "retriever": "dense",
+            "reranker": "Raw",
+            "questions": 140,
+            "available": 56,
+            "gold_hit1": 47,
+            "absent": 84,
+            "present_not_selected": 9,
+            "conditional_gold_hit1": 0.8392857142857143,
+            "inference_pairs": 0,
+            "inference_unpadded_tokens": 0
+          },
+          "BGE": {
+            "retriever": "dense",
+            "reranker": "BGE",
+            "questions": 140,
+            "available": 56,
+            "gold_hit1": 50,
+            "absent": 84,
+            "present_not_selected": 6,
+            "conditional_gold_hit1": 0.8928571428571429,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 176054
+          },
+          "M0": {
+            "retriever": "dense",
+            "reranker": "M0",
+            "questions": 140,
+            "available": 56,
+            "gold_hit1": 53,
+            "absent": 84,
+            "present_not_selected": 3,
+            "conditional_gold_hit1": 0.9464285714285714,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 175931
+          }
+        }
+      },
+      "rrf": {
+        "available": 65,
+        "models": {
+          "Raw": {
+            "retriever": "rrf",
+            "reranker": "Raw",
+            "questions": 140,
+            "available": 65,
+            "gold_hit1": 45,
+            "absent": 75,
+            "present_not_selected": 20,
+            "conditional_gold_hit1": 0.6923076923076923,
+            "inference_pairs": 0,
+            "inference_unpadded_tokens": 0
+          },
+          "BGE": {
+            "retriever": "rrf",
+            "reranker": "BGE",
+            "questions": 140,
+            "available": 65,
+            "gold_hit1": 57,
+            "absent": 75,
+            "present_not_selected": 8,
+            "conditional_gold_hit1": 0.8769230769230769,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 181260
+          },
+          "M0": {
+            "retriever": "rrf",
+            "reranker": "M0",
+            "questions": 140,
+            "available": 65,
+            "gold_hit1": 60,
+            "absent": 75,
+            "present_not_selected": 5,
+            "conditional_gold_hit1": 0.9230769230769231,
+            "inference_pairs": 700,
+            "inference_unpadded_tokens": 181142
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+WikiQA data attribution and modification notice
+
+Source: Microsoft Research WikiQA Corpus; Yi Yang, Wen-tau Yih and
+Christopher Meek (EMNLP 2015).
+
+evaluation_inputs.json is a MODIFIED evaluation representation, dated
+12 November 2026: selected the 237 mixed-label native test query pools;
+retained all 2,341 sentences, labels and row order; added row/group identifiers.
+It is not the original complete WikiQA dataset.
+
+wikiqa_test.parquet is the pinned, unmodified source test file identified in
+evaluation_protocol.json. WIKIQA_ORIGINAL_DATA_CARD.md preserves the source card.
+
+The original Microsoft Research Data License Agreement and full modification
+notice are in WIKIQA_LICENSE_AND_MODIFICATIONS.md. Those terms govern the
+source and derived data; the repository software license grants no additional
+rights to this dataset. No Microsoft endorsement is implied.

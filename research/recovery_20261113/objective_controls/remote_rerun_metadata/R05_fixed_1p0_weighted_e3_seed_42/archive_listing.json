@@ -1,0 +1,74 @@
+[
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/final_model/",
+    "size": 0,
+    "compressed_bytes": 0,
+    "crc32": "00000000"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/final_model/config.json",
+    "size": 876,
+    "compressed_bytes": 419,
+    "crc32": "dbcafd30"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/final_model/model.safetensors",
+    "size": 1112201932,
+    "compressed_bytes": 982834249,
+    "crc32": "da678be4"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/final_model/tokenizer.json",
+    "size": 17098349,
+    "compressed_bytes": 4009696,
+    "crc32": "a78cc96c"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/final_model/tokenizer_config.json",
+    "size": 423,
+    "compressed_bytes": 206,
+    "crc32": "31bcce88"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/manifest.json",
+    "size": 1195,
+    "compressed_bytes": 606,
+    "crc32": "6e906e4b"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/progress.jsonl",
+    "size": 112634,
+    "compressed_bytes": 27507,
+    "crc32": "cc51ed96"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/test_scores.json",
+    "size": 212205,
+    "compressed_bytes": 13814,
+    "crc32": "4c2f5bbd"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/validation_epoch_1.json",
+    "size": 176095,
+    "compressed_bytes": 12583,
+    "crc32": "755c841d"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/validation_epoch_2.json",
+    "size": 175717,
+    "compressed_bytes": 12375,
+    "crc32": "2d83be71"
+  },
+  {
+    "name": "R05_fixed_1p0_weighted_e3_seed_42/validation_epoch_3.json",
+    "size": 175796,
+    "compressed_bytes": 12413,
+    "crc32": "59c57a03"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-21",
+  "panel": "External destination-domain test of reference selection using real Travel Stack Exchange questions about Vietnam. English majority. Author-accepted answer ID is the reference, and other answers are unjudged. Historical forum acceptance does not validate factual sufficiency, current travel advice or behavior.",
+  "source": "https://archive.org/download/stackexchange/travel.stackexchange.com.7z",
+  "source_sha256": "4c33527edc970cc32a159607372ba652d4328fa007e1214f3510595f55629169",
+  "archive_member": "Posts.xml",
+  "eligible_questions": "All visible question posts tagged exactly vietnam with an accepted answer ID located in the frozen answer corpus with that question as its parent. Exclude closed posts and missing or empty cleaned titles. Take the entire eligible set, regardless of date, retrieval ranks or content type.",
+  "corpus": "Index all answer posts from the snapshot with nonempty visible text after removing HTML and blockquotes, including nonaccepted answers across sites' topics. Preserve post IDs and dates. No question text, votes, tag or post ID features in scoring. Corpus is same in every arm.",
+  "query": "Original title plus first 180 whitespace words of visible body excluding blockquotes. A retrieval-only title-only sensitivity holds the corpus and retrievers fixed.",
+  "primary": "RRF minus symmetric Unicode BM25 in accepted-answer Hit@1 with archived M0 seed 42, at five scored pairs per query. Record paired percentile bootstrap question-level 20000 draws with seed 20261121 and exact McNemar.",
+  "additional": ["Hit@5, full frozen set", "Dense-only", "BGE pretrained and M0 within every fixed pool", "raw rank 1", "absence vs reference present but unselected", "miss decomposition on shared availability", "title-only retrieval", "legacy Vietnamese tokenization is not evaluated on English", "quote and duplicate-text audits"],
+  "lexical": "Symmetric case-insensitive Unicode alphanumeric sequences; no stopword or stemming rules, fixed k1=1.5/b=0.75, whitespace lengths, positive IDF. Descending score then increasing answer ID.",
+  "dense": "Pinned Potion multilingual 128M weights and tokenizer 73908c3438cf03b6a01bcb9611d62b23d0726f08, same exact mean-L2 inner product as previous tourism and MLQA analyses. Score ties by answer ID.",
+  "rrf": "Pool top 50 per branch, k=60. Ties by BM25 rank then dense rank then answer ID.",
+  "rerank": "Archived M0 fixed 1.0 weighted matched seed42 and BGE pretrained. File hashes verified; CPU FP32 deterministic SDPA, max length 512, sorted-by-length batches of four. Score a common pair once across conditions, tie by retrieval rank. Report input tokens and truncated pairs separately from number of pairs.",
+  "scope": "This snapshot is an external English forum task with historical community acceptance. It tests whether the two-stage design diagnosis is portable to real tourism questions. Evidence availability in the Vietnamese development panel uses a different, adjudicated rubric. There is no synthesis or current-travel recommendation assessment."
+}

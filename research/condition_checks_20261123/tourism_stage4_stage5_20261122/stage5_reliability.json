@@ -1,0 +1,417 @@
+{
+  "failure_counts": [
+    {
+      "pool": "natural",
+      "model": "BGE",
+      "gate": "raw",
+      "wrong direction": 16,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "BGE",
+      "gate": "unordered_stops",
+      "wrong direction": 16,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "BM25",
+      "gate": "raw",
+      "wrong direction": 128,
+      "pickup or dropoff restricted": 4,
+      "unavailable": 3,
+      "required stop missing": 2
+    },
+    {
+      "pool": "natural",
+      "model": "BM25",
+      "gate": "unordered_stops",
+      "wrong direction": 129,
+      "pickup or dropoff restricted": 4,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_123",
+      "gate": "raw",
+      "wrong direction": 19,
+      "pickup or dropoff restricted": 4,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_123",
+      "gate": "unordered_stops",
+      "wrong direction": 19,
+      "pickup or dropoff restricted": 4,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_42",
+      "gate": "raw",
+      "wrong direction": 24,
+      "pickup or dropoff restricted": 3,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_42",
+      "gate": "unordered_stops",
+      "wrong direction": 24,
+      "pickup or dropoff restricted": 3,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_999",
+      "gate": "raw",
+      "wrong direction": 11,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M0_999",
+      "gate": "unordered_stops",
+      "wrong direction": 11,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M1_123",
+      "gate": "raw",
+      "wrong direction": 51,
+      "wrong agency or route": 2,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3,
+      "required stop missing": 1
+    },
+    {
+      "pool": "natural",
+      "model": "M1_123",
+      "gate": "unordered_stops",
+      "wrong direction": 51,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M1_42",
+      "gate": "raw",
+      "wrong direction": 42,
+      "wrong agency or route": 1,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3,
+      "required stop missing": 1
+    },
+    {
+      "pool": "natural",
+      "model": "M1_42",
+      "gate": "unordered_stops",
+      "wrong direction": 42,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "M1_999",
+      "gate": "raw",
+      "wrong direction": 41,
+      "wrong agency or route": 1,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3,
+      "required stop missing": 1
+    },
+    {
+      "pool": "natural",
+      "model": "M1_999",
+      "gate": "unordered_stops",
+      "wrong direction": 41,
+      "pickup or dropoff restricted": 5,
+      "unavailable": 3
+    },
+    {
+      "pool": "natural",
+      "model": "direct_order_check",
+      "gate": "raw",
+      "unavailable": 3
+    },
+    {
+      "pool": "stress",
+      "model": "BGE",
+      "gate": "raw",
+      "wrong direction": 24,
+      "wrong agency or route": 1
+    },
+    {
+      "pool": "stress",
+      "model": "BGE",
+      "gate": "unordered_stops",
+      "wrong direction": 24
+    },
+    {
+      "pool": "stress",
+      "model": "BM25",
+      "gate": "raw",
+      "wrong direction": 131,
+      "required stop missing": 2
+    },
+    {
+      "pool": "stress",
+      "model": "BM25",
+      "gate": "unordered_stops",
+      "wrong direction": 132
+    },
+    {
+      "pool": "stress",
+      "model": "M0_123",
+      "gate": "raw",
+      "wrong direction": 32,
+      "wrong agency or route": 1
+    },
+    {
+      "pool": "stress",
+      "model": "M0_123",
+      "gate": "unordered_stops",
+      "wrong direction": 32
+    },
+    {
+      "pool": "stress",
+      "model": "M0_42",
+      "gate": "raw",
+      "wrong direction": 43,
+      "required stop missing": 1
+    },
+    {
+      "pool": "stress",
+      "model": "M0_42",
+      "gate": "unordered_stops",
+      "wrong direction": 44
+    },
+    {
+      "pool": "stress",
+      "model": "M0_999",
+      "gate": "raw",
+      "wrong direction": 30,
+      "wrong agency or route": 1,
+      "required stop missing": 1
+    },
+    {
+      "pool": "stress",
+      "model": "M0_999",
+      "gate": "unordered_stops",
+      "wrong direction": 30
+    },
+    {
+      "pool": "stress",
+      "model": "M1_123",
+      "gate": "raw",
+      "wrong agency or route": 189,
+      "wrong direction": 9,
+      "required stop missing": 47
+    },
+    {
+      "pool": "stress",
+      "model": "M1_123",
+      "gate": "unordered_stops",
+      "wrong direction": 86
+    },
+    {
+      "pool": "stress",
+      "model": "M1_42",
+      "gate": "raw",
+      "wrong direction": 22,
+      "required stop missing": 61,
+      "wrong agency or route": 120
+    },
+    {
+      "pool": "stress",
+      "model": "M1_42",
+      "gate": "unordered_stops",
+      "wrong direction": 77
+    },
+    {
+      "pool": "stress",
+      "model": "M1_999",
+      "gate": "raw",
+      "wrong direction": 26,
+      "required stop missing": 56,
+      "wrong agency or route": 112
+    },
+    {
+      "pool": "stress",
+      "model": "M1_999",
+      "gate": "unordered_stops",
+      "wrong direction": 88
+    }
+  ],
+  "synthetic_stop_metadata_corruption": [
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "natural",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 239.73333333333332,
+      "gold_passages_demoted": 3.1,
+      "queries_with_all_sufficient_demoted": 0.13333333333333333
+    },
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "natural",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 233.73333333333332,
+      "gold_passages_demoted": 3.1,
+      "queries_with_all_sufficient_demoted": 0.13333333333333333
+    },
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "natural",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 213.66666666666666,
+      "gold_passages_demoted": 3.1,
+      "queries_with_all_sufficient_demoted": 0.13333333333333333
+    },
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "stress",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 238.76666666666668,
+      "gold_passages_demoted": 1.5666666666666667,
+      "queries_with_all_sufficient_demoted": 1.5666666666666667
+    },
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "stress",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 219.03333333333333,
+      "gold_passages_demoted": 1.5666666666666667,
+      "queries_with_all_sufficient_demoted": 1.5666666666666667
+    },
+    {
+      "planned_noise_probability": 0.01,
+      "pool": "stress",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 186.46666666666667,
+      "gold_passages_demoted": 1.5666666666666667,
+      "queries_with_all_sufficient_demoted": 1.5666666666666667
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "natural",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 239.06666666666666,
+      "gold_passages_demoted": 15.066666666666666,
+      "queries_with_all_sufficient_demoted": 0.4
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "natural",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 232.33333333333334,
+      "gold_passages_demoted": 15.066666666666666,
+      "queries_with_all_sufficient_demoted": 0.4
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "natural",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 212.7,
+      "gold_passages_demoted": 15.066666666666666,
+      "queries_with_all_sufficient_demoted": 0.4
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "stress",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 233.96666666666667,
+      "gold_passages_demoted": 7.266666666666667,
+      "queries_with_all_sufficient_demoted": 7.266666666666667
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "stress",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 214.63333333333333,
+      "gold_passages_demoted": 7.266666666666667,
+      "queries_with_all_sufficient_demoted": 7.266666666666667
+    },
+    {
+      "planned_noise_probability": 0.05,
+      "pool": "stress",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 183.93333333333334,
+      "gold_passages_demoted": 7.266666666666667,
+      "queries_with_all_sufficient_demoted": 7.266666666666667
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "natural",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 238.36666666666667,
+      "gold_passages_demoted": 30.3,
+      "queries_with_all_sufficient_demoted": 0.9666666666666667
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "natural",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 231.43333333333334,
+      "gold_passages_demoted": 30.3,
+      "queries_with_all_sufficient_demoted": 0.9666666666666667
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "natural",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 212.06666666666666,
+      "gold_passages_demoted": 30.3,
+      "queries_with_all_sufficient_demoted": 0.9666666666666667
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "stress",
+      "model": "BGE",
+      "trials": 30,
+      "successful": 228.53333333333333,
+      "gold_passages_demoted": 13.533333333333333,
+      "queries_with_all_sufficient_demoted": 13.533333333333333
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "stress",
+      "model": "M0_42",
+      "trials": 30,
+      "successful": 210.0,
+      "gold_passages_demoted": 13.533333333333333,
+      "queries_with_all_sufficient_demoted": 13.533333333333333
+    },
+    {
+      "planned_noise_probability": 0.1,
+      "pool": "stress",
+      "model": "M1_42",
+      "trials": 30,
+      "successful": 181.16666666666666,
+      "gold_passages_demoted": 13.533333333333333,
+      "queries_with_all_sufficient_demoted": 13.533333333333333
+    }
+  ]
+}

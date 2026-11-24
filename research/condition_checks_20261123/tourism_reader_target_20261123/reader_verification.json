@@ -1,0 +1,56 @@
+{
+  "checkpoint_audit": {
+    "BGE": {
+      "margin": 2.469581514596939,
+      "condition": 20,
+      "replacement": 3
+    },
+    "M0_42": {
+      "margin": 3.213368773460388,
+      "condition": 20,
+      "replacement": 3
+    },
+    "M0_123": {
+      "margin": 2.7886675596237183,
+      "condition": 20,
+      "replacement": 3
+    },
+    "M0_999": {
+      "margin": 3.293609529733658,
+      "condition": 20,
+      "replacement": 3
+    },
+    "M1_42": {
+      "margin": 2.4200384616851807,
+      "condition": 10,
+      "replacement": 0
+    },
+    "M1_123": {
+      "margin": 2.8396048545837402,
+      "condition": 10,
+      "replacement": 0
+    },
+    "M1_999": {
+      "margin": 1.1966054439544678,
+      "condition": 8,
+      "replacement": 0
+    }
+  },
+  "training_exact_overlap": {
+    "train_moc_0.json": {
+      "archive_sha256": "e701677e4073b167e69734d9d67e5beb32f6a84e074f41cf7901d3cd3e9132f1",
+      "training_rows": 7618,
+      "exact_reader_quote_matches": [],
+      "exact_anchor_body_matches": [],
+      "exact_candidate_body_matches": []
+    },
+    "train_moc_13.json": {
+      "archive_sha256": "cf28b8bf4fded1337b5e8e31bf310083e6535a73cf9d07219300ce217e7a0a16",
+      "training_rows": 8668,
+      "exact_reader_quote_matches": [],
+      "exact_anchor_body_matches": [],
+      "exact_candidate_body_matches": []
+    }
+  },
+  "limits": "Exact normalized strings only. No semantic or base pretraining contamination audit."
+}

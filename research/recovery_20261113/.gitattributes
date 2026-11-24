@@ -1,0 +1,9 @@
+# Preserve the exact bytes pinned by frozen protocols and source manifests.
+# In particular, keep the original CRLF exports on every checkout platform.
+* -text
+*.json whitespace=cr-at-eol
+*.jsonl whitespace=cr-at-eol
+*.csv whitespace=cr-at-eol
+
+# Original upstream card formatting is retained verbatim with its source terms.
+wikiqa/WIKIQA_ORIGINAL_DATA_CARD.md -whitespace

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "runs": {
+    "R_quality_mask_seed_42": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    },
+    "Q_quality_mask_seed_999": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    },
+    "R_quality_mask_seed_123": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    },
+    "Q_quality_mask_seed_42": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    },
+    "Q_quality_mask_seed_123": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    },
+    "R_quality_mask_seed_999": {
+      "updates": 408,
+      "pairs": 26004,
+      "masked_presentations": 369,
+      "active_loss_weight_mass": 25635
+    }
+  }
+}

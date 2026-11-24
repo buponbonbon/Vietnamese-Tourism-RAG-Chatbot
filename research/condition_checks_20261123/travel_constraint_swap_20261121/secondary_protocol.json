@@ -1,0 +1,7 @@
+{
+  "status": "Secondary paired-score diagnostic specified while inference was running, before inspecting ranking outcomes. Primary analysis and benchmark remain frozen.",
+  "operator": "Subtract the same passage's score on the opposite-direction question from its score on the current question. Both scores are already available in the joint paired benchmark.",
+  "scope": "Report for all three plain-passage checkpoints. This analysis tests whether paired relative scores contain directional information masked by a passage's score level. For one independently arriving query it requires constructing and scoring a legitimate opposite-direction query, which doubles cross-encoder calls. It is not a compute-matched serving comparison.",
+  "outputs": ["Both pair wins", "Both unique rank-one selections out of five", "Route-cluster bootstrap of within-model change in both unique rank-one selections"],
+  "cautions": "The two adjusted score vectors are negatives of each other by construction. Therefore a different selected passage alone is insufficient evidence. Both choices must be the correct, distinct GTFS-validated references. Ties are failures."
+}

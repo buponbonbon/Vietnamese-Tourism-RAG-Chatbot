@@ -1,0 +1,41 @@
+{
+  "client_date": "2026-11-21",
+  "scope": "Exploratory source-grounded Vietnamese query benchmark using historical NYC ferry and subway static timetable snapshots. Rendered queries and passages are generated from structured records. The task is to select the passage showing boardable ordered departure and arrival stops on the specified route and service date.",
+  "sources": {
+    "ferry": {
+      "file": "nyc_ferry.zip",
+      "sha256": "4f917b925de3c1f018d8e9a53bb5f5fd041b034e91f430232e22ca3603149e87",
+      "url": "https://nycferry.connexionz.net/rtt/public/resource/gtfs.zip",
+      "publisher_page": "https://www.ferry.nyc/developer-tools/",
+      "label": "NYC Ferry"
+    },
+    "subway": {
+      "file": "mta_feed.zip",
+      "sha256": "acb122715bd90aeacf61f4559722ccf0b7de9c63317200a6dd7480246488f1e6",
+      "url": "https://rrgtfsfeeds.s3.amazonaws.com/gtfs_subway.zip",
+      "publisher_page": "https://new.mta.info/developers",
+      "label": "tàu điện ngầm MTA"
+    }
+  },
+  "data_rules": {
+    "date": "First Wednesday on or after feed_start_date, within feed validity. Apply GTFS calendar and calendar_dates exceptions.",
+    "trip_window_lengths": [3, 4, 5],
+    "candidate_eligibility": "Five distinct excerpts. Every candidate is a contiguous scheduled trip window whose first stop permits normal pickup and whose last permits normal dropoff. Windows require unique stop IDs and printed stop names. Gold may be any conforming route window with normal pickup at the query origin, normal dropoff at the destination and the origin before destination.",
+    "pair_rule": "Same network, route and service date. Two actual reverse windows. The endpoints form an undirected identity. Choose at most three endpoint pairs per physical route group by sorted SHA256 after deduplication; route IDs 6X, 7X, FX share groups 6, 7, F. Select the longest mirrored window for an endpoint pair, then lexically smallest stop-ID path.",
+    "distractors": "Three highest symmetric unigram BM25 candidates in the same network after excluding all same-route windows containing both endpoints in any order, ensuring no printed ambiguity. Reused route short names are disambiguated with their route IDs. Break ties by stable passage hash. Fixed hashed candidate order across both directions and all ranking arms.",
+    "queries": "One Vietnamese template, swapping only the upward/downward endpoint strings on the same route; real English stop names retained.",
+    "plain_passage": "Route, historical service date and ordered stop sequence.",
+    "explicit_passage": "Same underlying ordered schedule fragment, exposing its first, intermediate and last stops explicitly. No query-derived features or answer IDs are exposed to the reranker."
+  },
+  "primary_endpoint": "Strict success on both directional questions in the same family. Report both gold-vs-reverse pair success and both unique first-rank selections among all five. Ties on the required comparison count as failures.",
+  "primary_comparison": "BGE pretrained, M0 seed 42 and M1 seed 42 on plain passages. Single fixed checkpoint per arm. Report observed signs regardless of the outcome.",
+  "secondary_comparisons": [
+    "Unigram and adjacent-bigram BM25 lexical baselines.",
+    "Exact ordered-pair check on GTFS metadata used solely as a data-construction check.",
+    "M0 seed 42 on labeled-endpoint rendering versus plain passage rendering.",
+    "Breakdown by operator, reference-vs-mirror margin, both unique rank-one failure due to another distractor, and descriptive route-cluster bootstrap.",
+    "Unigram full-corpus top-five availability and hit-at-one, using GTFS fields for all ranked candidate labels."
+  ],
+  "inference": "CPU float32 SDPA, dynamic padding, max 512, four threads. No fine-tuning. Candidate and model logic locked before model scores are examined.",
+  "interpretation": "Role-binding evaluation on generated Vietnamese wording and two agencies in one city. Repeated routes are clustered, and effects do not estimate real tourist utility, legal or future service correctness, or general language effects."
+}

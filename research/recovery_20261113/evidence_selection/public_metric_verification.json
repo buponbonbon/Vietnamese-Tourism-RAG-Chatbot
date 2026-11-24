@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "models": 13,
+  "model_query_checks": 1820,
+  "source_workbook_validation_performed": false,
+  "cohort_queries": 140,
+  "oracle_queries": 95,
+  "K_queries": 41,
+  "bootstrap_contrasts": 7,
+  "max_absolute_metric_or_interval_discrepancy": 5.551115123125783e-17,
+  "protocol_sha256": "851fb56c2d43b7389b8af9f23d88b13d5247d92ae9cf0576a3ef15677424608d",
+  "results_sha256": "46e4173705749a3d00e1ecf2780d61f383b21461d5e96e6dc4477f318620fd88",
+  "verifier_sha256": "d056e1f509556d3d79c816feceed6cf2645ae5e270c706188ac04b9a9ef150d1"
+}

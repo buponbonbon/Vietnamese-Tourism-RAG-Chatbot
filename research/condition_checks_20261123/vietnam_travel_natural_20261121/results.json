@@ -1,0 +1,350 @@
+{
+  "benchmark_sha256": "d43e395e69829acf542c3de8fd8fcebb4983a089d9548090c73a79c5915fa622",
+  "n": 9,
+  "main": {
+    "BM25": {
+      "n": 9,
+      "k2": 3,
+      "k5": 2,
+      "loses_pair_pass": 1,
+      "ties_k2": 1,
+      "ties_k5": 1
+    },
+    "BGE": {
+      "n": 9,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_42": {
+      "n": 9,
+      "k2": 5,
+      "k5": 2,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_123": {
+      "n": 9,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_999": {
+      "n": 9,
+      "k2": 4,
+      "k5": 1,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_42": {
+      "n": 9,
+      "k2": 4,
+      "k5": 1,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_123": {
+      "n": 9,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_999": {
+      "n": 9,
+      "k2": 4,
+      "k5": 2,
+      "loses_pair_pass": 2,
+      "ties_k2": 0,
+      "ties_k5": 0
+    }
+  },
+  "by_language": {
+    "en": {
+      "BM25": {
+        "n": 5,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 1,
+        "ties_k5": 1
+      },
+      "BGE": {
+        "n": 5,
+        "k2": 3,
+        "k5": 1,
+        "loses_pair_pass": 2,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_42": {
+        "n": 5,
+        "k2": 3,
+        "k5": 2,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_123": {
+        "n": 5,
+        "k2": 2,
+        "k5": 1,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_999": {
+        "n": 5,
+        "k2": 2,
+        "k5": 1,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_42": {
+        "n": 5,
+        "k2": 2,
+        "k5": 1,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_123": {
+        "n": 5,
+        "k2": 3,
+        "k5": 1,
+        "loses_pair_pass": 2,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_999": {
+        "n": 5,
+        "k2": 3,
+        "k5": 2,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      }
+    },
+    "fr": {
+      "BM25": {
+        "n": 1,
+        "k2": 1,
+        "k5": 1,
+        "loses_pair_pass": 0,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "BGE": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_42": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_123": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_999": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_42": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_123": {
+        "n": 1,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_999": {
+        "n": 1,
+        "k2": 0,
+        "k5": 0,
+        "loses_pair_pass": 0,
+        "ties_k2": 0,
+        "ties_k5": 0
+      }
+    },
+    "vi": {
+      "BM25": {
+        "n": 3,
+        "k2": 1,
+        "k5": 1,
+        "loses_pair_pass": 0,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "BGE": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_42": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_123": {
+        "n": 3,
+        "k2": 2,
+        "k5": 0,
+        "loses_pair_pass": 2,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M0_999": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_42": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_123": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      },
+      "M1_999": {
+        "n": 3,
+        "k2": 1,
+        "k5": 0,
+        "loses_pair_pass": 1,
+        "ties_k2": 0,
+        "ties_k5": 0
+      }
+    }
+  },
+  "without_cat_ba": {
+    "BM25": {
+      "n": 8,
+      "k2": 3,
+      "k5": 2,
+      "loses_pair_pass": 1,
+      "ties_k2": 1,
+      "ties_k5": 1
+    },
+    "BGE": {
+      "n": 8,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_42": {
+      "n": 8,
+      "k2": 5,
+      "k5": 2,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_123": {
+      "n": 8,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M0_999": {
+      "n": 8,
+      "k2": 4,
+      "k5": 1,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_42": {
+      "n": 8,
+      "k2": 4,
+      "k5": 1,
+      "loses_pair_pass": 3,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_123": {
+      "n": 8,
+      "k2": 5,
+      "k5": 1,
+      "loses_pair_pass": 4,
+      "ties_k2": 0,
+      "ties_k5": 0
+    },
+    "M1_999": {
+      "n": 8,
+      "k2": 4,
+      "k5": 2,
+      "loses_pair_pass": 2,
+      "ties_k2": 0,
+      "ties_k5": 0
+    }
+  },
+  "paired_count_delta_m1_minus_m0": {
+    "42": {
+      "k2": -1,
+      "k5": -1
+    },
+    "123": {
+      "k2": 0,
+      "k5": 0
+    },
+    "999": {
+      "k2": 0,
+      "k5": 1
+    }
+  }
+}
